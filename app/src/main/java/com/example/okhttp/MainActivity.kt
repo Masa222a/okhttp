@@ -20,6 +20,7 @@ import java.io.IOException
 class MainActivity : AppCompatActivity() {
     private var flagList = mutableListOf<Flag>()
     private lateinit var binding: ActivityMainBinding
+    private var adapter: CustomAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +36,52 @@ class MainActivity : AppCompatActivity() {
         }
 
         val recyclerView = binding.recyclerView
-        recyclerView.adapter = CustomAdapter(flagList)
+        adapter = CustomAdapter(flagList)
         recyclerView.layoutManager = LinearLayoutManager(this)
-
+        recyclerView.adapter = adapter
+        binding.asia1Tab.setOnClickListener {
+            recyclerView.scrollToPosition(0)
+        }
+        binding.asia2Tab.setOnClickListener {
+            recyclerView.scrollToPosition(10)
+        }
+        binding.asia2Tab.setOnClickListener {
+            recyclerView.scrollToPosition(20)
+        }
+        binding.oceaniaTab.setOnClickListener {
+            recyclerView.scrollToPosition(30)
+        }
+        binding.northAmericaTab.setOnClickListener {
+            recyclerView.scrollToPosition(40)
+        }
+        binding.southAmericaTab.setOnClickListener {
+            recyclerView.scrollToPosition(50)
+        }
+        binding.europeTab.setOnClickListener {
+            recyclerView.scrollToPosition(60)
+        }
+        binding.middleEastTab.setOnClickListener {
+            recyclerView.scrollToPosition(70)
+        }
+        binding.africaTab.setOnClickListener {
+            recyclerView.scrollToPosition(80)
+        }
+//        adapter.setOnCountryClickListener(
+//            object : CustomAdapter.OnCountryCellClickListener {
+//                override fun onItemClick(flag: Flag) {
+//                    val fragment = DetailFragment()
+//                    val bundle = Bundle()
+//                    bundle.putSerializable("shopDetail", shop)
+//                    fragment.arguments = bundle
+//                    Log.d("bundle", "$bundle")
+//                    parentFragmentManager
+//                        .beginTransaction()
+//                        .replace(R.id.container, fragment)
+//                        .addToBackStack(null)
+//                        .commit()
+//                }
+//            }
+//        )
     }
 
     private fun getXmlData() : MutableList<Flag> {
@@ -118,6 +162,11 @@ class MainActivity : AppCompatActivity() {
     )
 
     class CustomAdapter(private val flagList: MutableList<Flag>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+        private lateinit var listener: OnCountryCellClickListener
+
+        interface OnCountryCellClickListener {
+            fun onItemClick(flag: Flag)
+        }
 
         class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             val image: ImageView = view.findViewById(R.id.flag_imageview)
@@ -136,16 +185,21 @@ class MainActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
             val flag = flagList[position]
-//            viewHolder.image.setImageResource(flag.pictureId)
             Picasso.get().load(flag.pictureId).resize(120, 80).into(viewHolder.image)
             viewHolder.countryName.text = flag.name
             viewHolder.population.text = flag.population
             viewHolder.language.text = flag.language
             viewHolder.capital.text = flag.capital
             viewHolder.currency.text = flag.currency
-            viewHolder.button.id = position
+            viewHolder.button.setOnClickListener {
+                listener.onItemClick(flag)
+            }
         }
 
         override fun getItemCount(): Int = flagList.size
+
+        fun setOnCountryClickListener(listener: OnCountryCellClickListener) {
+            this.listener = listener
+        }
     }
 }
