@@ -1,5 +1,6 @@
 package com.example.okhttp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -39,33 +40,39 @@ class MainActivity : AppCompatActivity() {
         adapter = CustomAdapter(flagList)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
-        binding.asia1Tab.setOnClickListener {
-            recyclerView.scrollToPosition(0)
+        val tab = binding.tabLayout
+        tab.setOnClickListener {
+            when(tab.selectedTabPosition) {
+                0 -> {
+                    changeCountriesList(flagList, 0)
+                }
+                1 -> {
+                    changeCountriesList(flagList, 1)
+                }
+                2 -> {
+                    changeCountriesList(flagList, 2)
+                }
+                3 -> {
+                    changeCountriesList(flagList, 3)
+                }
+                4 -> {
+                    changeCountriesList(flagList, 4)
+                }
+                5 -> {
+                    changeCountriesList(flagList, 5)
+                }
+                6 -> {
+                    changeCountriesList(flagList, 6)
+                }
+                7 -> {
+                    changeCountriesList(flagList, 7)
+                }
+                8 -> {
+                    changeCountriesList(flagList, 8)
+                }
+            }
         }
-        binding.asia2Tab.setOnClickListener {
-            recyclerView.scrollToPosition(10)
-        }
-        binding.asia2Tab.setOnClickListener {
-            recyclerView.scrollToPosition(20)
-        }
-        binding.oceaniaTab.setOnClickListener {
-            recyclerView.scrollToPosition(30)
-        }
-        binding.northAmericaTab.setOnClickListener {
-            recyclerView.scrollToPosition(40)
-        }
-        binding.southAmericaTab.setOnClickListener {
-            recyclerView.scrollToPosition(50)
-        }
-        binding.europeTab.setOnClickListener {
-            recyclerView.scrollToPosition(60)
-        }
-        binding.middleEastTab.setOnClickListener {
-            recyclerView.scrollToPosition(70)
-        }
-        binding.africaTab.setOnClickListener {
-            recyclerView.scrollToPosition(80)
-        }
+
 //        adapter.setOnCountryClickListener(
 //            object : CustomAdapter.OnCountryCellClickListener {
 //                override fun onItemClick(flag: Flag) {
@@ -82,6 +89,61 @@ class MainActivity : AppCompatActivity() {
 //                }
 //            }
 //        )
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun changeCountriesList(flagList: MutableList<Flag>, position: Int) {
+        var regionCountry = mutableListOf<Flag>()
+        for (count in 0 until flagList.count()) {
+            when(position) {
+                0 -> {
+                    if (count in 0..17) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                1 -> {
+                    if (count in 18..29) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                2 -> {
+                    if (count in 30..45) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                3 -> {
+                    if (count in 46..47) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                4 -> {
+                    if (count in 48..68) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                5 -> {
+                    if (count in 69..80) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                6 -> {
+                    if (count in 81..129) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                7 -> {
+                    if (count in 130..150) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+                8 -> {
+                    if (count in 151..198) {
+                        regionCountry.add(flagList[count])
+                    }
+                }
+            }
+        }
+        adapter?.notifyDataSetChanged()
     }
 
     private fun getXmlData() : MutableList<Flag> {
