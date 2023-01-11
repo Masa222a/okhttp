@@ -9,19 +9,23 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.okhttp.databinding.ActivityMainBinding
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
-    private var flagList = mutableListOf<Flag>()
     private lateinit var binding: ActivityMainBinding
     private var adapter: CustomAdapter? = null
+    private var flagList = mutableListOf<Flag>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,30 +49,44 @@ class MainActivity : AppCompatActivity() {
             when(tab.selectedTabPosition) {
                 0 -> {
                     changeCountriesList(flagList, 0)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
                 }
                 1 -> {
                     changeCountriesList(flagList, 1)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
                 }
                 2 -> {
                     changeCountriesList(flagList, 2)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
                 }
                 3 -> {
                     changeCountriesList(flagList, 3)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
+
                 }
                 4 -> {
                     changeCountriesList(flagList, 4)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
+
                 }
                 5 -> {
                     changeCountriesList(flagList, 5)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
                 }
                 6 -> {
                     changeCountriesList(flagList, 6)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
+
                 }
                 7 -> {
                     changeCountriesList(flagList, 7)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
+
                 }
                 8 -> {
                     changeCountriesList(flagList, 8)
+                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
+
                 }
             }
         }

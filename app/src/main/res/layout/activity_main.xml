@@ -18,56 +18,56 @@
         app:tabMode="scrollable" >
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/asia1_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="東・東南アジア" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/asia2_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="南・中央アジア" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/oceania_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="オセアニア" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/north_america_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="北米" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/central_america_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="中米" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/south_america_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="南米" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/europe_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ヨーロッパ" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/middle_east_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="中東・北アフリカ" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/africa_tab"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="アフリカ" />
