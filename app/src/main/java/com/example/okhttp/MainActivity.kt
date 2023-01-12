@@ -14,10 +14,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.okhttp.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayout
 import com.squareup.picasso.Picasso
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import java.io.IOException
@@ -45,58 +43,34 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
         val tab = binding.tabLayout
-        tab.setOnClickListener {
-            when(tab.selectedTabPosition) {
-                0 -> {
-                    changeCountriesList(flagList, 0)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-                }
-                1 -> {
-                    changeCountriesList(flagList, 1)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-                }
-                2 -> {
-                    changeCountriesList(flagList, 2)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-                }
-                3 -> {
-                    changeCountriesList(flagList, 3)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-
-                }
-                4 -> {
-                    changeCountriesList(flagList, 4)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-
-                }
-                5 -> {
-                    changeCountriesList(flagList, 5)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-                }
-                6 -> {
-                    changeCountriesList(flagList, 6)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-
-                }
-                7 -> {
-                    changeCountriesList(flagList, 7)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-
-                }
-                8 -> {
-                    changeCountriesList(flagList, 8)
-                    Toast.makeText(applicationContext, "${tab.selectedTabPosition}", Toast.LENGTH_LONG).show()
-
+        tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            @SuppressLint("NotifyDataSetChanged")
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                if (tab != null) {
+                    var regionCountries = changeCountriesList(flagList, tab.position)
+                    adapter?.flagList = regionCountries
+                    adapter?.notifyDataSetChanged()
+                    Toast.makeText(applicationContext, "${tab.position}", Toast.LENGTH_LONG).show()
                 }
             }
-        }
 
-//        adapter.setOnCountryClickListener(
-//            object : CustomAdapter.OnCountryCellClickListener {
-//                override fun onItemClick(flag: Flag) {
-//                    val fragment = DetailFragment()
-//                    val bundle = Bundle()
-//                    bundle.putSerializable("shopDetail", shop)
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+                Toast.makeText(applicationContext, "${tab?.position}onTabUnselected", Toast.LENGTH_LONG).show()
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+                Toast.makeText(applicationContext, "${tab?.position}onTabReselected", Toast.LENGTH_LONG).show()
+            }
+
+        })
+
+        adapter!!.setOnCountryClickListener(
+            object : CustomAdapter.OnCountryCellClickListener {
+                override fun onItemClick(flag: Flag) {
+                    Toast.makeText(applicationContext, "${flag}", Toast.LENGTH_LONG).show()
+                    val fragment = DetailFragment()
+                    val bundle = Bundle()
+//                    bundle.putSerializable("countryDetail", flag)
 //                    fragment.arguments = bundle
 //                    Log.d("bundle", "$bundle")
 //                    parentFragmentManager
@@ -104,13 +78,12 @@ class MainActivity : AppCompatActivity() {
 //                        .replace(R.id.container, fragment)
 //                        .addToBackStack(null)
 //                        .commit()
-//                }
-//            }
-//        )
+                }
+            }
+        )
     }
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun changeCountriesList(flagList: MutableList<Flag>, position: Int) {
+    fun changeCountriesList(flagList: MutableList<Flag>, position: Int): MutableList<Flag> {
         var regionCountry = mutableListOf<Flag>()
         for (count in 0 until flagList.count()) {
             when(position) {
@@ -118,50 +91,60 @@ class MainActivity : AppCompatActivity() {
                     if (count in 0..17) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ0", "${regionCountry}")
                 }
                 1 -> {
                     if (count in 18..29) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ1", "${regionCountry}")
                 }
                 2 -> {
                     if (count in 30..45) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ2", "${regionCountry}")
                 }
                 3 -> {
                     if (count in 46..47) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ3", "${regionCountry}")
                 }
                 4 -> {
                     if (count in 48..68) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ4", "${regionCountry}")
                 }
                 5 -> {
                     if (count in 69..80) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ5", "${regionCountry}")
                 }
                 6 -> {
                     if (count in 81..129) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ6", "${regionCountry}")
                 }
                 7 -> {
                     if (count in 130..150) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ7", "${regionCountry}")
                 }
                 8 -> {
                     if (count in 151..198) {
                         regionCountry.add(flagList[count])
                     }
+                    Log.d("デバッグ8", "${regionCountry}")
                 }
             }
         }
-        adapter?.notifyDataSetChanged()
+        Log.d("デバッグresult", "${regionCountry.count()}")
+        return regionCountry
     }
 
     private fun getXmlData() : MutableList<Flag> {
@@ -241,7 +224,7 @@ class MainActivity : AppCompatActivity() {
         val currency: String?
     )
 
-    class CustomAdapter(private val flagList: MutableList<Flag>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+    class CustomAdapter(var flagList: MutableList<Flag>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
         private lateinit var listener: OnCountryCellClickListener
 
         interface OnCountryCellClickListener {
