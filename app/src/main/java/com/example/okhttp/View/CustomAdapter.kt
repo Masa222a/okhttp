@@ -1,4 +1,4 @@
-package com.example.okhttp
+package com.example.okhttp.View
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.okhttp.Model.Flag
+import com.example.okhttp.R
 import com.squareup.picasso.Picasso
 
 class CustomAdapter(var flagList: MutableList<Flag>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {

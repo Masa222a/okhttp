@@ -1,4 +1,4 @@
-package com.example.okhttp
+package com.example.okhttp.Model
 
 data class Flag(
     val pictureId: Int,
