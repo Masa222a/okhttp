@@ -23,6 +23,7 @@ class MainFragment : Fragment() {
     private var adapter: CustomAdapter? = null
     private var flagList = mutableListOf<Flag>()
     var xmlManager = XmlManager()
+    private val countriesList = xmlManager.getXmlData()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +33,7 @@ class MainFragment : Fragment() {
 
         // currentPositionを元にManagerクラスにポジションの情報を渡してデータをもらえるようにする。
         try {
-            flagList = xmlManager.getXmlData()
+            flagList = xmlManager.changeCountriesList(countriesList, 0)
         } catch (e: XmlPullParserException) {
             Log.d("$e", "XmlPullParserException")
         } catch (e: IOException) {
@@ -48,7 +49,7 @@ class MainFragment : Fragment() {
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
-                    val regionCountries = xmlManager.changeCountriesList(flagList, tab.position)
+                    val regionCountries = xmlManager.changeCountriesList(countriesList, tab.position)
                     adapter?.flagList = regionCountries
                     adapter?.notifyDataSetChanged()
                     Toast.makeText(activity, "${tab.position}", Toast.LENGTH_LONG).show()

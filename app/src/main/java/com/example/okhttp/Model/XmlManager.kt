@@ -111,64 +111,7 @@ class XmlManager {
                 }
             }
         }
-//        for (count in 0 until flagList.count()) {
-//            when(position) {
-//                Regions.SoutheastAsia.index -> {
-//                    if (count in Regions.SoutheastAsia.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ0", "${regionCountry}")
-//                }
-//                Regions.CentralAsia.index -> {
-//                    if (count in Regions.CentralAsia.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ1", "${regionCountry}")
-//                }
-//                Regions.Oseania.index -> {
-//                    if (count in Regions.Oseania.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ2", "${regionCountry}")
-//                }
-//                Regions.NorthAmerica.index -> {
-//                    if (count in Regions.NorthAmerica.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ3", "${regionCountry}")
-//                }
-//                Regions.CentralAmerica.index -> {
-//                    if (count in Regions.CentralAmerica.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ4", "${regionCountry}")
-//                }
-//                Regions.SouthAmerica.index -> {
-//                    if (count in Regions.SouthAmerica.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ5", "${regionCountry}")
-//                }
-//                Regions.Europe.index -> {
-//                    if (count in Regions.Europe.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ6", "${regionCountry}")
-//                }
-//                Regions.NorthAfrica.index -> {
-//                    if (count in Regions.NorthAfrica.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ7", "${regionCountry}")
-//                }
-//                Regions.Africa.index -> {
-//                    if (count in Regions.Africa.countryCodes) {
-//                        regionCountry.add(flagList[count])
-//                    }
-//                    Log.d("デバッグ8", "${regionCountry}")
-//                }
-//            }
-//        }
+
         Log.d("デバッグresult", "${regionCountry.count()}")
         return regionCountry
     }
