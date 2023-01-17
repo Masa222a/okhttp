@@ -56,7 +56,7 @@ class XmlManager {
         for (count in 0 until flagList.count()) {
             when(position) {
                 Regions.SoutheastAsia.index -> {
-                    if (count in 0..17) {
+                    if (count in Regions.SoutheastAsia.countryCodes) {
                         regionCountry.add(flagList[count])
                     }
                     Log.d("デバッグ0", "${regionCountry}")
