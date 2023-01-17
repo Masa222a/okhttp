@@ -1,6 +1,7 @@
 package com.example.okhttp.Model
 
 data class Flag(
+    val id: Int,
     val pictureId: Int,
     val name: String?,
     val engName: String?,
