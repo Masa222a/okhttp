@@ -15,7 +15,6 @@ import com.example.okhttp.R
 import com.example.okhttp.View.CustomAdapter
 import com.example.okhttp.databinding.FragmentMainBinding
 import com.google.android.material.tabs.TabLayout
-import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import java.io.IOException
 
@@ -23,6 +22,7 @@ class MainFragment : Fragment() {
     lateinit var binding: FragmentMainBinding
     private var adapter: CustomAdapter? = null
     private var flagList = mutableListOf<Flag>()
+    var xmlManager = XmlManager()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +32,7 @@ class MainFragment : Fragment() {
 
         // currentPositionを元にManagerクラスにポジションの情報を渡してデータをもらえるようにする。
         try {
-            flagList = XmlManager().getXmlData()
+            flagList = xmlManager.getXmlData()
         } catch (e: XmlPullParserException) {
             Log.d("$e", "XmlPullParserException")
         } catch (e: IOException) {
@@ -48,7 +48,7 @@ class MainFragment : Fragment() {
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
-                    val regionCountries = changeCountriesList(flagList, tab.position)
+                    val regionCountries = xmlManager.changeCountriesList(flagList, tab.position)
                     adapter?.flagList = regionCountries
                     adapter?.notifyDataSetChanged()
                     Toast.makeText(activity, "${tab.position}", Toast.LENGTH_LONG).show()

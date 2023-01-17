@@ -18,56 +18,47 @@
         app:tabMode="scrollable" >
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="東・東南アジア" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="南・中央アジア" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="オセアニア" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="北米" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="中米" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="南米" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ヨーロッパ" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="中東・北アフリカ" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="アフリカ" />

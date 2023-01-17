@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -20,7 +21,6 @@ class DetailFragment : Fragment() {
     ): View {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
         var toolbar = binding.detailToolbar
-        var collapsingToolbarLayout = binding.collapsingToolBar
 
         var tabLayout = binding.tabLayout
         var viewPager = binding.detailViewPager
@@ -29,8 +29,9 @@ class DetailFragment : Fragment() {
             tab.text = tabTitleList[position]
         }.attach()
 
-//        var flag = arguments?.getSerializable("country")
-//        Log.d("デバッグアルグメンツ", "${flag}")
+        binding.backButton.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         return binding.root
     }
 
