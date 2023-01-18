@@ -19,7 +19,7 @@ import org.xmlpull.v1.XmlPullParserException
 import java.io.IOException
 
 class MainFragment : Fragment() {
-    lateinit var binding: FragmentMainBinding
+    private lateinit var binding: FragmentMainBinding
     private var adapter: CountriesListAdapter? = null
     private var flagList = mutableListOf<Flag>()
     var xmlManager = XmlManager()
@@ -28,7 +28,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
         try {
@@ -39,28 +39,31 @@ class MainFragment : Fragment() {
             Log.d("$e", "IOException")
         }
 
-        val recyclerView = binding.recyclerView
         adapter = CountriesListAdapter(flagList)
+        val recyclerView = binding.recyclerView
+        val tab = binding.tabLayout
         recyclerView.layoutManager = LinearLayoutManager(view?.context)
         recyclerView.adapter = adapter
-        val tab = binding.tabLayout
+
         tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
                     val regionCountries = xmlManager.changeCountriesList(countriesList, tab.position)
                     adapter?.flagList = regionCountries
+                    recyclerView.scrollToPosition(0)
                     adapter?.notifyDataSetChanged()
-                    Toast.makeText(activity, "${tab.position}", Toast.LENGTH_LONG).show()
                 }
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab?) {
-                Toast.makeText(activity, "${tab?.position}onTabUnselected", Toast.LENGTH_LONG).show()
+                recyclerView.scrollToPosition(0)
+                Toast.makeText(requireActivity(), "onTabUnselected",Toast.LENGTH_LONG).show()
             }
 
             override fun onTabReselected(tab: TabLayout.Tab?) {
-                Toast.makeText(activity, "${tab?.position}onTabReselected", Toast.LENGTH_LONG).show()
+                recyclerView.scrollToPosition(0)
+                Toast.makeText(requireActivity(), "onTabReselected",Toast.LENGTH_LONG).show()
             }
 
         })
@@ -68,12 +71,10 @@ class MainFragment : Fragment() {
         adapter!!.setOnCountryClickListener(
             object : CountriesListAdapter.OnCountryCellClickListener {
                 override fun onItemClick(flag: Flag) {
-                    Toast.makeText(activity, "${flag}", Toast.LENGTH_LONG).show()
                     val fragment = DetailFragment()
                     val bundle = Bundle()
                     bundle.putSerializable("country", flag)
                     fragment.arguments = bundle
-                    Log.d("bundle", "$bundle")
                     parentFragmentManager
                         .beginTransaction()
                         .replace(R.id.container, fragment)

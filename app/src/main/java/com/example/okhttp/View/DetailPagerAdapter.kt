@@ -17,13 +17,13 @@ class DetailPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
     override fun createFragment(position: Int): Fragment {
         return when(position) {
             0 -> {
-                DetailEmbassyFragment()
-            }
-            1 -> {
                 DetailVisaFragment()
             }
-            else -> {
+            1 -> {
                 DetailEmbassyFragment()
+            }
+            else -> {
+                DetailVisaFragment()
             }
         }
     }

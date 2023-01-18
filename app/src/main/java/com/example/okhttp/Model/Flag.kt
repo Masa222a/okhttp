@@ -1,5 +1,7 @@
 package com.example.okhttp.Model
 
+import java.io.Serializable
+
 data class Flag(
     val id: Int,
     val pictureId: Int,
@@ -9,4 +11,4 @@ data class Flag(
     val language: String?,
     val capital: String?,
     val currency: String?
-): java.io.Serializable
+): Serializable
