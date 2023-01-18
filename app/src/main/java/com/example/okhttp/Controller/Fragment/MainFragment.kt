@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.okhttp.Model.Flag
 import com.example.okhttp.Model.XmlManager
 import com.example.okhttp.R
-import com.example.okhttp.View.CustomAdapter
+import com.example.okhttp.View.CountriesListAdapter
 import com.example.okhttp.databinding.FragmentMainBinding
 import com.google.android.material.tabs.TabLayout
 import org.xmlpull.v1.XmlPullParserException
@@ -20,7 +20,7 @@ import java.io.IOException
 
 class MainFragment : Fragment() {
     lateinit var binding: FragmentMainBinding
-    private var adapter: CustomAdapter? = null
+    private var adapter: CountriesListAdapter? = null
     private var flagList = mutableListOf<Flag>()
     var xmlManager = XmlManager()
     private val countriesList = xmlManager.getXmlData()
@@ -31,7 +31,6 @@ class MainFragment : Fragment() {
     ): View? {
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
-        // currentPositionを元にManagerクラスにポジションの情報を渡してデータをもらえるようにする。
         try {
             flagList = xmlManager.changeCountriesList(countriesList, 0)
         } catch (e: XmlPullParserException) {
@@ -41,7 +40,7 @@ class MainFragment : Fragment() {
         }
 
         val recyclerView = binding.recyclerView
-        adapter = CustomAdapter(flagList)
+        adapter = CountriesListAdapter(flagList)
         recyclerView.layoutManager = LinearLayoutManager(view?.context)
         recyclerView.adapter = adapter
         val tab = binding.tabLayout
@@ -67,7 +66,7 @@ class MainFragment : Fragment() {
         })
 
         adapter!!.setOnCountryClickListener(
-            object : CustomAdapter.OnCountryCellClickListener {
+            object : CountriesListAdapter.OnCountryCellClickListener {
                 override fun onItemClick(flag: Flag) {
                     Toast.makeText(activity, "${flag}", Toast.LENGTH_LONG).show()
                     val fragment = DetailFragment()

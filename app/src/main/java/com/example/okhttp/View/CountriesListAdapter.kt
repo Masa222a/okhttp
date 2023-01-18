@@ -11,7 +11,7 @@ import com.example.okhttp.Model.Flag
 import com.example.okhttp.R
 import com.squareup.picasso.Picasso
 
-class CustomAdapter(var flagList: MutableList<Flag>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CountriesListAdapter(var flagList: MutableList<Flag>): RecyclerView.Adapter<CountriesListAdapter.ViewHolder>() {
     private lateinit var listener: OnCountryCellClickListener
 
     interface OnCountryCellClickListener {

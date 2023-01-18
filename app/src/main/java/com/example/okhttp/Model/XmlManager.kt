@@ -1,17 +1,11 @@
 package com.example.okhttp.Model
 
-import android.annotation.SuppressLint
 import android.util.Log
 import com.example.okhttp.R
 import org.xmlpull.v1.XmlPullParser
 
 class XmlManager {
-    companion object {
-        @SuppressLint("StaticFieldLeak")
-        var instance: XmlManager = XmlManager()
-    }
-
-    val context = SingletonContext.applicationContext()!!
+    private val context = SingletonContext.applicationContext()!!
 
     enum class Regions(val index: Int) {
         SoutheastAsia(0),
@@ -59,55 +53,55 @@ class XmlManager {
                     if (flag.id in Regions.SoutheastAsia.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ0", "${regionCountry}")
+                    Log.d("デバッグ0", "$regionCountry")
                 }
                 Regions.CentralAsia.index -> {
                     if (flag.id in Regions.CentralAsia.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ1", "${regionCountry}")
+                    Log.d("デバッグ1", "$regionCountry")
                 }
                 Regions.Oseania.index -> {
                     if (flag.id in Regions.Oseania.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ2", "${regionCountry}")
+                    Log.d("デバッグ2", "$regionCountry")
                 }
                 Regions.NorthAmerica.index -> {
                     if (flag.id in Regions.NorthAmerica.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ3", "${regionCountry}")
+                    Log.d("デバッグ3", "$regionCountry")
                 }
                 Regions.CentralAmerica.index -> {
                     if (flag.id in Regions.CentralAmerica.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ4", "${regionCountry}")
+                    Log.d("デバッグ4", "$regionCountry")
                 }
                 Regions.SouthAmerica.index -> {
                     if (flag.id in Regions.SouthAmerica.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ5", "${regionCountry}")
+                    Log.d("デバッグ5", "$regionCountry")
                 }
                 Regions.Europe.index -> {
                     if (flag.id in Regions.Europe.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ6", "${regionCountry}")
+                    Log.d("デバッグ6", "$regionCountry")
                 }
                 Regions.NorthAfrica.index -> {
                     if (flag.id in Regions.NorthAfrica.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ7", "${regionCountry}")
+                    Log.d("デバッグ7", "$regionCountry")
                 }
                 Regions.Africa.index -> {
                     if (flag.id in Regions.Africa.countryCodes) {
                         regionCountry.add(flag)
                     }
-                    Log.d("デバッグ8", "${regionCountry}")
+                    Log.d("デバッグ8", "$regionCountry")
                 }
             }
         }
@@ -178,7 +172,7 @@ class XmlManager {
 
         parser.close()
 
-        for(i in 0..pictureIds.size - 1) {
+        for(i in 0 until pictureIds.size) {
             flags.add(Flag(countryCodes[i], pictureIds[i], countriesName[i], countriesEngName[i], populations[i], languages[i], capitals[i], currencies[i]))
         }
         return flags
