@@ -7,11 +7,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.okhttp.Model.Flag
+import com.example.okhttp.Model.Entity.Flag
 import com.example.okhttp.R
 import com.squareup.picasso.Picasso
 
-class CountriesListAdapter(var flagList: MutableList<Flag>): RecyclerView.Adapter<CountriesListAdapter.ViewHolder>() {
+class CountriesListAdapter(var flagList: List<Flag>): RecyclerView.Adapter<CountriesListAdapter.ViewHolder>() {
     private lateinit var listener: OnCountryCellClickListener
 
     interface OnCountryCellClickListener {

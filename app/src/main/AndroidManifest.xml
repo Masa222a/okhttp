@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Okhttp"
         tools:targetApi="31"
-        android:name=".Model.SingletonContext">
+        android:name=".SingletonContext">
         <activity
             android:name=".Controller.Activity.MainActivity"
             android:exported="true">

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.okhttp.Model.Flag
+import com.example.okhttp.Model.Entity.Flag
 import com.example.okhttp.Model.XmlManager
 import com.example.okhttp.R
 import com.example.okhttp.View.CountriesListAdapter
@@ -21,9 +21,8 @@ import java.io.IOException
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     private var adapter: CountriesListAdapter? = null
-    private var flagList = mutableListOf<Flag>()
+    private var flagList = listOf<Flag>()
     var xmlManager = XmlManager()
-    private val countriesList = xmlManager.getXmlData()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +31,7 @@ class MainFragment : Fragment() {
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
         try {
-            flagList = xmlManager.changeCountriesList(countriesList, 0)
+            flagList = xmlManager.changeCountriesList(XmlManager.Regions.SoutheastAsia)
         } catch (e: XmlPullParserException) {
             Log.d("$e", "XmlPullParserException")
         } catch (e: IOException) {
@@ -49,7 +48,7 @@ class MainFragment : Fragment() {
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
-                    val regionCountries = xmlManager.changeCountriesList(countriesList, tab.position)
+                    val regionCountries = xmlManager.changeCountriesList(XmlManager.Regions(tab.position))
                     adapter?.flagList = regionCountries
                     recyclerView.scrollToPosition(0)
                     adapter?.notifyDataSetChanged()

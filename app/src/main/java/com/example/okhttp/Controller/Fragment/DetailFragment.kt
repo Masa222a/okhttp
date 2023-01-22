@@ -4,10 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.okhttp.Model.DetailManager
-import com.example.okhttp.Model.Flag
+import com.example.okhttp.Model.Entity.Flag
 import com.example.okhttp.View.DetailPagerAdapter
 import com.example.okhttp.databinding.FragmentDetailBinding
 import com.google.android.material.tabs.TabLayoutMediator

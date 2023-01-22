@@ -1,6 +1,7 @@
 package com.example.okhttp.Model
 
 import android.widget.ImageView
+import com.example.okhttp.SingletonContext
 
 class DetailManager {
     private val context = SingletonContext.applicationContext()!!

@@ -1,4 +1,4 @@
-package com.example.okhttp.Model
+package com.example.okhttp
 
 import android.app.Application
 import android.content.Context
