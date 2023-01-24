@@ -48,7 +48,7 @@ class MainFragment : Fragment() {
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
-                    val regionCountries = xmlManager.changeCountriesList(XmlManager.Regions(tab.position))
+                    val regionCountries = xmlManager.changeCountriesList(XmlManager.Regions.indexOf(tab.position))
                     adapter?.flagList = regionCountries
                     recyclerView.scrollToPosition(0)
                     adapter?.notifyDataSetChanged()

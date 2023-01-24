@@ -1,6 +1,5 @@
 package com.example.okhttp.Model
 
-import android.util.Log
 import com.example.okhttp.Model.Entity.Flag
 import com.example.okhttp.R
 import com.example.okhttp.SingletonContext
@@ -23,6 +22,12 @@ class XmlManager {
         Europe(6),
         NorthAfrica(7),
         Africa(8);
+
+        companion object {
+            fun indexOf(position: Int): Regions {
+                return values().first { it.index == position }
+            }
+        }
 
         val countryCodes: List<Int>
             get() = when(this) {
@@ -48,7 +53,7 @@ class XmlManager {
     }
 
     fun changeCountriesList(regions: Regions): List<Flag> {
-        return flags.filter { it.id == regions.countryCodes.first() }
+        return flags.filter { regions.countryCodes.contains(it.id) }
     }
 
     private fun getXmlData() {
