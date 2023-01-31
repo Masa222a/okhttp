@@ -29,7 +29,7 @@ class CountriesListAdapter(var flagList: List<Flag>): RecyclerView.Adapter<Count
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.list_items, viewGroup, false)
+        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.countries_row, viewGroup, false)
         return ViewHolder(view)
     }
 
