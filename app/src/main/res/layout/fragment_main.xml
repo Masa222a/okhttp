@@ -21,12 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="東・東南アジア" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="南・中央アジア" />
+            android:text="アジア" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
@@ -41,12 +36,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="中米" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="南米" />
+            android:text="中・南米" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
@@ -56,7 +46,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="中東・北アフリカ" />
+            android:text="中東" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"

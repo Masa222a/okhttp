@@ -31,7 +31,7 @@ class MainFragment : Fragment() {
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
         try {
-            flagList = xmlManager.changeCountriesList(XmlManager.Regions.SoutheastAsia)
+            flagList = xmlManager.changeCountriesList(XmlManager.Regions.Asia)
         } catch (e: XmlPullParserException) {
             Log.d("$e", "XmlPullParserException")
         } catch (e: IOException) {

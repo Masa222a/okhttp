@@ -13,15 +13,13 @@ class XmlManager {
     }
 
     enum class Regions(val index: Int) {
-        SoutheastAsia(0),
-        CentralAsia(1),
-        Oseania(2),
-        NorthAmerica(3),
-        CentralAmerica(4),
-        SouthAmerica(5),
-        Europe(6),
-        NorthAfrica(7),
-        Africa(8);
+        Asia(0),
+        Oceania(1),
+        NorthAmerica(2),
+        CentralNorthAmerica(3),
+        Europe(4),
+        MiddleEast(5),
+        Africa(6);
 
         companion object {
             fun indexOf(position: Int): Regions {
@@ -31,24 +29,20 @@ class XmlManager {
 
         val countryCodes: List<Int>
             get() = when(this) {
-                //1..18
-                SoutheastAsia -> (1..18).toList()
-                //19..30
-                CentralAsia -> (19..30).toList()
-                //31..46
-                Oseania -> (31..46).toList()
-                //47..48
-                NorthAmerica -> (47..48).toList()
-                //49..69
-                CentralAmerica -> (49..69).toList()
-                //70..81
-                SouthAmerica -> (70..81).toList()
-                //82..130
-                Europe -> (82..130).toList()
-                //131..151
-                NorthAfrica -> (131..151).toList()
-                // 152..199
-                Africa -> (152..199).toList()
+                //1..25アジア
+                Asia -> (1..25).toList()
+                //26..41オセアニア
+                Oceania -> (26..41).toList()
+                //42..43北米
+                NorthAmerica -> (42..43).toList()
+                //44..76中・南米
+                CentralNorthAmerica -> (44..765).toList()
+                //77..130ヨーロッパ
+                Europe -> (77..130).toList()
+                //131..145中東
+                MiddleEast -> (131..145).toList()
+                // 146..199アフリカ
+                Africa -> (146..199).toList()
             }
     }
 

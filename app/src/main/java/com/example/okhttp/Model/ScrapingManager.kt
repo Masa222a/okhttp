@@ -6,9 +6,20 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
 import java.io.IOException
-import java.net.URL
 
 class ScrapingManager {
+    private val mainUrl = “https://www.mofa.go.jp/mofaj/annai/zaigai/list/”
+
+    enum class Embassies{
+        asia,
+        oceania,
+        n_ame,
+        cs_ame,
+        europe,
+        nm_east,
+        africa
+    }
+
     private val listData = mutableListOf<Embassy>()
     private suspend fun fetchUrl(url: String) {
         return withContext(Dispatchers.IO) {

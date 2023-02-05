@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <regions region="東・東南アジア" region_code="1">
+    <regions region="アジア" region_code="1" region_eng="asia">
         <country country_code="1" country_in_region_code="1">
+            <name>インド</name>
+            <flag>india</flag>
+            <population>13億6900万人</population>
+            <language>ヒンディー語/英語/他</language>
+            <capital>ニューデリー</capital>
+            <currency>インド・ルピー(INR)₹ </currency>
+        </country>
+
+        <country country_code="2" country_in_region_code="2">
             <name>インドネシア</name>
             <flag>indonesia</flag>
             <population>2億7000万人</population>
             <language>インドネシア語</language>
             <capital>ジャカルタ</capital>
             <currency>ルピア(INR)Rp</currency>
-        </country>
-
-        <country country_code="2" country_in_region_code="2">
-            <name>韓国</name>
-            <flag>korea</flag>
-            <population>5130万人</population>
-            <language>韓国語</language>
-            <capital>ソウル</capital>
-            <currency>ウォン(KRW)₩</currency>
         </country>
 
         <country country_code="3" country_in_region_code="3">
@@ -30,21 +30,21 @@
         </country>
 
         <country country_code="4" country_in_region_code="4">
-            <name>北朝鮮</name>
-            <flag>northkorea</flag>
-            <population>2570万人</population>
-            <language>朝鮮語</language>
-            <capital>ピョンヤン</capital>
-            <currency>ウォン(KPW)₩</currency>
-        </country>
-
-        <country country_code="5" country_in_region_code="5">
             <name>シンガポール</name>
             <flag>singapore</flag>
             <population>590万人</population>
             <language>マレー語/英語/中国語</language>
             <capital>シンガポール</capital>
             <currency>シンガポール・ドル(SGD)S$ </currency>
+        </country>
+
+        <country country_code="5" country_in_region_code="5">
+            <name>スリランカ</name>
+            <flag>srilanka</flag>
+            <population>2110万人</population>
+            <language>シンハラ語/タミール語/英語</language>
+            <capital>スリ・ジャヤワルダナプラ・コッテ</capital>
+            <currency>スリランカ・ルピー(LKR)රු </currency>
         </country>
 
         <country country_code="6" country_in_region_code="6">
@@ -57,12 +57,12 @@
         </country>
 
         <country country_code="7" country_in_region_code="7">
-            <name>台湾</name>
-            <flag>taiwan</flag>
-            <population>2359万人</population>
-            <language>台湾語/中国語</language>
-            <capital>台北</capital>
-            <currency>新台湾ドル(TWD)NT$</currency>
+            <name>韓国</name>
+            <flag>korea</flag>
+            <population>5130万人</population>
+            <language>韓国語</language>
+            <capital>ソウル</capital>
+            <currency>ウォン(KRW)₩</currency>
         </country>
 
         <country country_code="8" country_in_region_code="8">
@@ -75,15 +75,33 @@
         </country>
 
         <country country_code="9" country_in_region_code="9">
-            <name>日本</name>
-            <flag>japan</flag>
-            <population>1億2000万人</population>
-            <language>日本語</language>
-            <capital>東京</capital>
-            <currency>円(JPY)¥</currency>
+            <name>ネパール</name>
+            <flag>nepal</flag>
+            <population>2930万人</population>
+            <language>ネパール語</language>
+            <capital>カトマンズ</capital>
+            <currency>ネパール・ルピー(NPR)रू </currency>
         </country>
 
         <country country_code="10" country_in_region_code="10">
+            <name>パキスタン</name>
+            <flag>pakistan</flag>
+            <population>2億460万人</population>
+            <language>ウルドゥ語/英語</language>
+            <capital>イスラマバード</capital>
+            <currency>パキスタンルピー(PKR)Rs</currency>
+        </country>
+
+        <country country_code="11" country_in_region_code="11">
+            <name>バングラデシュ</name>
+            <flag>bangladesh</flag>
+            <population>1億6370万人</population>
+            <language>ベンガル語</language>
+            <capital>ダッカ</capital>
+            <currency>タカ(BDT)৳</currency>
+        </country>
+
+        <country country_code="12" country_in_region_code="12">
             <name>東ティモール</name>
             <flag>timorleste</flag>
             <population>140万人</population>
@@ -92,7 +110,7 @@
             <currency>米ドル(USD)$</currency>
         </country>
 
-        <country country_code="11" country_in_region_code="11">
+        <country country_code="13" country_in_region_code="13">
             <name>フィリピン</name>
             <flag>philippines</flag>
             <population>1億1000万人</population>
@@ -101,7 +119,16 @@
             <currency>ペソ(PHP)₱</currency>
         </country>
 
-        <country country_code="12" country_in_region_code="12">
+        <country country_code="14" country_in_region_code="14">
+            <name>ブータン</name>
+            <flag>bhutan</flag>
+            <population>80万人</population>
+            <language>ゾンカ語/英語/他</language>
+            <capital>ティンプー</capital>
+            <currency>ニュルタム(BTN)Nu</currency>
+        </country>
+
+        <country country_code="15" country_in_region_code="15">
             <name>ブルネイ</name>
             <flag>brunei</flag>
             <population>40万人</population>
@@ -110,7 +137,7 @@
             <currency>ブルネイ・ドル(BND)B$ </currency>
         </country>
 
-        <country country_code="13" country_in_region_code="13">
+        <country country_code="16" country_in_region_code="16">
             <name>ベトナム</name>
             <flag>vietnam</flag>
             <population>9740万人</population>
@@ -119,16 +146,7 @@
             <currency>ドン(VND)₫ </currency>
         </country>
 
-        <country country_code="14" country_in_region_code="14">
-            <name>香港</name>
-            <flag>hongkong</flag>
-            <population>734万人</population>
-            <language>広東語/中国語/英語</language>
-            <capital>NOT</capital>
-            <currency>香港ドル(HKD)HK$ </currency>
-        </country>
-
-        <country country_code="15" country_in_region_code="15">
+        <country country_code="17" country_in_region_code="17">
             <name>マレーシア</name>
             <flag>malaysia</flag>
             <population>3250万人</population>
@@ -137,7 +155,7 @@
             <currency>リンギット(MYR)RM </currency>
         </country>
 
-        <country country_code="16" country_in_region_code="16">
+        <country country_code="18" country_in_region_code="18">
             <name>ミャンマー</name>
             <flag>myanmar</flag>
             <population>5430万人</population>
@@ -146,128 +164,7 @@
             <currency>チャット(MMK)K </currency>
         </country>
 
-        <country country_code="17" country_in_region_code="17">
-            <name>モンゴル</name>
-            <flag>mongolia</flag>
-            <population>320万人</population>
-            <language>モンゴル語</language>
-            <capital>ウランバートル</capital>
-            <currency>トゥグルグ(MNT)₮ </currency>
-        </country>
-
-        <country country_code="18" country_in_region_code="18">
-            <name>ラオス</name>
-            <flag>laos</flag>
-            <population>710万人</population>
-            <language>ラオス語</language>
-            <capital>ビエンチャン</capital>
-            <currency>キープ(LAK)₭/₭N </currency>
-        </country>
-
-    </regions>
-
-
-    <regions region="南・中央アジア" region_code="2">
-        <country country_code="19" country_in_region_code="1">
-            <name>インド</name>
-            <flag>india</flag>
-            <population>13億6900万人</population>
-            <language>ヒンディー語/英語/他</language>
-            <capital>ニューデリー</capital>
-            <currency>インド・ルピー(INR)₹ </currency>
-        </country>
-
-        <country country_code="20" country_in_region_code="2">
-            <name>ウズベキスタン</name>
-            <flag>uzbekistan</flag>
-            <population>3240万人</population>
-            <language>ウズベク語</language>
-            <capital>タシュケント</capital>
-            <currency>スム(UZS)сум </currency>
-        </country>
-
-        <country country_code="21" country_in_region_code="3">
-            <name>カザフスタン</name>
-            <flag>kazakhstan</flag>
-            <population>1860万人</population>
-            <language>カザフ語</language>
-            <capital>ヌルスルタン</capital>
-            <currency>テンゲ(KZT)〒</currency>
-        </country>
-
-        <country country_code="22" country_in_region_code="4">
-            <name>キルギス</name>
-            <flag>kyrgyzstan</flag>
-            <population>610万人</population>
-            <language>キルギス語/ロシア語</language>
-            <capital>ビシュケク</capital>
-            <currency>ソム(KGS)сом </currency>
-        </country>
-        
-        <country country_code="23" country_in_region_code="5">
-            <name>スリランカ</name>
-            <flag>srilanka</flag>
-            <population>2110万人</population>
-            <language>シンハラ語/タミール語/英語</language>
-            <capital>スリ・ジャヤワルダナプラ・コッテ</capital>
-            <currency>スリランカ・ルピー(LKR)රු </currency>
-        </country>
-        
-        <country country_code="24" country_in_region_code="5">
-            <name>タジキスタン</name>
-            <flag>tajikistan</flag>
-            <population>930万人</population>
-            <language>タジク語</language>
-            <capital>ドゥシャンベ</capital>
-            <currency>ソモニ(TJS)</currency>
-        </country>
-        
-        <country country_code="25" country_in_region_code="6">
-            <name>トルクメニスタン</name>
-            <flag>turkmenistan</flag>
-            <population>580万人</population>
-            <language>トルクメン語</language>
-            <capital>アシガバート</capital>
-            <currency>マナト(TMT)m</currency>
-        </country>
-        
-        <country country_code="26" country_in_region_code="7">
-            <name>ネパール</name>
-            <flag>nepal</flag>
-            <population>2930万人</population>
-            <language>ネパール語</language>
-            <capital>カトマンズ</capital>
-            <currency>ネパール・ルピー(NPR)रू </currency>
-        </country>
-        
-        <country country_code="27" country_in_region_code="8">
-            <name>バングラデシュ</name>
-            <flag>bangladesh</flag>
-            <population>1億6370万人</population>
-            <language>ベンガル語</language>
-            <capital>ダッカ</capital>
-            <currency>タカ(BDT)৳</currency>
-        </country>
-        
-        <country country_code="28" country_in_region_code="9">
-            <name>パキスタン</name>
-            <flag>pakistan</flag>
-            <population>2億460万人</population>
-            <language>ウルドゥ語/英語</language>
-            <capital>イスラマバード</capital>
-            <currency>パキスタンルピー(PKR)Rs</currency>
-        </country>
-        
-        <country country_code="29" country_in_region_code="10">
-            <name>ブータン</name>
-            <flag>bhutan</flag>
-            <population>80万人</population>
-            <language>ゾンカ語/英語/他</language>
-            <capital>ティンプー</capital>
-            <currency>ニュルタム(BTN)Nu</currency>
-        </country>
-        
-        <country country_code="30" country_in_region_code="11">
+        <country country_code="19" country_in_region_code="19">
             <name>モルディブ</name>
             <flag>maldives</flag>
             <population>50万人</population>
@@ -276,10 +173,65 @@
             <currency>ルフィア(MVR)Rf</currency>
         </country>
 
+        <country country_code="20" country_in_region_code="20">
+            <name>モンゴル</name>
+            <flag>mongolia</flag>
+            <population>320万人</population>
+            <language>モンゴル語</language>
+            <capital>ウランバートル</capital>
+            <currency>トゥグルグ(MNT)₮ </currency>
+        </country>
+
+        <country country_code="21" country_in_region_code="21">
+            <name>ラオス</name>
+            <flag>laos</flag>
+            <population>710万人</population>
+            <language>ラオス語</language>
+            <capital>ビエンチャン</capital>
+            <currency>キープ(LAK)₭/₭N </currency>
+        </country>
+
+        <country country_code="22" country_in_region_code="22">
+            <name>日本</name>
+            <flag>japan</flag>
+            <population>1億2000万人</population>
+            <language>日本語</language>
+            <capital>東京</capital>
+            <currency>円(JPY)¥</currency>
+        </country>
+
+        <country country_code="23" country_in_region_code="23">
+            <name>香港</name>
+            <flag>hongkong</flag>
+            <population>734万人</population>
+            <language>広東語/中国語/英語</language>
+            <capital>NOT</capital>
+            <currency>香港ドル(HKD)HK$ </currency>
+        </country>
+
+        <country country_code="24" country_in_region_code="24">
+            <name>北朝鮮</name>
+            <flag>northkorea</flag>
+            <population>2570万人</population>
+            <language>朝鮮語</language>
+            <capital>ピョンヤン</capital>
+            <currency>ウォン(KPW)₩</currency>
+        </country>
+
+        <country country_code="25" country_in_region_code="25">
+            <name>台湾</name>
+            <flag>taiwan</flag>
+            <population>2359万人</population>
+            <language>台湾語/中国語</language>
+            <capital>台北</capital>
+            <currency>新台湾ドル(TWD)NT$</currency>
+        </country>
+
     </regions>
 
-    <regions region="オセアニア" region_code="3">
-        <country country_code="31" country_in_region_code="1">
+
+    <regions region="オセアニア" region_code="2" region_eng="oceania">
+        <country country_code="26" country_in_region_code="1">
             <name>オーストラリア</name>
             <flag>australia</flag>
             <population>2510万人</population>
@@ -288,7 +240,7 @@
             <currency>オーストラリア・ドル(AUD)A$ </currency>
         </country>
         
-        <country country_code="32" country_in_region_code="2">
+        <country country_code="27" country_in_region_code="2">
             <name>キリバス共和国</name>
             <flag>kiribati</flag>
             <population>10万人</population>
@@ -297,7 +249,7 @@
             <currency>オーストラリア・ドル(AUD)A$</currency>
         </country>
         
-        <country country_code="33" country_in_region_code="3">
+        <country country_code="28" country_in_region_code="3">
             <name>クック諸島</name>
             <flag>cookislands</flag>
             <population>1万9000人</population>
@@ -307,7 +259,7 @@
         </country>
         
         
-        <country country_code="34" country_in_region_code="4">
+        <country country_code="29" country_in_region_code="4">
             <name>サモア</name>
             <flag>samoa</flag>
             <population>20万人</population>
@@ -316,7 +268,7 @@
             <currency>サモアタラ(WST)WS$</currency>
         </country>
         
-        <country country_code="35" country_in_region_code="5">
+        <country country_code="30" country_in_region_code="5">
             <name>ソロモン諸島</name>
             <flag>solomonislands</flag>
             <population>60万人</population>
@@ -325,7 +277,7 @@
             <currency>ソロモン・ドル(SBD)SI$</currency>
         </country>
         
-        <country country_code="36" country_in_region_code="6">
+        <country country_code="31" country_in_region_code="6">
             <name>ツバル</name>
             <flag>tuvalu</flag>
             <population>1万人</population>
@@ -335,7 +287,7 @@
         </country>
         
         
-        <country country_code="37" country_in_region_code="7">
+        <country country_code="32" country_in_region_code="7">
             <name>トンガ</name>
             <flag>tonga</flag>
             <population>10万人</population>
@@ -344,7 +296,7 @@
             <currency>パ・アンガ(TOP)T$</currency>
         </country>
         
-        <country country_code="38" country_in_region_code="8">
+        <country country_code="33" country_in_region_code="8">
             <name>ナウル</name>
             <flag>nauru</flag>
             <population>1万1000人</population>
@@ -353,7 +305,7 @@
             <currency>オーストラリア・ドル(AUD)A$</currency>
         </country>
         
-        <country country_code="39" country_in_region_code="9">
+        <country country_code="34" country_in_region_code="9">
             <name>ニウエ</name>
             <flag>niue</flag>
             <population>1500人</population>
@@ -362,16 +314,16 @@
             <currency>ニュージーランド・ドル(NZD)NZ$</currency>
         </country>
         
-        <country country_code="40" country_in_region_code="10">
+        <country country_code="35" country_in_region_code="10">
             <name>ニュージーランド</name>
             <flag>newzealand</flag>
             <population>480万人</population>
             <language>英語/マオリ語</language>
             <capital>ウェリントン</capital>
-            <currency>ニュージーランド・ドル</currency>
+            <currency>ニュージーｎランド・ドル</currency>
         </country>
         
-        <country country_code="41" country_in_region_code="11">
+        <country country_code="36" country_in_region_code="11">
             <name>バヌアツ</name>
             <flag>vanuatu</flag>
             <population>30万人</population>
@@ -380,7 +332,7 @@
             <currency>バツ(VUV)Vt</currency>
         </country>
         
-        <country country_code="42" country_in_region_code="12">
+        <country country_code="37" country_in_region_code="12">
             <name>パプアニューギニア</name>
             <flag>papuanewguinea</flag>
             <population>860万人</population>
@@ -389,7 +341,7 @@
             <currency>キナ(PGK)K</currency>
         </country>
         
-        <country country_code="43" country_in_region_code="13">
+        <country country_code="38" country_in_region_code="13">
             <name>パラオ</name>
             <flag>palau</flag>
             <population>2万1000人</population>
@@ -398,7 +350,7 @@
             <currency>米ドル(USD)$</currency>
         </country>
         
-        <country country_code="44" country_in_region_code="14">
+        <country country_code="39" country_in_region_code="14">
             <name>フィジー</name>
             <flag>fiji</flag>
             <population>90万人</population>
@@ -407,7 +359,7 @@
             <currency>フィジー・ドル(FJD)FJ$</currency>
         </country>
         
-        <country country_code="45" country_in_region_code="15">
+        <country country_code="40" country_in_region_code="15">
             <name>マーシャル諸島</name>
             <flag>marshallislands</flag>
             <population>5万3000人</population>
@@ -416,7 +368,7 @@
             <currency>米ドル(USD)$</currency>
         </country>
         
-        <country country_code="46" country_in_region_code="16">
+        <country country_code="41" country_in_region_code="16">
             <name>ミクロネシア</name>
             <flag>micronesia</flag>
             <population>11万4000人</population>
@@ -425,20 +377,20 @@
             <currency>米ドル(USD)$</currency>
         </country>
 
-
     </regions>
 
-    <regions region="北米" region_code="4">
-        <country country_code="47" country_in_region_code="1">
+
+    <regions region="北米" region_code="3" region_eng="n_ame">
+        <country country_code="42" country_in_region_code="1">
             <name>アメリカ</name>
-            <flag>unitedstates</flag>
+            <flag>usa</flag>
             <population>3億3000万人</population>
             <language>英語</language>
             <capital>ワシントンD.C.</capital>
             <currency>米ドル(USD)$</currency>
         </country>
         
-        <country country_code="48" country_in_region_code="2">
+        <country country_code="43" country_in_region_code="2">
             <name>カナダ</name>
             <flag>canada</flag>
             <population>3730万人</population>
@@ -447,11 +399,21 @@
             <currency>カナダ・ドル(CAD)C$</currency>
         </country>
 
-
     </regions>
 
-    <regions region="中米" region_code="4">
-        <country country_code="49" country_in_region_code="1">
+
+    <regions region="中・南米" region_code="4" region_eng="cs_ame">
+
+        <country country_code="44" country_in_region_code="1">
+            <name>アルゼンチン</name>
+            <flag>argentina</flag>
+            <population>4510万人</population>
+            <language>スペイン語</language>
+            <capital>ブエノスアイレス</capital>
+            <currency>ペソ(ARS)$</currency>
+        </country>
+
+        <country country_code="45" country_in_region_code="2">
             <name>アンティグア・バーブーダ</name>
             <flag>antiguabarbuda</flag>
             <population>10万人</population>
@@ -459,8 +421,26 @@
             <capital>セントジョンズ</capital>
             <currency>ECドル(XCD)EC$</currency>
         </country>
-        
-        <country country_code="50" country_in_region_code="2">
+
+        <country country_code="46" country_in_region_code="3">
+            <name>ウルグアイ</name>
+            <flag>uruguay</flag>
+            <population>350万人</population>
+            <language>スペイン語</language>
+            <capital>モンテビデオ</capital>
+            <currency>ペソ(UYU)$</currency>
+        </country>
+
+        <country country_code="47" country_in_region_code="4">
+            <name>エクアドル</name>
+            <flag>ecuador</flag>
+            <population>1710万人</population>
+            <language>スペイン語</language>
+            <capital>キト</capital>
+            <currency>米ドル(USD)$</currency>
+        </country>
+
+        <country country_code="48" country_in_region_code="5">
             <name>エルサルバドル</name>
             <flag>elsalvador</flag>
             <population>640万人</population>
@@ -468,8 +448,17 @@
             <capital>サンサルバドル</capital>
             <currency>米ドル(USD)$</currency>            
         </country>
-        
-        <country country_code="51" country_in_region_code="3">
+
+        <country country_code="49" country_in_region_code="6">
+            <name>ガイアナ</name>
+            <flag>guyana</flag>
+            <population>80万人</population>
+            <language>英語</language>
+            <capital>ジョージタウン</capital>
+            <currency>ガイアナ・ドル(GYD)G$</currency>
+        </country>
+
+        <country country_code="50" country_in_region_code="7">
             <name>キューバ</name>
             <flag>cuba</flag>
             <population>1150万人</population>
@@ -478,7 +467,7 @@
             <currency>キューバ・ペソ(CUP)$MN、₱ </currency>
         </country>
         
-        <country country_code="52" country_in_region_code="4">
+        <country country_code="51" country_in_region_code="8">
             <name>グアテマラ</name>
             <flag>guatemala</flag>
             <population>1760万人</population>
@@ -487,7 +476,7 @@
             <currency>ケツァル(GTQ)Q</currency>            
         </country>
         
-        <country country_code="53" country_in_region_code="5">
+        <country country_code="52" country_in_region_code="9">
             <name>グレナダ</name>
             <flag>grenada</flag>
             <population>10万人</population>
@@ -496,7 +485,7 @@
             <currency>ECドル(XCD)EC$</currency>
         </country>
         
-        <country country_code="54" country_in_region_code="6">
+        <country country_code="53" country_in_region_code="10">
             <name>コスタリカ</name>
             <flag>costarica</flag>
             <population>500万人</population>
@@ -504,8 +493,17 @@
             <capital>サンホセ</capital>
             <currency>コロン(CRC)₡</currency>
         </country>
-        
-        <country country_code="55" country_in_region_code="7">
+
+        <country country_code="54" country_in_region_code="11">
+            <name>コロンビア</name>
+            <flag>colombia</flag>
+            <population>4980万人</population>
+            <language>スペイン語</language>
+            <capital>ボゴタ</capital>
+            <currency>ペソ(COP)$</currency>
+        </country>
+
+        <country country_code="55" country_in_region_code="12">
             <name>ジャマイカ</name>
             <flag>jamaica</flag>
             <population>290万人</population>
@@ -513,8 +511,26 @@
             <capital>キングストン</capital>
             <currency>ジャマイカ・ドル(JMD)$</currency>
         </country>
-        
-        <country country_code="56" country_in_region_code="8">
+
+        <country country_code="56" country_in_region_code="13">
+            <name>スリナム</name>
+            <flag>suriname</flag>
+            <population>60万人</population>
+            <language>オランダ語/スリナム語/ 英語</language>
+            <capital>パラマリボ</capital>
+            <currency>スリナム・ギルダー(SRD)$</currency>
+        </country>
+
+        <country country_code="57" country_in_region_code="14">
+            <name>セントクリストファー・ネービス</name>
+            <flag>stkittsnevis</flag>
+            <population>10万人</population>
+            <language>英語</language>
+            <capital>バセテール</capital>
+            <currency>ECドル(XCD)EC$</currency>
+        </country>
+
+        <country country_code="58" country_in_region_code="15">
             <name>セントビンセントおよびグレナディーン諸島</name>
             <flag>stvincentthegrenadines</flag>
             <population>10万人</population>
@@ -522,17 +538,8 @@
             <capital>キングスタウン</capital>
             <currency>ECドル(XCD)EC$</currency>
         </country>
-        
-        <country country_code="57" country_in_region_code="9">
-            <name>セントクリストファー・ネービス</name>
-            <flag>stkittsnevis</flag>
-            <population>10万人</population>
-            <language>英語</language>
-            <capital>バセテール</capital>
-            <currency>ECドル(XCD)EC$</currency>            
-        </country>
-        
-        <country country_code="58" country_in_region_code="10">
+
+        <country country_code="59" country_in_region_code="16">
             <name>セントルシア</name>
             <flag>stlucia</flag>
             <population>20万人</population>
@@ -540,8 +547,17 @@
             <capital>カストリーズ</capital>
             <currency>ECドル(XCD)EC$</currency>            
         </country>
-        
-        <country country_code="59" country_in_region_code="11">
+
+        <country country_code="60" country_in_region_code="17">
+            <name>チリ</name>
+            <flag>chile</flag>
+            <population>1830万人</population>
+            <language>スペイン語</language>
+            <capital>サンティアゴ</capital>
+            <currency>ペソ(CLP)$</currency>
+        </country>
+
+        <country country_code="61" country_in_region_code="18">
             <name>ドミニカ国</name>
             <flag>dominica</flag>
             <population>10万人</population>
@@ -550,8 +566,7 @@
             <currency>ECドル(XCD)EC$</currency>
         </country>
         
-        
-        <country country_code="60" country_in_region_code="12">
+        <country country_code="62" country_in_region_code="19">
             <name>ドミニカ共和国</name>
             <flag>dominicanrepublic</flag>
             <population>1100万人</population>
@@ -560,7 +575,7 @@
             <currency>ペソ(DOP)RD$</currency>
         </country>
         
-        <country country_code="61" country_in_region_code="13">
+        <country country_code="63" country_in_region_code="20">
             <name>トリニダード・トバゴ</name>
             <flag>trinidadtobago</flag>
             <population>140万人</population>
@@ -569,7 +584,7 @@
             <currency>トリニダードトバゴ・ドル(TTD)$</currency>
         </country>
         
-        <country country_code="62" country_in_region_code="14">
+        <country country_code="64" country_in_region_code="21">
             <name>ニカラグア</name>
             <flag>nicaragua</flag>
             <population>640万人</population>
@@ -578,7 +593,7 @@
             <currency>コルドバ(NIO)C$</currency>
         </country>
         
-        <country country_code="63" country_in_region_code="15">
+        <country country_code="65" country_in_region_code="22">
             <name>ハイチ</name>
             <flag>haiti</flag>
             <population>1120万人</population>
@@ -586,17 +601,8 @@
             <capital>ポルトープランス</capital>
             <currency>グルード(HTG)G</currency>
         </country>
-        
-        <country country_code="64" country_in_region_code="16">
-            <name>バハマ</name>
-            <flag>bahamas</flag>
-            <population>40万人</population>
-            <language>英語</language>
-            <capital>ナッソー</capital>
-            <currency>バハマ・ドル(BSD)B$</currency>
-        </country>
-        
-        <country country_code="65" country_in_region_code="17">
+
+        <country country_code="66" country_in_region_code="23">
             <name>パナマ</name>
             <flag>panama</flag>
             <population>420万人</population>
@@ -604,8 +610,26 @@
             <capital>パナマシティ</capital>
             <currency>バルボア(PAB)B/.</currency>
         </country>
-        
-        <country country_code="66" country_in_region_code="18">
+
+        <country country_code="67" country_in_region_code="24">
+            <name>バハマ</name>
+            <flag>bahamas</flag>
+            <population>40万人</population>
+            <language>英語</language>
+            <capital>ナッソー</capital>
+            <currency>バハマ・ドル(BSD)B$</currency>
+        </country>
+
+        <country country_code="68" country_in_region_code="25">
+            <name>パラグアイ</name>
+            <flag>paraguay</flag>
+            <population>700万人</population>
+            <language>スペイン語/グアラニー語</language>
+            <capital>アスンシオン</capital>
+            <currency>グアラニー(PYG)₲</currency>
+        </country>
+
+        <country country_code="69" country_in_region_code="26">
             <name>バルバドス</name>
             <flag>barbados</flag>
             <population>30万人</population>
@@ -613,8 +637,26 @@
             <capital>ブリッジタウン</capital>
             <currency>バルバドス・ドル(BBD)Bds$</currency>
         </country>
-        
-        <country country_code="67" country_in_region_code="19">
+
+        <country country_code="70" country_in_region_code="27">
+            <name>ブラジル</name>
+            <flag>brazil</flag>
+            <population>2億1240万人</population>
+            <language>ポルトガル語</language>
+            <capital>ブラジリア</capital>
+            <currency>レアル(BRL)R$</currency>
+        </country>
+
+        <country country_code="71" country_in_region_code="28">
+            <name>ベネズエラ</name>
+            <flag>venezuela</flag>
+            <population>3280万人</population>
+            <language>スペイン語</language>
+            <capital>カラカス</capital>
+            <currency>ボリバル・ソベラノ(VES)Bs.S</currency>
+        </country>
+
+        <country country_code="72" country_in_region_code="29">
             <name>ベリーズ</name>
             <flag>belize</flag>
             <population>40万人</population>
@@ -622,8 +664,26 @@
             <capital>ベルモパン</capital>
             <currency>ベリーズ・ドル(BZD)BZ$</currency>
         </country>
-        
-        <country country_code="68" country_in_region_code="20">
+
+        <country country_code="73" country_in_region_code="30">
+            <name>ペルー</name>
+            <flag>peru</flag>
+            <population>3290万人</population>
+            <language>スペイン語</language>
+            <capital>リマ</capital>
+            <currency>ヌエボ・ソル(PEN)S/.</currency>
+        </country>
+
+        <country country_code="74" country_in_region_code="31">
+            <name>ボリビア</name>
+            <flag>bolivia</flag>
+            <population>1140万人</population>
+            <language>スペイン語/ケチュア語/他</language>
+            <capital>ラパス</capital>
+            <currency>ボリビアーノ(BOB)Bs</currency>
+        </country>
+
+        <country country_code="75" country_in_region_code="32">
             <name>ホンジュラス</name>
             <flag>honduras</flag>
             <population>960万人</population>
@@ -632,7 +692,7 @@
             <currency>レンピラ(HNL)L</currency>
         </country>
         
-        <country country_code="69" country_in_region_code="21">
+        <country country_code="76" country_in_region_code="33">
             <name>メキシコ</name>
             <flag>mexico</flag>
             <population>1億3230万人</population>
@@ -640,124 +700,11 @@
             <capital>メキシコシティ</capital>
             <currency>ペソ(MXN)Mex$</currency>
         </country>
-        
 
     </regions>
 
-
-    <regions region="南米" region_code="6">
-        <country country_code="70" country_in_region_code="1">
-            <name>アルゼンチン</name>
-            <flag>argentina</flag>
-            <population>4510万人</population>
-            <language>スペイン語</language>
-            <capital>ブエノスアイレス</capital>
-            <currency>ペソ(ARS)$</currency>
-        </country>
-        
-        <country country_code="71" country_in_region_code="2">
-            <name>ウルグアイ</name>
-            <flag>uruguay</flag>
-            <population>350万人</population>
-            <language>スペイン語</language>
-            <capital>モンテビデオ</capital>
-            <currency>ペソ(UYU)$</currency>
-        </country>
-        
-        <country country_code="72" country_in_region_code="3">
-            <name>エクアドル</name>
-            <flag>ecuador</flag>
-            <population>1710万人</population>
-            <language>スペイン語</language>
-            <capital>キト</capital>
-            <currency>米ドル(USD)$</currency>
-        </country>
-        
-        <country country_code="73" country_in_region_code="4">
-            <name>ガイアナ</name>
-            <flag>guyana</flag>
-            <population>80万人</population>
-            <language>英語</language>
-            <capital>ジョージタウン</capital>
-            <currency>ガイアナ・ドル(GYD)G$</currency>
-        </country>
-        
-        <country country_code="74" country_in_region_code="5">
-            <name>コロンビア</name>
-            <flag>colombia</flag>
-            <population>4980万人</population>
-            <language>スペイン語</language>
-            <capital>ボゴタ</capital>
-            <currency>ペソ(COP)$</currency>
-        </country>
-        
-        <country country_code="75" country_in_region_code="6">
-            <name>スリナム</name>
-            <flag>suriname</flag>
-            <population>60万人</population>
-            <language>オランダ語/スリナム語/ 英語</language>
-            <capital>パラマリボ</capital>
-            <currency>スリナム・ギルダー(SRD)$</currency>
-        </country>
-        
-        <country country_code="76" country_in_region_code="7">
-            <name>チリ</name>
-            <flag>chile</flag>
-            <population>1830万人</population>
-            <language>スペイン語</language>
-            <capital>サンティアゴ</capital>
-            <currency>ペソ(CLP)$</currency>
-        </country>
-        
-        <country country_code="77" country_in_region_code="8">
-            <name>パラグアイ</name>
-            <flag>paraguay</flag>
-            <population>700万人</population>
-            <language>スペイン語/グアラニー語</language>
-            <capital>アスンシオン</capital>
-            <currency>グアラニー(PYG)₲</currency>
-        </country>
-        
-        <country country_code="78" country_in_region_code="9">
-            <name>ブラジル</name>
-            <flag>brazil</flag>
-            <population>2億1240万人</population>
-            <language>ポルトガル語</language>
-            <capital>ブラジリア</capital>
-            <currency>レアル(BRL)R$</currency>
-        </country>
-        
-        <country country_code="79" country_in_region_code="10">
-            <name>ベネズエラ</name>
-            <flag>venezuela</flag>
-            <population>3280万人</population>
-            <language>スペイン語</language>
-            <capital>カラカス</capital>
-            <currency>ボリバル・ソベラノ(VES)Bs.S</currency>
-        </country>
-        
-        <country country_code="80" country_in_region_code="11">
-            <name>ペルー</name>
-            <flag>peru</flag>
-            <population>3290万人</population>
-            <language>スペイン語</language>
-            <capital>リマ</capital>
-            <currency>ヌエボ・ソル(PEN)S/.</currency>
-        </country>
-        
-        <country country_code="81" country_in_region_code="12">
-            <name>ボリビア</name>
-            <flag>bolivia</flag>
-            <population>1140万人</population>
-            <language>スペイン語/ケチュア語/他</language>
-            <capital>ラパス</capital>
-            <currency>ボリビアーノ(BOB)Bs</currency>
-        </country>
-    
-    </regions>
-
-    <regions region="ヨーロッパ" region_code="7">
-        <country country_code="82" country_in_region_code="1">
+    <regions region="ヨーロッパ" region_code="5" region_eng="europe">
+        <country country_code="77" country_in_region_code="1">
             <name>アイスランド</name>
             <flag>iceland</flag>
             <population>36万人</population>
@@ -766,7 +713,7 @@
             <currency>アイスランド・クローナ(ISK)kr</currency>
         </country>
         
-        <country country_code="83" country_in_region_code="2">
+        <country country_code="78" country_in_region_code="2">
             <name>アイルランド</name>
             <flag>ireland</flag>
             <population>490万人</population>
@@ -775,7 +722,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="84" country_in_region_code="3">
+        <country country_code="79" country_in_region_code="3">
             <name>アゼルバイジャン</name>
             <flag>azerbaijan</flag>
             <population>1020万人</population>
@@ -784,7 +731,7 @@
             <currency>マナト(AZN) ₼, m, man. ман.</currency>
         </country>
         
-        <country country_code="85" country_in_region_code="4">
+        <country country_code="80" country_in_region_code="4">
             <name>アルバニア</name>
             <flag>albania</flag>
             <population>290万人</population>
@@ -793,7 +740,7 @@
             <currency>レク(ALL)L</currency>
         </country>
         
-        <country country_code="86" country_in_region_code="5">
+        <country country_code="81" country_in_region_code="5">
             <name>アルメニア</name>
             <flag>armenia</flag>
             <population>290万人</population>
@@ -801,8 +748,8 @@
             <capital>エレバン</capital>
             <currency>ドラム(AMD)֏</currency>
         </country>
-        
-        <country country_code="87" country_in_region_code="6">
+
+        <country country_code="82" country_in_region_code="6">
             <name>アンドラ</name>
             <flag>andorra</flag>
             <population>7万8000人</population>
@@ -810,8 +757,8 @@
             <capital>アンドララヴェ</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="88" country_in_region_code="7">
+
+        <country country_code="83" country_in_region_code="7">
             <name>イタリア</name>
             <flag>italy</flag>
             <population>6046万人</population>
@@ -819,8 +766,8 @@
             <capital>ローマ</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="89" country_in_region_code="8">
+
+        <country country_code="84" country_in_region_code="8">
             <name>ウクライナ</name>
             <flag>ukraine</flag>
             <population>4205万人</population>
@@ -828,8 +775,17 @@
             <capital>キエフ</capital>
             <currency>フリヴニャ(UAH)₴</currency>
         </country>
-        
-        <country country_code="90" country_in_region_code="9">
+
+        <country country_code="85" country_in_region_code="9">
+            <name>ウズベキスタン</name>
+            <flag>uzbekistan</flag>
+            <population>3240万人</population>
+            <language>ウズベク語</language>
+            <capital>タシュケント</capital>
+            <currency>スム(UZS)сум </currency>
+        </country>
+
+        <country country_code="86" country_in_region_code="10">
             <name>英国</name>
             <flag>unitedkingdom</flag>
             <population>6680万人</population>
@@ -838,7 +794,7 @@
             <currency>英ポンド(GBP)£</currency>
         </country>
         
-        <country country_code="91" country_in_region_code="10">
+        <country country_code="87" country_in_region_code="11">
             <name>エストニア</name>
             <flag>estonia</flag>
             <population>132万人</population>
@@ -847,7 +803,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="92" country_in_region_code="11">
+        <country country_code="88" country_in_region_code="12">
             <name>オーストリア</name>
             <flag>austria</flag>
             <population>885万人</population>
@@ -856,7 +812,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="93" country_in_region_code="12">
+        <country country_code="89" country_in_region_code="13">
             <name>オランダ</name>
             <flag>netherlands</flag>
             <population>1728万人</population>
@@ -864,8 +820,17 @@
             <capital>アムステルダム</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="94" country_in_region_code="13">
+
+        <country country_code="90" country_in_region_code="14">
+            <name>カザフスタン</name>
+            <flag>kazakhstan</flag>
+            <population>1860万人</population>
+            <language>カザフ語</language>
+            <capital>ヌルスルタン</capital>
+            <currency>テンゲ(KZT)〒</currency>
+        </country>
+
+        <country country_code="91" country_in_region_code="15">
             <name>北マケドニア</name>
             <flag>northmacedonia</flag>
             <population>210万人</population>
@@ -874,7 +839,7 @@
             <currency>デナール(MKD)</currency>
         </country>
         
-        <country country_code="95" country_in_region_code="14">
+        <country country_code="92" country_in_region_code="16">
             <name>キプロス</name>
             <flag>cyprus</flag>
             <population>87万人</population>
@@ -883,7 +848,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="96" country_in_region_code="15">
+        <country country_code="93" country_in_region_code="17">
             <name>ギリシャ</name>
             <flag>greece</flag>
             <population>1072万人</population>
@@ -891,8 +856,17 @@
             <capital>アテネ</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="97" country_in_region_code="16">
+
+        <country country_code="94" country_in_region_code="18">
+            <name>キルギス</name>
+            <flag>kyrgyzstan</flag>
+            <population>610万人</population>
+            <language>キルギス語/ロシア語</language>
+            <capital>ビシュケク</capital>
+            <currency>ソム(KGS)сом </currency>
+        </country>
+
+        <country country_code="95" country_in_region_code="19">
             <name>クロアチア</name>
             <flag>croatia</flag>
             <population>406万人</population>
@@ -901,7 +875,7 @@
             <currency>クーナ(HRK)kn</currency>
         </country>
         
-        <country country_code="98" country_in_region_code="17">
+        <country country_code="96" country_in_region_code="20">
             <name>コソボ</name>
             <flag>kosovo</flag>
             <population>187万人</population>
@@ -910,7 +884,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="99" country_in_region_code="18">
+        <country country_code="97" country_in_region_code="21">
             <name>サンマリノ</name>
             <flag>sanmarino</flag>
             <population>3万3500人</population>
@@ -919,7 +893,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="100" country_in_region_code="19">
+        <country country_code="98" country_in_region_code="22">
             <name>ジョージア(グルジア)</name>
             <flag>georgia</flag>
             <population>372万人</population>
@@ -928,7 +902,7 @@
             <currency>ラリ(GEL)₾</currency>
         </country>
         
-        <country country_code="101" country_in_region_code="20">
+        <country country_code="99" country_in_region_code="23">
             <name>スイス</name>
             <flag>switzerland</flag>
             <population>845万人</population>
@@ -937,7 +911,7 @@
             <currency>スイス・フラン(CHF)Fr</currency>
         </country>
         
-        <country country_code="102" country_in_region_code="21">
+        <country country_code="100" country_in_region_code="24">
             <name>スウェーデン</name>
             <flag>sweden</flag>
             <population>1022万人</population>
@@ -946,7 +920,7 @@
             <currency>スウェーデン・クローナ(SEK)kr</currency>
         </country>
         
-        <country country_code="103" country_in_region_code="22">
+        <country country_code="101" country_in_region_code="25">
             <name>スペイン</name>
             <flag>spain</flag>
             <population>4694万人</population>
@@ -955,7 +929,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="104" country_in_region_code="23">
+        <country country_code="102" country_in_region_code="26">
             <name>スロバキア</name>
             <flag>slovakia</flag>
             <population>545万人</population>
@@ -964,7 +938,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="105" country_in_region_code="24">
+        <country country_code="103" country_in_region_code="27">
             <name>スロベニア</name>
             <flag>slovenia</flag>
             <population>208万人</population>
@@ -973,7 +947,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="106" country_in_region_code="25">
+        <country country_code="104" country_in_region_code="28">
             <name>セルビア</name>
             <flag>serbia</flag>
             <population>694万人</population>
@@ -981,8 +955,17 @@
             <capital>ベオグラード</capital>
             <currency>ディナール(RSD)РСД、RSD </currency>
         </country>
-        
-        <country country_code="107" country_in_region_code="26">
+
+        <country country_code="105" country_in_region_code="29">
+            <name>タジキスタン</name>
+            <flag>tajikistan</flag>
+            <population>930万人</population>
+            <language>タジク語</language>
+            <capital>ドゥシャンベ</capital>
+            <currency>ソモニ(TJS)</currency>
+        </country>
+
+        <country country_code="106" country_in_region_code="30">
             <name>チェコ</name>
             <flag>czechrepublic</flag>
             <population>1065万人</population>
@@ -991,7 +974,7 @@
             <currency>コルナ(CZK)</currency>
         </country>
         
-        <country country_code="108" country_in_region_code="27">
+        <country country_code="107" country_in_region_code="31">
             <name>デンマーク</name>
             <flag>denmark</flag>
             <population>580万人</population>
@@ -1000,7 +983,7 @@
             <currency>デンマーク・クローネ(DKK)kr</currency>
         </country>
         
-        <country country_code="109" country_in_region_code="28">
+        <country country_code="108" country_in_region_code="32">
             <name>ドイツ</name>
             <flag>germany</flag>
             <population>8302万人</population>
@@ -1008,8 +991,17 @@
             <capital>ベルリン</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="110" country_in_region_code="29">
+
+        <country country_code="109" country_in_region_code="33">
+            <name>トルクメニスタン</name>
+            <flag>turkmenistan</flag>
+            <population>580万人</population>
+            <language>トルクメン語</language>
+            <capital>アシガバート</capital>
+            <currency>マナト(TMT)m</currency>
+        </country>
+
+        <country country_code="110" country_in_region_code="34">
             <name>ノルウェー</name>
             <flag>norway</flag>
             <population>532万人</population>
@@ -1018,7 +1010,7 @@
             <currency>ノルウェー・クローネ(NOK)kr</currency>
         </country>
         
-        <country country_code="111" country_in_region_code="30">
+        <country country_code="111" country_in_region_code="35">
             <name>バチカン</name>
             <flag>vatican</flag>
             <population>832人</population>
@@ -1027,7 +1019,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="112" country_in_region_code="31">
+        <country country_code="112" country_in_region_code="36">
             <name>ハンガリー</name>
             <flag>hungary</flag>
             <population>970万人</population>
@@ -1036,7 +1028,7 @@
             <currency>フォリント(HUF)Ft</currency>
         </country>
         
-        <country country_code="113" country_in_region_code="32">
+        <country country_code="113" country_in_region_code="37">
             <name>フィンランド</name>
             <flag>finland</flag>
             <population>560万人</population>
@@ -1045,7 +1037,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="114" country_in_region_code="33">
+        <country country_code="114" country_in_region_code="38">
             <name>フランス</name>
             <flag>france</flag>
             <population>6700万人</population>
@@ -1054,7 +1046,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="115" country_in_region_code="34">
+        <country country_code="115" country_in_region_code="39">
             <name>ブルガリア</name>
             <flag>bulgaria</flag>
             <population>700万人</population>
@@ -1063,7 +1055,7 @@
             <currency>レフ(BGN)</currency>
         </country>
         
-        <country country_code="116" country_in_region_code="35">
+        <country country_code="116" country_in_region_code="40">
             <name>ベラルーシ</name>
             <flag>belarus</flag>
             <population>949万人</population>
@@ -1072,7 +1064,7 @@
             <currency>ベラルーシ・ルーブル(BYN)</currency>
         </country>
         
-        <country country_code="117" country_in_region_code="36">
+        <country country_code="117" country_in_region_code="41">
             <name>ベルギー</name>
             <flag>belgium</flag>
             <population>1160万人</population>
@@ -1081,7 +1073,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="118" country_in_region_code="37">
+        <country country_code="118" country_in_region_code="42">
             <name>ポーランド</name>
             <flag>poland</flag>
             <population>3800万人</population>
@@ -1090,7 +1082,7 @@
             <currency>ズロチ(PLN)zł</currency>
         </country>
         
-        <country country_code="119" country_in_region_code="38">
+        <country country_code="119" country_in_region_code="43">
             <name>ボスニア・ヘルツェゴヴィナ</name>
             <flag>bosniaherzegovina</flag>
             <population>350万人</population>
@@ -1099,7 +1091,7 @@
             <currency>米ドル(USD)$</currency>
         </country>
         
-        <country country_code="120" country_in_region_code="39">
+        <country country_code="120" country_in_region_code="44">
             <name>ポルトガル</name>
             <flag>portugal</flag>
             <population>1030万人</population>
@@ -1108,7 +1100,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="121" country_in_region_code="40">
+        <country country_code="121" country_in_region_code="45">
             <name>マルタ</name>
             <flag>malta</flag>
             <population>51万人</population>
@@ -1117,7 +1109,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="122" country_in_region_code="41">
+        <country country_code="122" country_in_region_code="46">
             <name>モナコ</name>
             <flag>monaco</flag>
             <population>3万8000人</population>
@@ -1126,7 +1118,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="123" country_in_region_code="42">
+        <country country_code="123" country_in_region_code="47">
             <name>モルドバ</name>
             <flag>moldova</flag>
             <population>265万人</population>
@@ -1135,7 +1127,7 @@
             <currency>レイ(MDL)</currency>
         </country>
         
-        <country country_code="124" country_in_region_code="43">
+        <country country_code="124" country_in_region_code="48">
             <name>モンテネグロ</name>
             <flag>montenegro</flag>
             <population>62万人</population>
@@ -1144,7 +1136,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="125" country_in_region_code="44">
+        <country country_code="125" country_in_region_code="49">
             <name>ラトビア</name>
             <flag>latvia</flag>
             <population>190万人</population>
@@ -1152,17 +1144,8 @@
             <capital>リガ</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="126" country_in_region_code="45">
-            <name>リヒテンシュタイン</name>
-            <flag>liechtenstein</flag>
-            <population>3万8000人</population>
-            <language>ドイツ語</language>
-            <capital>ファドゥーツ</capital>
-            <currency>スイス・フラン(CHF)Fr</currency>
-        </country>
-        
-        <country country_code="127" country_in_region_code="46">
+
+        <country country_code="126" country_in_region_code="50">
             <name>リトアニア</name>
             <flag>lithuania</flag>
             <population>279万人</population>
@@ -1170,8 +1153,17 @@
             <capital>ビリニュス</capital>
             <currency>ユーロ(EUR)€</currency>
         </country>
-        
-        <country country_code="128" country_in_region_code="47">
+
+        <country country_code="127" country_in_region_code="51">
+            <name>リヒテンシュタイン</name>
+            <flag>liechtenstein</flag>
+            <population>3万8000人</population>
+            <language>ドイツ語</language>
+            <capital>ファドゥーツ</capital>
+            <currency>スイス・フラン(CHF)Fr</currency>
+        </country>
+
+        <country country_code="128" country_in_region_code="52">
             <name>ルーマニア</name>
             <flag>romania</flag>
             <population>1950万人</population>
@@ -1180,7 +1172,7 @@
             <currency>レウ(RON)L</currency>
         </country>
         
-        <country country_code="129" country_in_region_code="48">
+        <country country_code="129" country_in_region_code="53">
             <name>ルクセンブルク</name>
             <flag>luxembourg</flag>
             <population>62万人</population>
@@ -1189,7 +1181,7 @@
             <currency>ユーロ(EUR)€</currency>
         </country>
         
-        <country country_code="130" country_in_region_code="49">
+        <country country_code="130" country_in_region_code="54">
             <name>ロシア</name>
             <flag>russia</flag>
             <population>1億4680万人</population>
@@ -1198,10 +1190,10 @@
             <currency>ルーブル(RUB)₽</currency>
         </country>
         
-        
     </regions>
-    
-    <regions region="中東・北アフリカ" region_code="8">
+
+
+    <regions region="中東" region_code="6" region_eng="nm_east">
         <country country_code="131" country_in_region_code="1">
             <name>アフガニスタン</name>
             <flag>afghanistan</flag>
@@ -1219,17 +1211,8 @@
             <capital>アブダビ</capital>
             <currency>UAEディルハム(AED)د.إ</currency>
         </country>
-        
+
         <country country_code="133" country_in_region_code="3">
-            <name>アルジェリア</name>
-            <flag>algeria</flag>
-            <population>4270万人</population>
-            <language>アラビア語/フランス語</language>
-            <capital>アルジェ</capital>
-            <currency>アルジェリア・ディナール(DZD)دج</currency>
-        </country>
-        
-        <country country_code="134" country_in_region_code="4">
             <name>イエメン</name>
             <flag>yemen</flag>
             <population>2960万人</population>
@@ -1238,7 +1221,7 @@
             <currency>イエメン・リアル(YER)﷼</currency>
         </country>
         
-        <country country_code="135" country_in_region_code="5">
+        <country country_code="134" country_in_region_code="4">
             <name>イスラエル</name>
             <flag>israel</flag>
             <population>860万人</population>
@@ -1247,7 +1230,7 @@
             <currency>新シェケル(ILS)₪</currency>
         </country>
         
-        <country country_code="136" country_in_region_code="6">
+        <country country_code="135" country_in_region_code="5">
             <name>イラク</name>
             <flag>iraq</flag>
             <population>4040万人</population>
@@ -1256,7 +1239,7 @@
             <currency>イラク・ディナール(IQD)ع.د</currency>
         </country>
         
-        <country country_code="137" country_in_region_code="7">
+        <country country_code="136" country_in_region_code="6">
             <name>イラン</name>
             <flag>iran</flag>
             <population>8280万人</population>
@@ -1264,17 +1247,8 @@
             <capital>テヘラン</capital>
             <currency>イラン・リヤル(IRR) ریال</currency>            
         </country>
-        
-        <country country_code="138" country_in_region_code="8">
-            <name>エジプト</name>
-            <flag>egypt</flag>
-            <population>1億120万人</population>
-            <language>アラビア語</language>
-            <capital>カイロ</capital>
-            <currency>エジプト・ポンド(EGP)E£、ج.م、L.E.</currency>            
-        </country>
-        
-        <country country_code="139" country_in_region_code="9">
+
+        <country country_code="137" country_in_region_code="7">
             <name>オマーン</name>
             <flag>oman</flag>
             <population>500万人</population>
@@ -1283,7 +1257,7 @@
             <currency>オマーン・リヤル(OMR)ر.ع. </currency>            
         </country>
         
-        <country country_code="140" country_in_region_code="10">
+        <country country_code="138" country_in_region_code="8">
             <name>カタール</name>
             <flag>qatar</flag>
             <population>270万人</population>
@@ -1292,17 +1266,17 @@
             <currency>カタール・リヤル(QAR)ر.ق </currency>            
         </country>
         
-        <country country_code="141" country_in_region_code="11">
+        <country country_code="139" country_in_region_code="9">
             <name>クウェート</name>
             <flag>kuwait</flag>
             <population>420万人</population>
             <language>アラビア語</language>
             <capital>クウェート</capital>
             <currency>クウェート・ディナール(KWD)
-د.ك </currency>            
+د.ك </currency>
         </country>
         
-        <country country_code="142" country_in_region_code="12">
+        <country country_code="140" country_in_region_code="10">
             <name>サウジアラビア</name>
             <flag>saudiarabia</flag>
             <population>3410万人</population>
@@ -1311,7 +1285,7 @@
             <currency>サウジ・リアル(SAR) ر.س, ﷼ </currency>            
         </country>
         
-        <country country_code="143" country_in_region_code="13">
+        <country country_code="141" country_in_region_code="11">
             <name>シリア</name>
             <flag>syria</flag>
             <population>1850万人</population>
@@ -1319,86 +1293,59 @@
             <capital>ダマスカス</capital>
             <currency>シリア・ポンド(SYP)</currency>
         </country>
-        
-        <country country_code="144" country_in_region_code="14">
-            <name>スーダン</name>
-            <flag>sudan</flag>
-            <population>4250万人</population>
-            <language>アラビア語/英語</language>
-            <capital>ハルツーム</capital>
-            <currency>スーダン・ポンド(SDG)</currency>            
-        </country>
-        
-        <country country_code="145" country_in_region_code="15">
-            <name>チュニジア</name>
-            <flag>tunisia</flag>
-            <population>1180万人</population>
-            <language>アラビア語/フランス語</language>
-            <capital>チュニス</capital>
-            <currency>チュニジア・ディナール(TND)د.ت </currency>            
-        </country>
-        
-        <country country_code="146" country_in_region_code="16">
+
+        <country country_code="142" country_in_region_code="12">
             <name>トルコ</name>
             <flag>turkey</flag>
             <population>8300万人</population>
             <language>トルコ語</language>
             <capital>アンカラ</capital>
-            <currency>トルコ・リラ(TRY)₺</currency>            
+            <currency>トルコ・リラ(TRY)₺</currency>
         </country>
-        
-        <country country_code="147" country_in_region_code="17">
+
+        <country country_code="143" country_in_region_code="13">
             <name>バーレーン</name>
             <flag>bahrain</flag>
             <population>160万人</population>
             <language>アラビア語</language>
             <capital>マナーマ</capital>
             <currency>バーレーン・ディナール(BHD)
- .د.ب </currency>            
+                .د.ب </currency>
         </country>
-        
-        <country country_code="148" country_in_region_code="18">
-            <name>モロッコ</name>
-            <flag>morocco</flag>
-            <population>3660万人</population>
-            <language>モロッコ語</language>
-            <capital>ラバト</capital>
-            <currency>ディルハム(MAD)
-د.م. </currency>            
-        </country>
-        
-        <country country_code="149" country_in_region_code="19">
+
+        <country country_code="144" country_in_region_code="14">
             <name>ヨルダン</name>
             <flag>jordan</flag>
             <population>1010万人</population>
             <language>アラビア語</language>
             <capital>ハイノ</capital>
-            <currency>ヨルダン・ディナール(JOD)</currency>            
+            <currency>ヨルダン・ディナール(JOD)</currency>
         </country>
-        
-        <country country_code="150" country_in_region_code="20">
+
+        <country country_code="145" country_in_region_code="15">
             <name>レバノン</name>
             <flag>lebanon</flag>
             <population>610万人</population>
             <language>アラビア語</language>
             <capital>ベイルート</capital>
-            <currency>レバノン・ポンド(LBP)ل.ل </currency>            
+            <currency>レバノン・ポンド(LBP)ل.ل </currency>
         </country>
-        
-        <country country_code="151" country_in_region_code="21">
-            <name>リビア</name>
-            <flag>libya</flag>
-            <population>660万人</population>
-            <language>リビア語</language>
-            <capital>モンロビア</capital>
-            <currency>リビア・ディナール(LYD)</currency>            
-        </country>
-        
 
     </regions>
 
-    <regions region="アフリカ" region_code="9">
-        <country country_code="152" country_in_region_code="1">
+
+    <regions region="アフリカ" region_code="7" region_eng="africa">
+
+        <country country_code="146" country_in_region_code="1">
+            <name>アルジェリア</name>
+            <flag>algeria</flag>
+            <population>4270万人</population>
+            <language>アラビア語/フランス語</language>
+            <capital>アルジェ</capital>
+            <currency>アルジェリア・ディナール(DZD)دج</currency>
+        </country>
+
+        <country country_code="147" country_in_region_code="2">
             <name>アンゴラ</name>
             <flag>angola</flag>
             <population>3180万人</population>
@@ -1407,7 +1354,7 @@
             <currency>クワンザ(AOA)Kz</currency>            
         </country>
         
-        <country country_code="153" country_in_region_code="2">
+        <country country_code="148" country_in_region_code="3">
             <name>ウガンダ</name>
             <flag>uganda</flag>
             <population>4570万人</population>
@@ -1415,8 +1362,17 @@
             <capital>カンパラ</capital>
             <currency>ウガンダ・シリング(UGX)USh</currency>            
         </country>
-        
-        <country country_code="154" country_in_region_code="3">
+
+        <country country_code="149" country_in_region_code="4">
+            <name>エジプト</name>
+            <flag>egypt</flag>
+            <population>1億120万人</population>
+            <language>アラビア語</language>
+            <capital>カイロ</capital>
+            <currency>エジプト・ポンド(EGP)E£、ج.م、L.E.</currency>
+        </country>
+
+        <country country_code="150" country_in_region_code="5">
             <name>エスワティニ</name>
             <flag>eswatini</flag>
             <population>140万人</population>
@@ -1425,7 +1381,7 @@
             <currency>リランゲーニ(SZL)L</currency>            
         </country>
         
-        <country country_code="155" country_in_region_code="4">
+        <country country_code="151" country_in_region_code="6">
             <name>エチオピア</name>
             <flag>ethiopia</flag>
             <population>1億1010万人</population>
@@ -1434,7 +1390,7 @@
             <currency>ブル(ETB)Br</currency>
         </country>
         
-        <country country_code="156" country_in_region_code="5">
+        <country country_code="152" country_in_region_code="7">
             <name>エリトリア</name>
             <flag>eritrea</flag>
             <population>530万人</population>
@@ -1443,7 +1399,7 @@
             <currency>ナクファ(ERN)</currency>
         </country>
         
-        <country country_code="157" country_in_region_code="6">
+        <country country_code="153" country_in_region_code="8">
             <name>ガーナ</name>
             <flag>ghana</flag>
             <population>3010万人</population>
@@ -1452,7 +1408,7 @@
             <currency>セディ(GHS)GH₵</currency>            
         </country>
         
-        <country country_code="158" country_in_region_code="7">
+        <country country_code="154" country_in_region_code="9">
             <name>カーボベルデ</name>
             <flag>caboverde</flag>
             <population>60万人</population>
@@ -1461,7 +1417,7 @@
             <currency>カーボンベルデ・エクスード(CVE)Esc</currency>            
         </country>
         
-        <country country_code="159" country_in_region_code="8">
+        <country country_code="155" country_in_region_code="10">
             <name>ガボン</name>
             <flag>gabon</flag>
             <population>210万人</population>
@@ -1470,8 +1426,8 @@
             <currency>CFAフラン(XAF)</currency>            
         </country>
         
-        <country country_code="160" country_in_region_code="9">
-            <name>カルメーン</name>
+        <country country_code="156" country_in_region_code="11">
+            <name>カメルーン</name>
             <flag>cameroon</flag>
             <population>2530万人</population>
             <language>フランス語/英語</language>
@@ -1479,7 +1435,7 @@
             <currency>CFAフラン(XAF)</currency>            
         </country>
         
-        <country country_code="161" country_in_region_code="10">
+        <country country_code="157" country_in_region_code="12">
             <name>ガンビア</name>
             <flag>gambia</flag>
             <population>220万人</population>
@@ -1488,7 +1444,7 @@
             <currency>ダラシ(GMD)D</currency>            
         </country>
         
-        <country country_code="162" country_in_region_code="11">
+        <country country_code="158" country_in_region_code="13">
             <name>ギニア</name>
             <flag>guinea</flag>
             <population>1340万人</population>
@@ -1497,7 +1453,7 @@
             <currency>ギニア・フラン(GNF)FG</currency>            
         </country>
         
-        <country country_code="163" country_in_region_code="12">
+        <country country_code="159" country_in_region_code="14">
             <name>ギニアビサウ</name>
             <flag>guineabissau</flag>
             <population>200万人</population>
@@ -1506,7 +1462,7 @@
             <currency>CFAフラン(XOF)</currency>            
         </country>
         
-        <country country_code="164" country_in_region_code="13">
+        <country country_code="160" country_in_region_code="15">
             <name>ケニア</name>
             <flag>kenya</flag>
             <population>5220万人</population>
@@ -1514,8 +1470,17 @@
             <capital>ナイロビ</capital>
             <currency>ケニア・シリング(KES)KSh</currency>            
         </country>
-        
-        <country country_code="165" country_in_region_code="14">
+
+        <country country_code="161" country_in_region_code="16">
+            <name>コートジボワール</name>
+            <flag>ivorycoast</flag>
+            <population>2550万人</population>
+            <language>フランス語</language>
+            <capital>ヤムスクロ</capital>
+            <currency>CFAフラン(XOF)</currency>
+        </country>
+
+        <country country_code="162" country_in_region_code="17">
             <name>コモロ</name>
             <flag>comoros</flag>
             <population>90万人</population>
@@ -1523,18 +1488,9 @@
             <capital>モロニ</capital>
             <currency>コモロ・フラン(KMF)CF</currency>            
         </country>
-        
-        <country country_code="166" country_in_region_code="15">
-            <name>コートジボワール</name>
-            <flag>ivorycoast</flag>
-            <population>2550万人</population>
-            <language>フランス語</language>
-            <capital>ヤムスクロ</capital>
-            <currency>CFAフラン(XOF)</currency>            
-        </country>
-        
-        <country country_code="167" country_in_region_code="16">
-            <name>コンゴ</name>
+
+        <country country_code="163" country_in_region_code="18">
+            <name>コンゴ共和国</name>
             <flag>congo</flag>
             <population>550万人</population>
             <language>フランス語</language>
@@ -1542,7 +1498,7 @@
             <currency>CFAフラン(XAF)</currency>            
         </country>
         
-        <country country_code="168" country_in_region_code="17">
+        <country country_code="164" country_in_region_code="19">
             <name>コンゴ民主共和国</name>
             <flag>thedemocraticrepubliccongo</flag>
             <population>8670万人</population>
@@ -1551,7 +1507,7 @@
             <currency>コンゴ・フラン(CDF)FC</currency>            
         </country>
         
-        <country country_code="169" country_in_region_code="18">
+        <country country_code="165" country_in_region_code="20">
             <name>サントメ・プリンシペ</name>
             <flag>thedemocraticrepublicofsaotomeandprincipe</flag>
             <population>20万人</population>
@@ -1560,7 +1516,7 @@
             <currency>ドブラ(STN)Db</currency>            
         </country>
         
-        <country country_code="170" country_in_region_code="19">
+        <country country_code="166" country_in_region_code="21">
             <name>ザンビア</name>
             <flag>zambia</flag>
             <population>1810万人</population>
@@ -1569,7 +1525,7 @@
             <currency>クワチャ(ZMK)K</currency>            
         </country>
         
-        <country country_code="171" country_in_region_code="20">
+        <country country_code="167" country_in_region_code="22">
             <name>シエラレオネ</name>
             <flag>sierraleone</flag>
             <population>790万人</population>
@@ -1578,7 +1534,7 @@
             <currency>レオネ(SLL)Le</currency>            
         </country>
         
-        <country country_code="172" country_in_region_code="21">
+        <country country_code="168" country_in_region_code="23">
             <name>ジブチ</name>
             <flag>djibouti</flag>
             <population>100万人</population>
@@ -1587,7 +1543,7 @@
             <currency>ジブチ・フラン(DJF)Fdj</currency>            
         </country>
         
-        <country country_code="173" country_in_region_code="22">
+        <country country_code="169" country_in_region_code="24">
             <name>ジンバブエ</name>
             <flag>zimbabwe</flag>
             <population>1730万人</population>
@@ -1595,8 +1551,17 @@
             <capital>ハラーレ</capital>
             <currency>米ドル(USD)$</currency>            
         </country>
-        
-        <country country_code="174" country_in_region_code="23">
+
+        <country country_code="170" country_in_region_code="25">
+            <name>スーダン</name>
+            <flag>sudan</flag>
+            <population>4250万人</population>
+            <language>アラビア語/英語</language>
+            <capital>ハルツーム</capital>
+            <currency>スーダン・ポンド(SDG)</currency>
+        </country>
+
+        <country country_code="171" country_in_region_code="26">
             <name>セーシェル</name>
             <flag>seychelles</flag>
             <population>10万人</population>
@@ -1605,7 +1570,7 @@
             <currency>セーシェル・ルピー(SCR)SR</currency>            
         </country>
         
-        <country country_code="175" country_in_region_code="24">
+        <country country_code="172" country_in_region_code="27">
             <name>赤道ギニア</name>
             <flag>equatorialguinea</flag>
             <population>140万人</population>
@@ -1614,7 +1579,7 @@
             <currency>CFAフラン(XAF)</currency>            
         </country>
         
-        <country country_code="176" country_in_region_code="25">
+        <country country_code="173" country_in_region_code="28">
             <name>セネガル</name>
             <flag>senegal</flag>
             <population>1670万人</population>
@@ -1623,7 +1588,7 @@
             <currency>CFAフラン(XOF)</currency>            
         </country>
         
-        <country country_code="177" country_in_region_code="26">
+        <country country_code="174" country_in_region_code="29">
             <name>ソマリア</name>
             <flag>somalia</flag>
             <population>1560万人</population>
@@ -1632,7 +1597,7 @@
             <currency>ソマリア・シリング(SOS)So、Sh</currency>            
         </country>
         
-        <country country_code="178" country_in_region_code="27">
+        <country country_code="175" country_in_region_code="30">
             <name>タンザニア</name>
             <flag>tanzania</flag>
             <population>6090万人</population>
@@ -1641,7 +1606,7 @@
             <currency>タンザニア・シリング(TZS)x/y</currency>            
         </country>
         
-        <country country_code="179" country_in_region_code="28">
+        <country country_code="176" country_in_region_code="31">
             <name>チャド</name>
             <flag>chad</flag>
             <population>1580万人</population>
@@ -1650,7 +1615,7 @@
             <currency>CFAフラン(XAF)</currency>            
         </country>
         
-        <country country_code="180" country_in_region_code="29">
+        <country country_code="177" country_in_region_code="32">
             <name>中央アフリカ</name>
             <flag>centralafricanrepublic</flag>
             <population>480万人</population>
@@ -1658,8 +1623,17 @@
             <capital>バンギ</capital>
             <currency>CFAフラン(XAF)</currency>           
         </country>
-        
-        <country country_code="181" country_in_region_code="30">
+
+        <country country_code="178" country_in_region_code="33">
+            <name>チュニジア</name>
+            <flag>tunisia</flag>
+            <population>1180万人</population>
+            <language>アラビア語/フランス語</language>
+            <capital>チュニス</capital>
+            <currency>チュニジア・ディナール(TND)د.ت </currency>
+        </country>
+
+        <country country_code="179" country_in_region_code="34">
             <name>トーゴ</name>
             <flag>togo</flag>
             <population>820万人</population>
@@ -1668,7 +1642,7 @@
             <currency>CFAフラン(XOF)</currency>           
         </country>
         
-        <country country_code="182" country_in_region_code="31">
+        <country country_code="180" country_in_region_code="35">
             <name>ナイジェリア</name>
             <flag>nigeria</flag>
             <population>2億100万人</population>
@@ -1677,7 +1651,7 @@
             <currency>ナイラ(NGN)₦</currency>           
         </country>
         
-        <country country_code="183" country_in_region_code="32">
+        <country country_code="181" country_in_region_code="36">
             <name>ナミビア</name>
             <flag>namibia</flag>
             <population>260万人</population>
@@ -1686,7 +1660,7 @@
             <currency>ナミビア・ドル(NAD)N$</currency>           
         </country>
         
-        <country country_code="184" country_in_region_code="33">
+        <country country_code="182" country_in_region_code="37">
             <name>ニジェール</name>
             <flag>niger</flag>
             <population>2320万人</population>
@@ -1695,7 +1669,7 @@
             <currency>CFAフラン(XOF)</currency>            
         </country>
         
-        <country country_code="185" country_in_region_code="34">
+        <country country_code="183" country_in_region_code="38">
             <name>ブルキナファソ</name>
             <flag>burkinafaso</flag>
             <population>2030万人</population>
@@ -1704,7 +1678,7 @@
             <currency>CFAフラン(XOF)</currency>                        
         </country>
         
-        <country country_code="186" country_in_region_code="35">
+        <country country_code="184" country_in_region_code="39">
             <name>ブルンジ</name>
             <flag>burundi</flag>
             <population>1160万人</population>
@@ -1713,7 +1687,7 @@
             <currency>ブルンジ・フラン(BIF)FBu</currency>                        
         </country>
         
-        <country country_code="187" country_in_region_code="36">
+        <country country_code="185" country_in_region_code="40">
             <name>ベナン</name>
             <flag>benin</flag>
             <population>1180万人</population>
@@ -1722,7 +1696,7 @@
             <currency>CFAフラン(XOF)</currency>            
         </country>
         
-        <country country_code="188" country_in_region_code="37">
+        <country country_code="186" country_in_region_code="41">
             <name>ボツワナ</name>
             <flag>botswana</flag>
             <population>240万人</population>
@@ -1731,7 +1705,7 @@
             <currency>プラ(BWP)P</currency>            
         </country>
         
-        <country country_code="189" country_in_region_code="38">
+        <country country_code="187" country_in_region_code="42">
             <name>マダガスカル</name>
             <flag>madagascar</flag>
             <population>2700万人</population>
@@ -1740,8 +1714,8 @@
             <currency>アリアリ(MGA)Ar</currency>                        
         </country>
         
-        <country country_code="190" country_in_region_code="39">
-            <name>マウライ</name>
+        <country country_code="188" country_in_region_code="43">
+            <name>マラウイ</name>
             <flag>malawi</flag>
             <population>1970万人</population>
             <language>英語/チェワ語</language>
@@ -1749,7 +1723,7 @@
             <currency>クワチャ(MWK)K</currency>            
         </country>
         
-        <country country_code="191" country_in_region_code="40">
+        <country country_code="189" country_in_region_code="44">
             <name>マリ</name>
             <flag>mali</flag>
             <population>1970万人</population>
@@ -1758,7 +1732,7 @@
             <currency>CFAフラン(XOF)</currency>            
         </country>
         
-        <country country_code="192" country_in_region_code="41">
+        <country country_code="190" country_in_region_code="45">
             <name>南アフリカ共和国</name>
             <flag>southafrica</flag>
             <population>5810万人</population>
@@ -1767,7 +1741,7 @@
             <currency>ランド(ZAR)R</currency>            
         </country>
         
-        <country country_code="193" country_in_region_code="42">
+        <country country_code="191" country_in_region_code="46">
             <name>南スーダン</name>
             <flag>southsudan</flag>
             <population>1330万人</population>
@@ -1775,8 +1749,26 @@
             <capital>ジュバ</capital>
             <currency>スーダン・ポンド(SSP)</currency>            
         </country>
-        
-        <country country_code="194" country_in_region_code="43">
+
+        <country country_code="192" country_in_region_code="47">
+            <name>モーリシャス</name>
+            <flag>mauritius</flag>
+            <population>130万人</population>
+            <language>英語/フランス語/クレオール語</language>
+            <capital>ポートルイス</capital>
+            <currency>モーリシャス・ルピー(MUR)Rs</currency>
+        </country>
+
+        <country country_code="193" country_in_region_code="48">
+            <name>モーリタニア</name>
+            <flag>mauritania</flag>
+            <population>470万人</population>
+            <language>アラビア語/フランス語</language>
+            <capital>ヌアクショット</capital>
+            <currency>ウギア(MRO)UM</currency>
+        </country>
+
+        <country country_code="194" country_in_region_code="49">
             <name>モザンビーク</name>
             <flag>mozambique</flag>
             <population>3140万人</population>
@@ -1784,26 +1776,27 @@
             <capital>マプート</capital>
             <currency>メティカル(MZN) MT,MTn </currency>            
         </country>
-        
-        <country country_code="195" country_in_region_code="44">
-            <name>モーリシャス</name>
-            <flag>mauritius</flag>
-            <population>130万人</population>
-            <language>英語/フランス語/クレオール語</language>
-            <capital>ポートルイス</capital>
-            <currency>モーリシャス・ルピー(MUR)Rs</currency>            
+
+        <country country_code="195" country_in_region_code="50">
+            <name>モロッコ</name>
+            <flag>morocco</flag>
+            <population>3660万人</population>
+            <language>モロッコ語</language>
+            <capital>ラバト</capital>
+            <currency>ディルハム(MAD)
+                د.م. </currency>
         </country>
-        
-        <country country_code="196" country_in_region_code="45">
-            <name>モーリタニア</name>
-            <flag>mauritania</flag>
-            <population>470万人</population>
-            <language>アラビア語/フランス語</language>
-            <capital>ヌアクショット</capital>
-            <currency>ウギア(MRO)UM</currency>            
+
+        <country country_code="196" country_in_region_code="51">
+            <name>リビア</name>
+            <flag>libya</flag>
+            <population>660万人</population>
+            <language>リビア語</language>
+            <capital>モンロビア</capital>
+            <currency>リビア・ディナール(LYD)</currency>
         </country>
-        
-        <country country_code="197" country_in_region_code="46">
+
+        <country country_code="197" country_in_region_code="52">
             <name>リベリア</name>
             <flag>liberia</flag>
             <population>500万人</population>
@@ -1812,7 +1805,7 @@
             <currency>リベリア・ドル(LRD)L$</currency>            
         </country>
         
-        <country country_code="198" country_in_region_code="47">
+        <country country_code="198" country_in_region_code="53">
             <name>ルワンダ</name>
             <flag>rwanda</flag>
             <population>1280万人</population>
@@ -1821,7 +1814,7 @@
             <currency>ルワンダ・フラン(RWF)FRw, RF, R₣</currency>            
         </country>
         
-        <country country_code="199" country_in_region_code="48">
+        <country country_code="199" country_in_region_code="54">
             <name>レソト</name>
             <flag>lesotho</flag>
             <population>230万人</population>
@@ -1829,10 +1822,7 @@
             <capital>マセル</capital>
             <currency>ロチ(LSL)L</currency>            
         </country>
-        
 
     </regions>
-
-
 
 </resources>
