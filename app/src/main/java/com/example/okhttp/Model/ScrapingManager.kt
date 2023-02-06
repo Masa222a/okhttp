@@ -8,17 +8,25 @@ import org.jsoup.Jsoup
 import java.io.IOException
 
 class ScrapingManager {
-    private val mainUrl = “https://www.mofa.go.jp/mofaj/annai/zaigai/list/”
+    class UrlCreate(val Regions: XmlManager.Regions) {
+        enum class Embassies(val region: XmlManager.Regions){
+            asia(XmlManager.Regions.Asia),
+            oceania(XmlManager.Regions.Oceania),
+            n_ame(XmlManager.Regions.NorthAmerica),
+            cs_ame(XmlManager.Regions.CentralNorthAmerica),
+            europe(XmlManager.Regions.Europe),
+            nm_east(XmlManager.Regions.MiddleEast),
+            africa(XmlManager.Regions.Africa)
+        }
 
-    enum class Embassies{
-        asia,
-        oceania,
-        n_ame,
-        cs_ame,
-        europe,
-        nm_east,
-        africa
+        private val mainUrl = "https://www.mofa.go.jp/mofaj/annai/zaigai/list/"
+
+
     }
+
+
+
+
 
     private val listData = mutableListOf<Embassy>()
     private suspend fun fetchUrl(url: String) {
