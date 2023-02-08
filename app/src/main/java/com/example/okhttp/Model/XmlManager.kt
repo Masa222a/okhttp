@@ -36,13 +36,26 @@ class XmlManager {
                 //42..43北米
                 NorthAmerica -> (42..43).toList()
                 //44..76中・南米
-                CentralNorthAmerica -> (44..765).toList()
+                CentralNorthAmerica -> (44..76).toList()
                 //77..130ヨーロッパ
                 Europe -> (77..130).toList()
                 //131..145中東
                 MiddleEast -> (131..145).toList()
                 // 146..199アフリカ
                 Africa -> (146..199).toList()
+            }
+
+        val urlPath: String
+            get() {
+                return when(this) {
+                    Asia -> "asia"
+                    Oceania -> "oceania"
+                    NorthAmerica -> "n_ame"
+                    CentralNorthAmerica -> "cs_ame"
+                    Europe -> "europe"
+                    MiddleEast -> "nm_east"
+                    Africa -> "africa"
+                }
             }
     }
 

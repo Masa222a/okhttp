@@ -2,6 +2,8 @@ package com.example.okhttp.Model
 
 import android.util.Log
 import com.example.okhttp.Model.Entity.Embassy
+import com.example.okhttp.Model.Entity.Flag
+import com.example.okhttp.Model.Entity.flagType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
@@ -19,8 +21,10 @@ class ScrapingManager {
             africa(XmlManager.Regions.Africa)
         }
 
-        private val mainUrl = "https://www.mofa.go.jp/mofaj/annai/zaigai/list/"
-
+        private val mainUrl: () -> String
+            get() = {
+                "https://www.mofa.go.jp/mofaj/annai/zaigai/list/${Regions.urlPath}/${flagType.urlPath}"
+            }
 
     }
 
