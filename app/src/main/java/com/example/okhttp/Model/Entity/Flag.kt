@@ -229,7 +229,6 @@ enum class flagType(countryCode: Int) {
 
     val urlPath: String
         get() = when(this) {
-
             //Asia
             India -> "india"
             Indonesia ->"indonesia"

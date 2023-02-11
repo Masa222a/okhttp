@@ -11,26 +11,13 @@ import java.io.IOException
 
 class ScrapingManager {
     class UrlCreate(val Regions: XmlManager.Regions) {
-        enum class Embassies(val region: XmlManager.Regions){
-            asia(XmlManager.Regions.Asia),
-            oceania(XmlManager.Regions.Oceania),
-            n_ame(XmlManager.Regions.NorthAmerica),
-            cs_ame(XmlManager.Regions.CentralNorthAmerica),
-            europe(XmlManager.Regions.Europe),
-            nm_east(XmlManager.Regions.MiddleEast),
-            africa(XmlManager.Regions.Africa)
-        }
 
         private val mainUrl: () -> String
             get() = {
-                "https://www.mofa.go.jp/mofaj/annai/zaigai/list/${Regions.urlPath}/${flagType.urlPath}"
+                "https://www.mofa.go.jp/mofaj/annai/zaigai/list/${Regions.urlPath}/${flagType(Frag.id).urlPath}"
             }
 
     }
-
-
-
-
 
     private val listData = mutableListOf<Embassy>()
     private suspend fun fetchUrl(url: String) {
