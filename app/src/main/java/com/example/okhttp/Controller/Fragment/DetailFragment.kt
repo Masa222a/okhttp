@@ -24,6 +24,9 @@ class DetailFragment : Fragment() {
     ): View {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
 
+        val flag = arguments?.getSerializable("country") as? Flag
+        Log.d("DetailFragmentデバッグ", "$flag")
+
         val tabLayout = binding.tabLayout
         val viewPager = binding.detailViewPager
         viewPager.adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)
@@ -34,8 +37,6 @@ class DetailFragment : Fragment() {
         binding.backButton.setOnClickListener {
             requireActivity().onBackPressed()
         }
-        val flag = arguments?.getSerializable("country") as? Flag
-        Log.d("DetailFragmentデバッグ", "$flag")
 
         val collapsingToolBar = binding.collapsingToolBar
         if (flag != null) {

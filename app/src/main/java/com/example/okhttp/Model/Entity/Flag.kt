@@ -11,9 +11,12 @@ data class Flag(
     val language: String?,
     val capital: String?,
     val currency: String?
-): Serializable
+): Serializable {
+    val flagType: FlagType
+        get() = FlagType.values().firstOrNull { it.countryCode == id } ?: FlagType.Others
+}
 
-enum class flagType(countryCode: Int) {
+enum class FlagType(val countryCode: Int) {
     //Asia
     India(1),
     Indonesia(2),
@@ -225,7 +228,8 @@ enum class flagType(countryCode: Int) {
     Libya(196),
     Liberia(197),
     Rwanda(198),
-    Lesotho(199);
+    Lesotho(199),
+    Others(200);
 
     val urlPath: String
         get() = when(this) {
@@ -441,5 +445,8 @@ enum class flagType(countryCode: Int) {
             Liberia -> "libelia"
             Rwanda -> "rwanda"
             Lesotho -> "resoto"
+
+            //others
+            Others -> ""
         }
 }
