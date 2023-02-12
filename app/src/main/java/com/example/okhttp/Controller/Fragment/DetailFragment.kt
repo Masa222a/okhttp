@@ -1,6 +1,8 @@
 package com.example.okhttp.Controller.Fragment
 
+import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,7 +35,15 @@ class DetailFragment : Fragment() {
             requireActivity().onBackPressed()
         }
         val flag = arguments?.getSerializable("country") as? Flag
-        detailManager.setPhoto(binding.eachCountryPhoto, flag?.engName)
+        Log.d("DetailFragmentデバッグ", "$flag")
+
+        val collapsingToolBar = binding.collapsingToolBar
+        if (flag != null) {
+            collapsingToolBar.title = flag.name
+            collapsingToolBar.setCollapsedTitleTextColor(Color.WHITE)
+            collapsingToolBar.setExpandedTitleColor(Color.WHITE)
+            detailManager.setPhoto(binding.eachCountryPhoto, flag.engName)
+        }
 
         return binding.root
     }
