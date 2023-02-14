@@ -1,31 +1,44 @@
 package com.example.okhttp.View
 
+import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.okhttp.Controller.Fragment.DetailEmbassyFragment
+import com.example.okhttp.Controller.Fragment.DetailFragment
 import com.example.okhttp.Controller.Fragment.DetailVisaFragment
+import com.example.okhttp.Model.Entity.Flag
 
 class DetailPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
+    var flag: Flag? = null
 
     override fun getItemCount(): Int {
         return 2
     }
 
     override fun createFragment(position: Int): Fragment {
-        return when(position) {
+        when(position) {
             0 -> {
-                DetailVisaFragment()
+                val fragment = DetailVisaFragment()
+                return fragment
             }
             1 -> {
-                DetailEmbassyFragment()
+                val fragment = DetailEmbassyFragment()
+                val bundle = Bundle()
+                bundle.putSerializable("flag", flag) as? Flag
+                fragment.arguments = bundle
+                return fragment
             }
             else -> {
-                DetailVisaFragment()
+                val fragment = DetailVisaFragment()
+                return fragment
             }
         }
     }
 
+    fun addData(country: Flag) {
+        this.flag = country
+    }
 }

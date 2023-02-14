@@ -29,7 +29,11 @@ class DetailFragment : Fragment() {
 
         val tabLayout = binding.tabLayout
         val viewPager = binding.detailViewPager
-        viewPager.adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)
+        val adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)
+        if (flag != null) {
+            adapter.addData(flag)
+        }
+        viewPager.adapter = adapter
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitleList[position]
         }.attach()

@@ -29,9 +29,8 @@ class DetailEmbassyFragment : Fragment() {
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(view?.context)
         recyclerView.adapter = adapter
-
-//        val flag = arguments?.getSerializable("country") as Flag
-//        Log.d("EmbassyFragmentデバッグ", "$flag")
+        val flag = arguments?.getSerializable("flag") as Flag
+        Log.d("EmbassyFragmentデバッグ", "$flag")
         return binding.root
     }
 
