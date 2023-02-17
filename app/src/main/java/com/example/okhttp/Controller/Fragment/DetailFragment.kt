@@ -24,15 +24,12 @@ class DetailFragment : Fragment() {
     ): View {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
 
-        val flag = arguments?.getSerializable("country") as? Flag
+        val flag = arguments?.getSerializable("country") as Flag
         Log.d("DetailFragmentデバッグ", "$flag")
 
         val tabLayout = binding.tabLayout
         val viewPager = binding.detailViewPager
-        val adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)
-        if (flag != null) {
-            adapter.addData(flag)
-        }
+        val adapter = DetailPagerAdapter(flag, parentFragmentManager, lifecycle)
         viewPager.adapter = adapter
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitleList[position]
