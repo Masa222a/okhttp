@@ -31,7 +31,7 @@ class MainFragment : Fragment() {
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
         try {
-            flagList = xmlManager.changeCountriesList(XmlManager.Regions.Asia)
+            flagList = xmlManager.changeCountriesList(XmlManager.Region.Asia)
         } catch (e: XmlPullParserException) {
             Log.d("$e", "XmlPullParserException")
         } catch (e: IOException) {
@@ -48,7 +48,7 @@ class MainFragment : Fragment() {
             @SuppressLint("NotifyDataSetChanged")
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
-                    val regionCountries = xmlManager.changeCountriesList(XmlManager.Regions.indexOf(tab.position))
+                    val regionCountries = xmlManager.changeCountriesList(XmlManager.Region.indexOf(tab.position))
                     adapter?.flagList = regionCountries
                     recyclerView.scrollToPosition(0)
                     adapter?.notifyDataSetChanged()

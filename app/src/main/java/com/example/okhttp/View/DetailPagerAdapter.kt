@@ -6,39 +6,42 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.okhttp.Controller.Fragment.DetailEmbassyFragment
-import com.example.okhttp.Controller.Fragment.DetailFragment
 import com.example.okhttp.Controller.Fragment.DetailVisaFragment
 import com.example.okhttp.Model.Entity.Flag
 
-class DetailPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
+class DetailPagerAdapter(val flag: Flag, fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
-    var flag: Flag? = null
+
+    enum class Page(val position: Int) {
+        Visa(0),
+        Embassy(1);
+
+        companion object {
+            fun positionOf(position: Int) = Page.values().firstOrNull { it.position == position } ?: throw IllegalArgumentException("invalid position")
+        }
+    }
 
     override fun getItemCount(): Int {
-        return 2
+        return Page.values().size
     }
 
     override fun createFragment(position: Int): Fragment {
-        when(position) {
-            0 -> {
+        when(Page.positionOf(position)) {
+            Page.Visa -> {
                 val fragment = DetailVisaFragment()
                 return fragment
             }
-            1 -> {
+            Page.Embassy -> {
                 val fragment = DetailEmbassyFragment()
                 val bundle = Bundle()
-                bundle.putSerializable("flag", flag) as? Flag
+                bundle.putSerializable("flag", flag)
                 fragment.arguments = bundle
                 return fragment
             }
             else -> {
-                val fragment = DetailVisaFragment()
-                return fragment
+                throw IllegalArgumentException("invalid position")
             }
         }
     }
 
-    fun addData(country: Flag) {
-        this.flag = country
-    }
 }

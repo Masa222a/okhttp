@@ -5,13 +5,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.okhttp.Model.Entity.Embassy
 import com.example.okhttp.Model.Entity.Flag
-import com.example.okhttp.R
 import com.example.okhttp.View.CountriesDetailEmbassyAdapter
 import com.example.okhttp.databinding.FragmentDetailEmbassyBinding
 

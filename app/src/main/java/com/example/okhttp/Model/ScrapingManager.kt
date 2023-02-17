@@ -9,9 +9,9 @@ import org.jsoup.Jsoup
 import java.io.IOException
 
 class ScrapingManager {
-    class UrlCreate(val regions: XmlManager.Regions, val flag: Flag) {
+    class UrlCreate(val region: XmlManager.Region, val flag: Flag) {
         private val mainUrl: String
-            get() = "https://www.mofa.go.jp/mofaj/annai/zaigai/list/${regions.urlPath}/${flag.flagType.urlPath}"
+            get() = "https://www.mofa.go.jp/mofaj/annai/zaigai/list/${region.urlPath}/${flag.flagType.urlPath}"
     }
 
     private val listData = mutableListOf<Embassy>()

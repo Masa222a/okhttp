@@ -12,7 +12,7 @@ class XmlManager {
         getXmlData()
     }
 
-    enum class Regions(val index: Int) {
+    enum class Region(val index: Int) {
         Asia(0),
         Oceania(1),
         NorthAmerica(2),
@@ -22,7 +22,7 @@ class XmlManager {
         Africa(6);
 
         companion object {
-            fun indexOf(position: Int): Regions {
+            fun indexOf(position: Int): Region {
                 return values().first { it.index == position }
             }
         }
@@ -59,7 +59,7 @@ class XmlManager {
             }
     }
 
-    fun changeCountriesList(regions: Regions): List<Flag> {
+    fun changeCountriesList(regions: Region): List<Flag> {
         return flags.filter { regions.countryCodes.contains(it.id) }
     }
 

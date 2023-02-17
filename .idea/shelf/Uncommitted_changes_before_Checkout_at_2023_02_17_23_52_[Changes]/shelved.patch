@@ -1,0 +1,102 @@
+Index: app/src/main/java/com/example/okhttp/Controller/Fragment/DetailFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.okhttp.Controller.Fragment\r\n\r\nimport android.graphics.Color\r\nimport android.os.Bundle\r\nimport android.util.Log\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport androidx.fragment.app.Fragment\r\nimport com.example.okhttp.Model.DetailManager\r\nimport com.example.okhttp.Model.Entity.Flag\r\nimport com.example.okhttp.View.DetailPagerAdapter\r\nimport com.example.okhttp.databinding.FragmentDetailBinding\r\nimport com.google.android.material.tabs.TabLayoutMediator\r\n\r\nclass DetailFragment : Fragment() {\r\n    private lateinit var binding: FragmentDetailBinding\r\n    private val tabTitleList = listOf(\"ビザ・渡航\", \"大使館\")\r\n    private val detailManager = DetailManager()\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View {\r\n        binding = FragmentDetailBinding.inflate(inflater, container, false)\r\n\r\n        val flag = arguments?.getSerializable(\"country\") as? Flag\r\n        Log.d(\"DetailFragmentデバッグ\", \"$flag\")\r\n\r\n        val tabLayout = binding.tabLayout\r\n        val viewPager = binding.detailViewPager\r\n        val adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)\r\n        if (flag != null) {\r\n            adapter.addData(flag)\r\n        }\r\n        viewPager.adapter = adapter\r\n        TabLayoutMediator(tabLayout, viewPager) { tab, position ->\r\n            tab.text = tabTitleList[position]\r\n        }.attach()\r\n\r\n        binding.backButton.setOnClickListener {\r\n            requireActivity().onBackPressed()\r\n        }\r\n\r\n        val collapsingToolBar = binding.collapsingToolBar\r\n        if (flag != null) {\r\n            collapsingToolBar.title = flag.name\r\n            collapsingToolBar.setCollapsedTitleTextColor(Color.WHITE)\r\n            collapsingToolBar.setExpandedTitleColor(Color.WHITE)\r\n            detailManager.setPhoto(binding.eachCountryPhoto, flag.engName)\r\n        }\r\n\r\n        return binding.root\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/okhttp/Controller/Fragment/DetailFragment.kt b/app/src/main/java/com/example/okhttp/Controller/Fragment/DetailFragment.kt
+--- a/app/src/main/java/com/example/okhttp/Controller/Fragment/DetailFragment.kt	
++++ b/app/src/main/java/com/example/okhttp/Controller/Fragment/DetailFragment.kt	
+@@ -24,15 +24,13 @@
+     ): View {
+         binding = FragmentDetailBinding.inflate(inflater, container, false)
+ 
+-        val flag = arguments?.getSerializable("country") as? Flag
++        val flag = arguments?.getSerializable("country") as Flag
+         Log.d("DetailFragmentデバッグ", "$flag")
+ 
+         val tabLayout = binding.tabLayout
+         val viewPager = binding.detailViewPager
+-        val adapter = DetailPagerAdapter(parentFragmentManager, lifecycle)
+-        if (flag != null) {
+-            adapter.addData(flag)
+-        }
++        val adapter = DetailPagerAdapter(flag, parentFragmentManager, lifecycle)
++
+         viewPager.adapter = adapter
+         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+             tab.text = tabTitleList[position]
+@@ -43,12 +41,10 @@
+         }
+ 
+         val collapsingToolBar = binding.collapsingToolBar
+-        if (flag != null) {
+-            collapsingToolBar.title = flag.name
+-            collapsingToolBar.setCollapsedTitleTextColor(Color.WHITE)
+-            collapsingToolBar.setExpandedTitleColor(Color.WHITE)
+-            detailManager.setPhoto(binding.eachCountryPhoto, flag.engName)
+-        }
++        collapsingToolBar.title = flag.name
++        collapsingToolBar.setCollapsedTitleTextColor(Color.WHITE)
++        collapsingToolBar.setExpandedTitleColor(Color.WHITE)
++        detailManager.setPhoto(binding.eachCountryPhoto, flag.engName)
+ 
+         return binding.root
+     }
+Index: app/src/main/java/com/example/okhttp/View/DetailPagerAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.okhttp.View\r\n\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\nimport androidx.fragment.app.FragmentManager\r\nimport androidx.lifecycle.Lifecycle\r\nimport androidx.viewpager2.adapter.FragmentStateAdapter\r\nimport com.example.okhttp.Controller.Fragment.DetailEmbassyFragment\r\nimport com.example.okhttp.Controller.Fragment.DetailFragment\r\nimport com.example.okhttp.Controller.Fragment.DetailVisaFragment\r\nimport com.example.okhttp.Model.Entity.Flag\r\n\r\nclass DetailPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :\r\n    FragmentStateAdapter(fragmentManager, lifecycle) {\r\n    var flag: Flag? = null\r\n\r\n    override fun getItemCount(): Int {\r\n        return 2\r\n    }\r\n\r\n    override fun createFragment(position: Int): Fragment {\r\n        when(position) {\r\n            0 -> {\r\n                val fragment = DetailVisaFragment()\r\n                return fragment\r\n            }\r\n            1 -> {\r\n                val fragment = DetailEmbassyFragment()\r\n                val bundle = Bundle()\r\n                bundle.putSerializable(\"flag\", flag) as? Flag\r\n                fragment.arguments = bundle\r\n                return fragment\r\n            }\r\n            else -> {\r\n                val fragment = DetailVisaFragment()\r\n                return fragment\r\n            }\r\n        }\r\n    }\r\n\r\n    fun addData(country: Flag) {\r\n        this.flag = country\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/okhttp/View/DetailPagerAdapter.kt b/app/src/main/java/com/example/okhttp/View/DetailPagerAdapter.kt
+--- a/app/src/main/java/com/example/okhttp/View/DetailPagerAdapter.kt	
++++ b/app/src/main/java/com/example/okhttp/View/DetailPagerAdapter.kt	
+@@ -6,13 +6,11 @@
+ import androidx.lifecycle.Lifecycle
+ import androidx.viewpager2.adapter.FragmentStateAdapter
+ import com.example.okhttp.Controller.Fragment.DetailEmbassyFragment
+-import com.example.okhttp.Controller.Fragment.DetailFragment
+ import com.example.okhttp.Controller.Fragment.DetailVisaFragment
+ import com.example.okhttp.Model.Entity.Flag
+ 
+-class DetailPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
++class DetailPagerAdapter(val flag: Flag, fragmentManager: FragmentManager, lifecycle: Lifecycle) :
+     FragmentStateAdapter(fragmentManager, lifecycle) {
+-    var flag: Flag? = null
+ 
+     override fun getItemCount(): Int {
+         return 2
+@@ -22,23 +20,22 @@
+         when(position) {
+             0 -> {
+                 val fragment = DetailVisaFragment()
++                val bundle = Bundle()
++                bundle.putSerializable("flag", flag)
++                fragment.arguments = bundle
+                 return fragment
+             }
+             1 -> {
+                 val fragment = DetailEmbassyFragment()
+                 val bundle = Bundle()
+-                bundle.putSerializable("flag", flag) as? Flag
++                bundle.putSerializable("flag", flag)
+                 fragment.arguments = bundle
+                 return fragment
+             }
+             else -> {
+-                val fragment = DetailVisaFragment()
+-                return fragment
++                throw java.lang.IllegalArgumentException("inva")
+             }
+         }
+     }
+ 
+-    fun addData(country: Flag) {
+-        this.flag = country
+-    }
+-}
+\ No newline at end of file
++}
