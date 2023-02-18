@@ -10,7 +10,8 @@ data class Flag(
     val population: String?,
     val language: String?,
     val capital: String?,
-    val currency: String?
+    val currency: String?,
+    val region: Int
 ): Serializable {
     val flagType: FlagType
         get() = FlagType.values().firstOrNull { it.countryCode == id } ?: FlagType.Others

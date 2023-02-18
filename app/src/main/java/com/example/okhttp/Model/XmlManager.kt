@@ -77,6 +77,7 @@ class XmlManager {
         val languages = mutableListOf<String>()
         val capitals = mutableListOf<String>()
         val currencies = mutableListOf<String>()
+        val regions = mutableListOf<Int>()
         while (eventType != XmlPullParser.END_DOCUMENT) {
             when(eventType) {
                 XmlPullParser.START_DOCUMENT -> {
@@ -84,8 +85,10 @@ class XmlManager {
                 }
                 XmlPullParser.START_TAG -> {
                     tagName = parser.name
-                    if (tagName == "country") {
-                        countryCodes.add(parser.getAttributeIntValue(null, "country_code", 0))
+                    when (tagName) {
+                        "country" -> {
+                            countryCodes.add(parser.getAttributeIntValue(null, "country_code", 0))
+                        }
                     }
                 }
                 XmlPullParser.TEXT -> {
@@ -116,6 +119,9 @@ class XmlManager {
                             "currency" -> {
                                 currencies.add(parser.text)
                             }
+                            "region" -> {
+                                regions.add(parser.text.toInt())
+                            }
                         }
                     }
                 }
@@ -126,7 +132,7 @@ class XmlManager {
         parser.close()
 
         for(i in 0 until pictureIds.size) {
-            flags.add(Flag(countryCodes[i], pictureIds[i], countriesName[i], countriesEngName[i], populations[i], languages[i], capitals[i], currencies[i]))
+            flags.add(Flag(countryCodes[i], pictureIds[i], countriesName[i], countriesEngName[i], populations[i], languages[i], capitals[i], currencies[i], regions[i]))
         }
         this.flags = flags
     }
