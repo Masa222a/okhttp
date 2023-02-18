@@ -15,9 +15,7 @@ import com.example.okhttp.Model.ScrapingManager
 import com.example.okhttp.Model.XmlManager
 import com.example.okhttp.View.CountriesDetailEmbassyAdapter
 import com.example.okhttp.databinding.FragmentDetailEmbassyBinding
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 
 class DetailEmbassyFragment : Fragment() {
     lateinit var binding: FragmentDetailEmbassyBinding
@@ -25,6 +23,7 @@ class DetailEmbassyFragment : Fragment() {
     var embassyList = mutableListOf<Embassy>()
     var scrapingManager = ScrapingManager()
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,7 +36,7 @@ class DetailEmbassyFragment : Fragment() {
         val flag = arguments?.getSerializable("flag") as Flag
         Log.d("EmbassyFragmentデバッグ", "$flag")
         val url = ScrapingManager.UrlCreate(XmlManager.Region.indexOf(flag.region), flag).mainUrl
-        lifecycleScope.launch {
+        GlobalScope.launch(Dispatchers.Main) {
             changeList(url)
             Log.d("EmbassyListデバッグ", "$embassyList")
         }
@@ -45,10 +44,10 @@ class DetailEmbassyFragment : Fragment() {
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    suspend fun changeList(url: String) {
+    private suspend fun changeList(url: String) {
         withContext(Dispatchers.Main) {
-            scrapingManager.fetchUrl(url)
-            embassyList = scrapingManager.listData
+            val archive = scrapingManager.fetchUrl(url)
+            embassyList = archive
             adapter?.notifyDataSetChanged()
         }
     }

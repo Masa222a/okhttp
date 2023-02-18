@@ -16,7 +16,7 @@ class ScrapingManager {
 
     val listData = mutableListOf<Embassy>()
     suspend fun fetchUrl(url: String): MutableList<Embassy> {
-        return withContext(Dispatchers.IO) {
+        return withContext(Dispatchers.Default) {
             val doc = Jsoup.connect(url).get()
             val items = doc.select(".main-section.section")
             for(i in 0 until items.size) {
