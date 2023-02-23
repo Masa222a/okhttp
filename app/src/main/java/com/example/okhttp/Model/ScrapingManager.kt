@@ -19,11 +19,15 @@ class ScrapingManager {
         return withContext(Dispatchers.Default) {
             val doc = Jsoup.connect(url).get()
             val items = doc.select(".main-section.section")
+            items.select("br").append("\\n")
             for(i in 0 until items.size) {
                 val title = items.select("h2.title2").eq(i).text()
                 val address = items.select("div.any-area").eq(i).text()
+                if (address.contains("\\n")) {
+                    address.replace("\\n", "\n")
+                }
                 Log.d("確認タイトル", "${title}")
-                Log.d("確認タイトル", "${address}")
+                Log.d("確認アドレス", "${address}")
                 listData.add(Embassy(title, address))
             }
             Log.d("scrapingManagerデバッグ", "${listData}")

@@ -20,7 +20,6 @@ import kotlinx.coroutines.*
 class DetailEmbassyFragment : Fragment() {
     lateinit var binding: FragmentDetailEmbassyBinding
     private var adapter: CountriesDetailEmbassyAdapter? = null
-    var embassyList = mutableListOf<Embassy>()
     var scrapingManager = ScrapingManager()
 
     @OptIn(DelicateCoroutinesApi::class)
@@ -29,7 +28,7 @@ class DetailEmbassyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentDetailEmbassyBinding.inflate(inflater, container, false)
-        adapter = CountriesDetailEmbassyAdapter(embassyList)
+        adapter = CountriesDetailEmbassyAdapter()
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(view?.context)
         recyclerView.adapter = adapter
@@ -38,7 +37,6 @@ class DetailEmbassyFragment : Fragment() {
         val url = ScrapingManager.UrlCreate(XmlManager.Region.indexOf(flag.region), flag).mainUrl
         GlobalScope.launch(Dispatchers.Main) {
             changeList(url)
-            Log.d("EmbassyListデバッグ", "$embassyList")
         }
         return binding.root
     }
@@ -47,7 +45,7 @@ class DetailEmbassyFragment : Fragment() {
     private suspend fun changeList(url: String) {
         withContext(Dispatchers.Main) {
             val archive = scrapingManager.fetchUrl(url)
-            embassyList = archive
+            adapter?.embassyList = archive
             adapter?.notifyDataSetChanged()
         }
     }

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.okhttp.Model.Entity.Embassy
 import com.example.okhttp.R
 
-class CountriesDetailEmbassyAdapter(var embassyList: MutableList<Embassy>): RecyclerView.Adapter<CountriesDetailEmbassyAdapter.ViewHolder>() {
+class CountriesDetailEmbassyAdapter(var embassyList: MutableList<Embassy> = mutableListOf()): RecyclerView.Adapter<CountriesDetailEmbassyAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val title: TextView = view.findViewById(R.id.embassyTitle)
         val address: TextView = view.findViewById(R.id.embassyAddress)
