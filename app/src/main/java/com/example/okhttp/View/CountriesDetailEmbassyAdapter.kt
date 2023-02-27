@@ -22,7 +22,8 @@ class CountriesDetailEmbassyAdapter(var embassyList: MutableList<Embassy> = muta
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val embassy = embassyList[position]
         holder.title.text = embassy.title
-        holder.address.text = embassy.address
+        val address = embassy.address.replace(" ", "").replace("\\n", "\n")
+        holder.address.text = address
     }
 
     override fun getItemCount(): Int = embassyList.size
