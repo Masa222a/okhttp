@@ -2,7 +2,6 @@ package com.example.okhttp.Controller.Fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,7 +30,6 @@ class DetailEmbassyFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(view?.context)
         recyclerView.adapter = adapter
         val flag = arguments?.getSerializable("flag") as Flag
-        Log.d("EmbassyFragmentデバッグ", "$flag")
         val url = ScrapingManager.UrlCreate(XmlManager.Region.indexOf(flag.region), flag).mainUrl
         GlobalScope.launch(Dispatchers.Main) {
             changeList(url)

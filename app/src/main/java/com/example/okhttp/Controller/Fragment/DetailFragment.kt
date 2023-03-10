@@ -2,7 +2,6 @@ package com.example.okhttp.Controller.Fragment
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +24,6 @@ class DetailFragment : Fragment() {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
 
         val flag = arguments?.getSerializable("country") as Flag
-        Log.d("DetailFragmentデバッグ", "$flag")
 
         val tabLayout = binding.tabLayout
         val viewPager = binding.detailViewPager

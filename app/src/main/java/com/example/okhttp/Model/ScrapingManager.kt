@@ -1,12 +1,10 @@
 package com.example.okhttp.Model
 
-import android.util.Log
 import com.example.okhttp.Model.Entity.Embassy
 import com.example.okhttp.Model.Entity.Flag
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
-import java.io.IOException
 
 class ScrapingManager {
     class UrlCreate(val region: XmlManager.Region, val flag: Flag) {
@@ -26,11 +24,8 @@ class ScrapingManager {
                 if (address.contains("\\n")) {
                     address.replace("\\n", "\n")
                 }
-                Log.d("確認タイトル", "${title}")
-                Log.d("確認アドレス", "${address}")
                 listData.add(Embassy(title, address))
             }
-            Log.d("scrapingManagerデバッグ", "${listData}")
             return@withContext listData
         }
     }
