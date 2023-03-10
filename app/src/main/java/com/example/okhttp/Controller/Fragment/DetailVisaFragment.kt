@@ -1,11 +1,12 @@
 package com.example.okhttp.Controller.Fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.okhttp.R
+import androidx.fragment.app.Fragment
+import com.example.okhttp.Model.Entity.Flag
 import com.example.okhttp.databinding.FragmentDetailVisaBinding
 
 class DetailVisaFragment : Fragment() {
@@ -16,6 +17,8 @@ class DetailVisaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentDetailVisaBinding.inflate(inflater, container, false)
+        val flag = arguments?.getSerializable("flag")
+        Log.d("デバッグVisa", "$flag")
         return binding.root
     }
 

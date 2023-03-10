@@ -1,0 +1,1913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <regions region="アジア" region_code="1">
+        <country country_code="1" country_in_region_code="1">
+            <name>インド</name>
+            <flag>india</flag>
+            <visa>
+                事前にビザまたはeVISA取得が必要。
+                申請料 1250円
+                日本国籍のみ条件付きで現地到着空港で取得可能(アライバルビザ)
+                申請料 4000円
+            </visa>
+        </country>
+
+        <country country_code="2" country_in_region_code="2">
+            <name>インドネシア</name>
+            <flag>indonesia</flag>
+            <visa>
+                ビザ免除 (日本人国籍の場合)
+                滞在期間  30日以内 旅券の必要残存期間
+                入国時6か月以上 その他必要書類
+                30日以内にインドネシアから出国する航空券
+                業務シングル(B211A)
+                滞在可能日数  30日/60日(滞在可能な最大日数) 有効期間
+                発給日から90日以内に入国が必要
+                必要旅券残存  入国時6か月以上
+                ビザ申請料金  5,750円 許可される活動
+                観光、親族訪問、社会訪問、文化、芸術、政府用務、商業目的でない スポーツ、視察、短期講座、短期トレーニング、商談、商品の購入、講演、セミナー参加、 国際展示会参加、インドネシア本社または駐在事務所での会議、トランジット
+                業務シングル(B211B)
+                滞在可能日数  30日/60日(滞在可能な最大日数) 有効期間
+                発給日から90日以内入国が必要
+                必要旅券残存  入国時6か月以上
+                ビザ申請料  5750円
+                許可される活動  工場関連の訪問
+                1インドネシア製品価格の向上、国際的マーケティングのためのコンサルタントと研修 2インドネシア 支社への監査、品質管理・検査 3外国人労働候補の採用に向けての実地試験
+                業務一年マルチブル(D212) 滞在可能日数  60日(一回の入国で滞在可能な最大日数)
+                有効期間  1年(有効期間内に入出国が必要)      
+                *ビザ発行日より90日以内に一度使用しないと無効になります。
+                必要旅券残存  申請時18ヶ月以上(最終入国時6ヶ月以上)
+                ビザ申請料金  12650円
+                許可される活動
+                親族訪問、社会訪問商品の購入政府用務講演、セミナー参加、国際展 示会参加、インドネシア 支社への監査、品質管理・検査
+            </visa>
+        </country>
+
+        <country country_code="3" country_in_region_code="3">
+            <name>カンボジア</name>
+            <flag>cambodia</flag>
+            <visa>
+                観光ビザ  最大滞在日数 30日 有効期限  3ヶ月 申請料金  3800円
+                観光1年マルチブル 最大滞在日数  各30日 有効期限  1年(複数回入国可能) 申請料  5000円
+                観光2年マルチブル 最大滞在可能日数  各30日 有効期限  2年(複数回入国可能) 申請料  7300円
+                観光3年マルチブル  最大滞在日数  各30日 有効期間  3年(複数回入国可能) 申請料  9700円
+                業務ビザ3ヶ月シングル 最大滞在可能日数  30日 有効期間  3ヶ月 申請料  4400円
+            </visa>
+        </country>
+
+        <country country_code="4" country_in_region_code="4">
+            <name>シンガポール</name>
+            <flag>singapore</flag>
+            <visa>
+                観光ビザ 最大滞在可能日数  入国時の審査官判断 有効期間  領事判断
+                申請料  2600円
+                業務ビザ 最大滞在可能日数  入国時の審査官判断 有効期間  領事判断
+                申請料  2600円
+            </visa>
+        </country>
+
+        <country country_code="5" country_in_region_code="5">
+            <name>スリランカ</name>
+            <flag>srilanka</flag>
+            <visa>ビザ又はETA（電子渡航認証）が必要</visa>
+        </country>
+
+        <country country_code="6" country_in_region_code="6">
+            <name>タイ</name>
+            <flag>thailand</flag>
+            <visa>
+                就労ビザシングル
+                最大滞在可能日数  90日以内 有効期間
+                3ヶ月(有効期間内に入国し上記滞在可能日数の滞在が1回だけ可能)
+                申請料  9000円
+            </visa>
+        </country>
+
+        <country country_code="7" country_in_region_code="7">
+            <name>韓国</name>
+            <flag>korea</flag>
+            <visa>
+                観光ビザ 滞在期間 90日
+                業務3ヶ月シングル 最大滞在日数 90日以内 有効期間 発給日3ヶ月
+                申請料金  4400円
+            </visa>
+        </country>
+
+        <country country_code="8" country_in_region_code="8">
+            <name>中国</name>
+            <flag>china</flag>
+            <visa>15日以内の滞在はビザ不要。</visa>
+        </country>
+
+        <country country_code="9" country_in_region_code="9">
+            <name>ネパール</name>
+            <flag>nepal</flag>
+            <visa>
+                観光6ヶ月マルチブル  15日滞在 最大滞在可能日数
+                15日(最初に入国した日から15日以内に複数回の入国が可能)
+                申請料 4000円
+                アライバルビザ 現地取得
+            </visa>
+        </country>
+
+        <country country_code="10" country_in_region_code="10">
+            <name>パキスタン</name>
+            <flag>pakistan</flag>
+            <visa>事前にビザ取得が必要</visa>
+        </country>
+
+        <country country_code="11" country_in_region_code="11">
+            <name>バングラデシュ</name>
+            <flag>bangladesh</flag>
+            <visa>事前にビザ取得が必要</visa>
+        </country>
+
+        <country country_code="12" country_in_region_code="12">
+            <name>東ティモール</name>
+            <flag>timorleste</flag>
+            <visa>
+                空路での入国時に30日間滞在可能なビザが取得可能。ビザ料金（US$30）、出国用航空券、宿泊予約証明書、十分な滞在費（US$100＋US$50×滞在日数分）が必要。
+                陸路入国の場合、事前にビザ取得が必要。
+            </visa>
+        </country>
+
+        <country country_code="13" country_in_region_code="13">
+            <name>フィリピン</name>
+            <flag>philippines</flag>
+            <visa>14日以内はビザ不要</visa>
+        </country>
+
+        <country country_code="14" country_in_region_code="14">
+            <name>ブータン</name>
+            <flag>bhutan</flag>
+            <visa>
+                事前にブータン旅行を扱う旅行会社で入国許可証を取得。
+                ビザは入国時取得。
+            </visa>
+        </country>
+
+        <country country_code="15" country_in_region_code="15">
+            <name>ブルネイ</name>
+            <flag>brunei</flag>
+            <visa>
+                観光ビザ1ヶ月シングル
+                最大滞在可能日数  1ヶ月 有効期間  1ヶ月 申請料  5500円
+                観光ビザ1ヶ月マルチブル
+                最大滞在可能日数  1ヶ月 有効期間  1ヶ月(有効期間内で出入国が何回でも可能)
+                観光3ヶ月シングル 最大滞在可能日数 3ヶ月 有効期間  3ヶ月 申請料  7500円
+                観光3ヶ月マルチブル
+                最大滞在可能  3ヶ月
+                有効期間  3ヶ月(有効期間内で入出国が何回でも可能)
+                申請料  14500円
+            </visa>
+        </country>
+
+        <country country_code="16" country_in_region_code="16">
+            <name>ベトナム</name>
+            <flag>vietnam</flag>
+            <visa>
+                15日以内の観光、業務目的滞在はビザ不要。
+                往復予約済航空券または第三国行きの航空券が必要。
+                前回のベトナム出国日から30日以内に再入国する場合はビザが必要。
+            </visa>
+        </country>
+
+        <country country_code="17" country_in_region_code="17">
+            <name>マレーシア</name>
+            <flag>malaysia</flag>
+            <visa>
+                観光ビザ
+                対象国籍 日本 韓国 滞在期間  30日以内
+                観光ビザ3ヶ月シングル
+                最大滞在可能日数  28日以内 有効期間  3ヶ月以内に入国が必要 申請料  4200円
+            </visa>
+        </country>
+
+        <country country_code="18" country_in_region_code="18">
+            <name>ミャンマー</name>
+            <flag>myanmar</flag>
+            <visa>
+                事前にビザまたはeVISAの取得が必要。
+                一部のビザ種類のみ現地到着空港で取得可能。
+                観光目的は2018年10月1日～2019年9月30日の入国で条件を満たせばビザ不要。
+            </visa>
+        </country>
+
+        <country country_code="19" country_in_region_code="19">
+            <name>モルディブ</name>
+            <flag>maldives</flag>
+            <visa>
+                観光目的であれば、通常30日以内の滞在についてはビザは不要。
+                ただし、復路航空券の所持、ホテルの予約が求められる。
+                30日を超える場合は、モルディブの出入国管理局で申請する。最大90日まで延長可能。
+            </visa>
+        </country>
+
+        <country country_code="20" country_in_region_code="20">
+            <name>モンゴル</name>
+            <flag>mongolia</flag>
+            <visa>30日以内の滞在はビザ不要。n\出国用航空券が必要。</visa>
+        </country>
+
+        <country country_code="21" country_in_region_code="21">
+            <name>ラオス</name>
+            <flag>laos</flag>
+            <visa>
+                日本国籍の方は特定の条件を満たせばビザなしでラオス入国可能。
+                パスポートの残存有効期間が入国時に6ヶ月以上あること。
+                ラオスでの滞在日数が入国日より原則15日以内
+                日本からビザなしで行く場合、空港でのアライバルビザ取得が可能。
+            </visa>
+        </country>
+
+        <country country_code="22" country_in_region_code="22">
+            <name>日本</name>
+            <flag>japan</flag>
+            <visa>NOT</visa>
+        </country>
+
+        <country country_code="23" country_in_region_code="23">
+            <name>香港</name>
+            <flag>hongkong</flag>
+            <visa>
+                観光、一般商務、外交・公用目的で
+                90日以内以下の滞在であれば不要。
+            </visa>
+        </country>
+
+        <country country_code="24" country_in_region_code="24">
+            <name>北朝鮮</name>
+            <flag>northkorea</flag>
+            <visa>事前にビザ取得が必要。ビザ取得日数は1ヵ月必要</visa>
+        </country>
+
+        <country country_code="25" country_in_region_code="25">
+            <name>台湾</name>
+            <flag>taiwan</flag>
+            <visa>
+                到着日の翌日深夜0時から起算して90泊91日以内の滞在はビザ不要。
+                往復予約済航空券または第三国へ出国するための予約済航空券が必要。
+            </visa>
+        </country>
+
+    </regions>
+
+
+    <regions region="オセアニア" region_code="2">
+        <country country_code="26" country_in_region_code="1">
+            <name>オーストラリア</name>
+            <flag>australia</flag>
+            <visa>
+                ETAS マルチブル
+                最大滞在日数  3ヶ月(1回の入国で滞在が可能な最大日数)
+                有効期間  許可日から最長12ヶ月以内で何回でも入国が可能     
+                (パスポートの有効期限が1年以内の場合はパスポート有効期限まで) 申請料  0円
+                file:///.file/id=6571367.4299098
+
+                ワーキングホリデービザ
+                最大滞在日数  12ヶ月 有効期間
+                ビザの発行から12ヶ月以内に入国すること 申請料  目安600豪ドル
+                *特定の条件を満たすと延長可。
+                file:///.file/id=6571367.4299202
+
+                学生ビザ
+                有効期間  コース終了から1−2ヶ月 申請料  620豪ドル
+            </visa>
+        </country>
+        
+        <country country_code="27" country_in_region_code="2">
+            <name>キリバス共和国</name>
+            <flag>kiribati</flag>
+            <visa>NOT</visa>
+        </country>
+        
+        <country country_code="28" country_in_region_code="3">
+            <name>クック諸島</name>
+            <flag>cookislands</flag>
+            <visa>
+                3ヶ月以内の刊行は査証不要。
+                ただし、往復航空券、滞在資金、第三国への査証（必要な場合）があること
+            </visa>
+        </country>
+        
+        
+        <country country_code="29" country_in_region_code="4">
+            <name>サモア</name>
+            <flag>samoa</flag>
+            <visa>
+                60日以内滞在は査証不要。
+                以下が必要な書類
+                ・出国用航空券
+                ・第三国への入国査証（必要な場合）
+                ・宿泊予約証明書
+                ・滞在費用証明
+            </visa>
+        </country>
+        
+        <country country_code="30" country_in_region_code="5">
+            <name>ソロモン諸島</name>
+            <flag>solomonislands</flag>
+            <visa>入国時目的別に３ヶ月有効な査証が発給される。</visa>
+        </country>
+        
+        <country country_code="31" country_in_region_code="6">
+            <name>ツバル</name>
+            <flag>tuvalu</flag>
+            <visa>
+                入国時滞在査証（最長１ヶ月）が付与される。
+                帰国用航空券または次の訪問先への航空券、十分な滞在費用が必要。
+            </visa>
+        </country>
+        
+        
+        <country country_code="32" country_in_region_code="7">
+            <name>トンガ</name>
+            <flag>tonga</flag>
+            <visa>
+                31日間滞在可能な査証を入国時に発給。
+                入国時に旅券、出国用航空券（乗船券）が必要。
+                滞在延長は入国管理局で申請可能。
+            </visa>
+        </country>
+        
+        <country country_code="33" country_in_region_code="8">
+            <name>ナウル</name>
+            <flag>nauru</flag>
+            <visa>
+                ナウルビザ申請はナウル本国入国管理局へ郵送やEーmailなどの手段の手続き必要。
+                申請料  9900円
+            </visa>
+        </country>
+        
+        <country country_code="34" country_in_region_code="9">
+            <name>ニウエ</name>
+            <flag>niue</flag>
+            <visa>NOT</visa>
+        </country>
+        
+        <country country_code="35" country_in_region_code="10">
+            <name>ニュージーランド</name>
+            <flag>newzealand</flag>
+            <visa>
+                3カ月以内の観光は査証不要。
+                無査証の場合、往復航空券と滞在資金があること。
+                ただし、2019年10月よりニュージーランドへ渡航する際、
+                日本を含む査証免除国籍及び通過査証免除国籍を所持している旅行者は、
+                入国または通過の際に事前にeTA（電子渡航認証）の取得が必要。
+
+                ・NZeTA
+                必要となるタイミング、入国時、経由時
+                申請期限　渡航７２時間前まで
+                有効期間　２年間
+                滞在可能期間　３ヶ月以内 
+
+                　　　　・NZeTAとは？
+                https://www.nz.emb-japan.go.jp/visiting_japan/resources/20190924NZeTA.pdf
+
+            </visa>
+        </country>
+        
+        <country country_code="36" country_in_region_code="11">
+            <name>バヌアツ</name>
+            <flag>vanuatu</flag>
+            <visa>１ヶ月以内の観光は査証不要</visa>
+        </country>
+        
+        <country country_code="37" country_in_region_code="12">
+            <name>パプアニューギニア</name>
+            <flag>papuanewguinea</flag>
+            <visa>
+                アライバルビザ
+                60日以内の観光及び商用目的の場合、ポートモレスビーのジャクソン国際空港(POM)でシングルビザの取得が可能。
+            </visa>
+        </country>
+        
+        <country country_code="38" country_in_region_code="13">
+            <name>パラオ</name>
+            <flag>palau</flag>
+            <visa>NOT</visa>
+        </country>
+        
+        <country country_code="39" country_in_region_code="14">
+            <name>フィジー</name>
+            <flag>fiji</flag>
+            <visa>NOT</visa>
+        </country>
+        
+        <country country_code="40" country_in_region_code="15">
+            <name>マーシャル諸島</name>
+            <flag>marshallislands</flag>
+            <visa>NOT</visa>
+        </country>
+        
+        <country country_code="41" country_in_region_code="16">
+            <name>ミクロネシア</name>
+            <flag>micronesia</flag>
+            <visa>
+                日本人が観光目的でミクロネシア連邦に渡航する場合、
+                ３０日以内の滞在なら原則としてビザは不要です。
+                また、到着後に各州の入国管理局にて
+                最大９０日までの滞在期間延長が可能です。
+            </visa>
+        </country>
+
+    </regions>
+
+
+    <regions region="北米" region_code="3">
+        <country country_code="42" country_in_region_code="1">
+            <name>アメリカ</name>
+            <flag>usa</flag>
+            <visa>
+                ESTA
+                最大滞在日数  90日以内(1回の入国で滞在が可能な最大日数)
+                有効期間  承認日から最大2年(有効期間内で上記滞在可能日数の入国が何回でも可
+                能)*パスポートの有効期限が2年以内の場合はパスポート有効期限まで
+                申請料 1610円
+                file:///.file/id=6571367.4301825
+            </visa>
+        </country>
+        
+        <country country_code="43" country_in_region_code="2">
+            <name>カナダ</name>
+            <flag>canada</flag>
+            <visa>
+                最大６ヶ月以内の観光は査証不要。
+                電子渡航認証eTAの取得が必要。
+                18歳未満の者が観光目的で入国する場合、入国審査時に保護者からの渡航同意書が必要。
+                eTA
+                手数料　７CAD(C$・カナダドル)
+                必要となるタイミング　入国時、経由時
+                申請期限　出発前まで
+                有効期間　５年間
+                滞在可能期間　６ヶ月いない
+            </visa>
+        </country>
+
+    </regions>
+
+
+    <regions region="中・南米" region_code="4">
+
+        <country country_code="44" country_in_region_code="1">
+            <name>アルゼンチン</name>
+            <flag>argentina</flag>
+            <visa>
+                90日以内の観光は査証不要。
+                無査証の場合、往復予約済航空券、または次の訪問国への航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="45" country_in_region_code="2">
+            <name>アンティグア・バーブーダ</name>
+            <flag>antiguabarbuda</flag>
+            <visa>
+                観光は査証不要（滞在期間は入国審査官判断）。
+                入国時に出国要予約済航空券（乗船券・乗車券）、次の訪問国の査証（必要な場合）、十分な滞在費用が必要。
+            </visa>
+        </country>
+
+        <country country_code="46" country_in_region_code="3">
+            <name>ウルグアイ</name>
+            <flag>uruguay</flag>
+            <visa>90日以内の滞在は査証不要。</visa>
+        </country>
+
+        <country country_code="47" country_in_region_code="4">
+            <name>エクアドル</name>
+            <flag>ecuador</flag>
+            <visa>90日以内の観光は査証不要。観光は年間合計90日まで滞在可能。</visa>
+        </country>
+
+        <country country_code="48" country_in_region_code="5">
+            <name>エルサルバドル</name>
+            <flag>elsalvador</flag>
+            <visa>90日以内の観光は査証不要。</visa>
+        </country>
+
+        <country country_code="49" country_in_region_code="6">
+            <name>ガイアナ</name>
+            <flag>guyana</flag>
+            <visa>入国に際して、３ヶ月以内の滞在ならビザは不要。</visa>
+        </country>
+
+        <country country_code="50" country_in_region_code="7">
+            <name>キューバ</name>
+            <flag>cuba</flag>
+            <visa>
+                30日以内の観光目的はビザ不要(ツーリストカード取得が必要)事前に滞在期間内の医療費 をカバーする保険(アメリカ系以外の会社)の加入が必要。
+            </visa>
+        </country>
+        
+        <country country_code="51" country_in_region_code="8">
+            <name>グアテマラ</name>
+            <flag>guatemala</flag>
+            <visa>90日以内の観光目的は査証不要。出国用航空券が必要。</visa>
+        </country>
+        
+        <country country_code="52" country_in_region_code="9">
+            <name>グレナダ</name>
+            <flag>grenada</flag>
+            <visa>短期（３ヶ月以内）の観光目的の旅行ではビザは必要なし。</visa>
+        </country>
+        
+        <country country_code="53" country_in_region_code="10">
+            <name>コスタリカ</name>
+            <flag>costarica</flag>
+            <visa>
+                90日以内の観光は査証不要。入国審査時出国を証明する書類の提示が必要。
+                旅券残存が90日以下の場合、残存と同日分の滞在許可になる。
+            </visa>
+        </country>
+
+        <country country_code="54" country_in_region_code="11">
+            <name>コロンビア</name>
+            <flag>colombia</flag>
+            <visa>90日以内の観光は査証不要。無査証の場合、往復航空券が必要。</visa>
+        </country>
+
+        <country country_code="55" country_in_region_code="12">
+            <name>ジャマイカ</name>
+            <flag>jamaica</flag>
+            <visa>30日以内の観光は査証不要</visa>
+        </country>
+
+        <country country_code="56" country_in_region_code="13">
+            <name>スリナム</name>
+            <flag>suriname</flag>
+            <visa>３ヶ月以内の滞在ならビザ不要。</visa>
+        </country>
+
+        <country country_code="57" country_in_region_code="14">
+            <name>セントクリストファー・ネービス</name>
+            <flag>stkittsnevis</flag>
+            <visa>観光は査証不要（滞在期間は入国審査官判断）</visa>
+        </country>
+
+        <country country_code="58" country_in_region_code="15">
+            <name>セントビンセントおよびグレナディーン諸島</name>
+            <flag>stvincentthegrenadines</flag>
+            <visa>短期（１ヶ月）の観光目的の旅行ではビザは必要なし</visa>
+        </country>
+
+        <country country_code="59" country_in_region_code="16">
+            <name>セントルシア</name>
+            <flag>stlucia</flag>
+            <visa>観光は査証不要（滞在期間は入国審査官判断）</visa>
+        </country>
+
+        <country country_code="60" country_in_region_code="17">
+            <name>チリ</name>
+            <flag>chile</flag>
+            <visa>90日以内の観光は査証不要。</visa>
+        </country>
+
+        <country country_code="61" country_in_region_code="18">
+            <name>ドミニカ国</name>
+            <flag>dominica</flag>
+            <visa>3ヶ月以内の観光目的の滞在はビザ不要</visa>
+        </country>
+        
+        <country country_code="62" country_in_region_code="19">
+            <name>ドミニカ共和国</name>
+            <flag>dominicanrepublic</flag>
+            <visa>
+                観光はビザ不要(滞在期間は入国審査官判断)。
+                出国用予約済航空券(乗船証・乗車 券)、次の訪問国のビザ(必要な場合)、十分な滞在費用が必要。
+            </visa>
+        </country>
+        
+        <country country_code="63" country_in_region_code="20">
+            <name>トリニダード・トバゴ</name>
+            <flag>trinidadtobago</flag>
+            <visa>
+                ３ヶ月以内の観光は査証不要。
+                出国用航空券、滞在費用、滞在先が確保されていること。
+            </visa>
+        </country>
+        
+        <country country_code="64" country_in_region_code="21">
+            <name>ニカラグア</name>
+            <flag>nicaragua</flag>
+            <visa>30日以内の観光は査証不要 </visa>
+        </country>
+        
+        <country country_code="65" country_in_region_code="22">
+            <name>ハイチ</name>
+            <flag>haiti</flag>
+            <visa>
+                90日以内の観光目的滞在は査証不要。
+                予約済復路航空券の提示、US$40を所持していること。
+                要件はその都度確認する。
+            </visa>
+        </country>
+
+        <country country_code="66" country_in_region_code="23">
+            <name>パナマ</name>
+            <flag>panama</flag>
+            <visa>NOT</visa>
+        </country>
+
+        <country country_code="67" country_in_region_code="24">
+            <name>バハマ</name>
+            <flag>bahamas</flag>
+            <visa>
+                ６ヶ月未満の滞在は原則査証不要。出国用航空券、滞在費用証明書が必要。
+                バハマ最大180日の滞在は査証不要。出国用航空券、十分な滞在費を所持していること。
+            </visa>
+        </country>
+
+        <country country_code="68" country_in_region_code="25">
+            <name>パラグアイ</name>
+            <flag>paraguay</flag>
+            <visa>90日以内の観光は査証不要。</visa>
+        </country>
+
+        <country country_code="69" country_in_region_code="26">
+            <name>バルバドス</name>
+            <flag>barbados</flag>
+            <visa>就労目的を除く90日以内の滞在は査証不要。復路航空券があること。</visa>
+        </country>
+
+        <country country_code="70" country_in_region_code="27">
+            <name>ブラジル</name>
+            <flag>brazil</flag>
+            <visa>
+                日本、アメリカ、カナダ、オーストラリアの国籍の方は2019年6月17日以降で以下の条件を 満たすことで
+                ブラジル連邦共和国への無査証(ビザなし)入国が認められている。
+            </visa>
+        </country>
+
+        <country country_code="71" country_in_region_code="28">
+            <name>ベネズエラ</name>
+            <flag>venezuela</flag>
+            <visa>90日以内の観光は査証不要。</visa>
+        </country>
+
+        <country country_code="72" country_in_region_code="29">
+            <name>ベリーズ</name>
+            <flag>belize</flag>
+            <visa>９０日以内の観光は査証不要。滞在資金、空路入国は出国用航空券が必要。</visa>
+        </country>
+
+        <country country_code="73" country_in_region_code="30">
+            <name>ペルー</name>
+            <flag>peru</flag>
+            <visa>183日以内の観光目的の滞在はビザ不要。出国航空券が必要。</visa>
+        </country>
+
+        <country country_code="74" country_in_region_code="31">
+            <name>ボリビア</name>
+            <flag>bolivia</flag>
+            <visa>1ヶ月以内の観光目的はビザ不要。</visa>
+        </country>
+
+        <country country_code="75" country_in_region_code="32">
+            <name>ホンジュラス</name>
+            <flag>honduras</flag>
+            <visa>90日以内の観光は査証不要。</visa>
+        </country>
+        
+        <country country_code="76" country_in_region_code="33">
+            <name>メキシコ</name>
+            <flag>mexico</flag>
+            <visa>
+                最大180日以内の観光は査証不要。滞在日数は入国審査官により決定される。
+                入国時滞在費用証明、復路航空券の提示を求められる場合がある。
+            </visa>
+        </country>
+
+    </regions>
+
+    <regions region="ヨーロッパ" region_code="5">
+        <country country_code="77" country_in_region_code="1">
+            <name>アイスランド</name>
+            <flag>iceland</flag>
+            <visa>６ヶ月間で３ヶ月以内の観光は査証不要。</visa>
+        </country>
+        
+        <country country_code="78" country_in_region_code="2">
+            <name>アイルランド</name>
+            <flag>ireland</flag>
+            <visa>滞在期間、目的に関わらず査証不要。３ヶ月を超える場合は現地で外国人登録が必要。</visa>
+        </country>
+        
+        <country country_code="79" country_in_region_code="3">
+            <name>アゼルバイジャン</name>
+            <flag>azerbaijan</flag>
+            <visa>事前にビザまたはeVISA取得が必要。 </visa>
+        </country>
+        
+        <country country_code="80" country_in_region_code="4">
+            <name>アルバニア</name>
+            <flag>albania</flag>
+            <visa>
+                90日以内の滞在は査証不要。
+                査証料として10EUR(€・ユーロ),滞在中の費用証明、次の目的地への必要書類が必要。
+            </visa>
+        </country>
+        
+        <country country_code="81" country_in_region_code="5">
+            <name>アルメニア</name>
+            <flag>armenia</flag>
+            <visa>
+                2017年8月31日のアルメニア政府の決定により、
+                アルメニアに渡航する日本国籍保持者は、年間180日までの滞在に限り、査証取得が不要。
+            </visa>
+        </country>
+
+        <country country_code="82" country_in_region_code="6">
+            <name>アンドラ</name>
+            <flag>andorra</flag>
+            <visa>
+                90日以内の観光は査証不要。フランスまたはスペインからの陸路入国。
+                出入国審査はない（旅券、航空券の提示を求められる場合がある）
+            </visa>
+        </country>
+
+        <country country_code="83" country_in_region_code="7">
+            <name>イタリア</name>
+            <flag>italy</flag>
+            <visa>
+                最初のシェンゲン加盟国の入国日から６ヶ月間に合計90日の無査証滞在が可能。
+                すべての加盟国での滞在日数が合計90日以内であること。過去の渡航歴も確認する。
+                シェンゲン協定加盟国の出国用航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="84" country_in_region_code="8">
+            <name>ウクライナ</name>
+            <flag>ukraine</flag>
+            <visa>90日以内の滞在は査証不要。滞在費用証明が必要。</visa>
+        </country>
+
+        <country country_code="85" country_in_region_code="9">
+            <name>ウズベキスタン</name>
+            <flag>uzbekistan</flag>
+            <visa>
+                72時間以上滞在する外国人は，滞在登録が必要。
+                通過、観光、親族・知人訪問、業務、添乗の目的で
+                30日以内滞在可能。
+                申請料　2500円
+            </visa>
+        </country>
+
+        <country country_code="86" country_in_region_code="10">
+            <name>英国</name>
+            <flag>unitedkingdom</flag>
+            <visa>
+                観光ビザ
+                日本国籍保持者は観光（短期滞在）の場合、事前のビザ申請せずにイギリスに入国可能。
+                滞在可能期間は、入国日から師長６ヶ月までで、短期（最大30日間）であれば学校に通うなど観光傍ら就学も可能。
+
+                学生ビザ
+                ・イギリス入国日から最大６ヶ月/１１ヶ月
+            </visa>
+        </country>
+        
+        <country country_code="87" country_in_region_code="11">
+            <name>エストニア</name>
+            <flag>estonia</flag>
+            <visa>
+                日本国発行のパスポートをお持ちの方は、エストニアに入国し、過去180日以内の間で９０日間以内の滞在する場合には、査証の取得は不要。
+            </visa>
+        </country>
+        
+        <country country_code="88" country_in_region_code="12">
+            <name>オーストリア</name>
+            <flag>austria</flag>
+            <visa>
+                日本国旅券保持者は、観光、訪問、商用が目的で滞在期間が６ヶ月を超えない場合、ビザは必要なし。
+            </visa>
+        </country>
+        
+        <country country_code="89" country_in_region_code="13">
+            <name>オランダ</name>
+            <flag>netherlands</flag>
+            <visa>
+                日本国籍の方は条件を満たすことでオランダのビザなし入国可能。
+                渡航目的　　観光、商用、外交、公用
+                滞在期間　　あらゆる180日間の期間内で90日以内
+            </visa>
+        </country>
+
+        <country country_code="90" country_in_region_code="14">
+            <name>カザフスタン</name>
+            <flag>kazakhstan</flag>
+            <visa>30日以内の観光・商用の短期滞在の場合は大使館での申請は不要。</visa>
+        </country>
+
+        <country country_code="91" country_in_region_code="15">
+            <name>北マケドニア</name>
+            <flag>northmacedonia</flag>
+            <visa>日本国籍者は滞在30日間はビザが免除される。</visa>
+        </country>
+        
+        <country country_code="92" country_in_region_code="16">
+            <name>キプロス</name>
+            <flag>cyprus</flag>
+            <visa>３ヶ月以内の一般、外交・公用目的の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="93" country_in_region_code="17">
+            <name>ギリシャ</name>
+            <flag>greece</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、業務目的の滞在はビザが不要。出国用航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="94" country_in_region_code="18">
+            <name>キルギス</name>
+            <flag>kyrgyzstan</flag>
+            <visa>滞在期間が60日間を超えない場合はビザが不要</visa>
+        </country>
+
+        <country country_code="95" country_in_region_code="19">
+            <name>クロアチア</name>
+            <flag>croatia</flag>
+            <visa>
+                180日以内の期間に合計90日以内の観光、会議、商談を目的とした滞在はビザ不要。
+                1日あたり70EUR(€・ユーロ)相当額の滞在費用とホテル予約確認書が必要。
+            </visa>
+        </country>
+        
+        <country country_code="96" country_in_region_code="20">
+            <name>コソボ</name>
+            <flag>kosovo</flag>
+            <visa>
+                90日以内の滞在であればビザ不要。 パスポートの有効残存期間は入国時に3ヵ月以上必要。 
+                入国時に、滞在先・期間・目的を証明するもの、滞在費用証明、出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="97" country_in_region_code="21">
+            <name>サンマリノ</name>
+            <flag>sanmarino</flag>
+            <visa>
+                ヨーロッパのシェンゲン圏内国にて発行される有効な自由入国査証が必要。
+                サンマリノに観光目的で滞在する場合は90日以内。
+            </visa>
+        </country>
+        
+        <country country_code="98" country_in_region_code="22">
+            <name>ジョージア(グルジア)</name>
+            <flag>georgia</flag>
+            <visa>
+                入国日から起算し１年間以内の滞在は活動内容を問わずビザの取得が免除。
+                滞在期間をカバーする海外旅券保険への加入が必要。
+            </visa>
+        </country>
+        
+        <country country_code="99" country_in_region_code="23">
+            <name>スイス</name>
+            <flag>switzerland</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の気管内で90日以内の観光、業務目的の観光はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="100" country_in_region_code="24">
+            <name>スウェーデン</name>
+            <flag>sweden</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の気管内で90日以内の観光、業務目的の観光はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="101" country_in_region_code="25">
+            <name>スペイン</name>
+            <flag>spain</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の気管内で90日以内の観光、業務目的の観光はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="102" country_in_region_code="26">
+            <name>スロバキア</name>
+            <flag>slovakia</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の気管内で90日以内の観光、業務目的の観光はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="103" country_in_region_code="27">
+            <name>スロベニア</name>
+            <flag>slovenia</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の気管内で90日以内の観光、業務目的の観光はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="104" country_in_region_code="28">
+            <name>セルビア</name>
+            <flag>serbia</flag>
+            <visa>
+                90日以内の短期滞在（観光、商談、会議出席など）に限り、ビザは不要。
+                ※入国日から180日間のうち、合計滞在日数が90日以内。 ・パスポート残存有効期間は、セルビア出国予定日から最低3カ月以上が必要。
+            </visa>
+        </country>
+
+        <country country_code="105" country_in_region_code="29">
+            <name>タジキスタン</name>
+            <flag>tajikistan</flag>
+            <visa>
+                駐日タジキスタン大使館またはタジキスタン大使館・総領事館が設置されている第三国において、査証を取得するか、オンラインでＥビザを取得することが必要。
+                アライバルビザは不可。
+            </visa>
+        </country>
+
+        <country country_code="106" country_in_region_code="30">
+            <name>チェコ</name>
+            <flag>czechrepublic</flag>
+            <visa>
+                日本国籍の方がチェコへ90日以内の観光や商用を目的に渡航する際、ビザの申請は必要ありません。
+                チェコを含むシェンゲン協定加盟国では90日以内の渡航におけるビザ申請が免除されており、パスポートのみで入国が認められています。
+                2022年に導入が予定されている事前渡航認証制度“ETIAS（エティアス）”が施行された際は、事前にETIAS(エティアス)を取得する必要があります。 
+            </visa>
+        </country>
+        
+        <country country_code="107" country_in_region_code="31">
+            <name>デンマーク</name>
+            <flag>denmark</flag>
+            <visa>
+                日本国籍の方はデンマークへ90日以内の観光や商用などを目的に渡航する際は、ビザの取得が必要ありません。
+                現在はパスポートのみで渡航することが認められています。
+                2022年には渡航認証制度“ETIAS（エティアス）”の導入が予定されています。
+                ETIAS（エティアス）はデンマークを含むシェンゲン協定加盟国へ渡航する際に年齢を問わず必要となる渡航認証です。
+                ヨーロッパ諸国へ渡航を予定している方は、有効なパスポート、クレジットカードを用意し必ず申請を行いましょう。
+                なお、デンマークへ留学や就労、ワーキングホリデーなどを目的に90日以上滞在を希望する方は、渡航前に目的に応じた居住許可を取得しなければなりません。
+            </visa>
+        </country>
+        
+        <country country_code="108" country_in_region_code="32">
+            <name>ドイツ</name>
+            <flag>germany</flag>
+            <visa>
+                現在、日本国籍の方が90日以内の観光やビジネスまたは乗り換えを目的としてドイツへ渡航する際は、ビザを取得する必要はありません。
+                パスポートのみで入国が許可されており、パスポートの残存期間がドイツまたはシェンゲン協定国からの出国日より3か月以上あることが条件となります。
+                2022年より事前渡航認証システム“ETIAS（エティアス）“の導入が予定されており、ドイツを含むシェンゲン協定加盟国26か国へ渡航する際はETIAS（エティアス）の取得が必須となります。
+                ETIAS（エティアス）申請は空路、海路、陸路の全ての入国で必要となり、年齢を問わず取得する必要があります。ETIAS（エティアス）はオンラインで全ての手続きが完結し、申請から取得まで即日～4週間を要すると発表されています。なお、ETIAS（エティアス）でドイツへ入国する際は90日以内の滞在が許可されますが、ドイツではEU加盟国や日本など欧州域外の一部の国を対象に入国後に長期滞在ビザを申請することが認められています。
+                ドイツの語学学校や大学への留学、就職や研究などを目的として長期滞在を希望する場合はドイツ入国後にビザを申請することが可能です。
+            </visa>
+        </country>
+
+        <country country_code="109" country_in_region_code="33">
+            <name>トルクメニスタン</name>
+            <flag>turkmenistan</flag>
+            <visa>
+                事前にビザ取得が必要。
+                トルクメニスタンの入国管理局からの招待状を所持してる方のみビザ申請可。
+            </visa>
+        </country>
+
+        <country country_code="110" country_in_region_code="34">
+            <name>ノルウェー</name>
+            <flag>norway</flag>
+            <visa>
+                日本国籍の方が90日以内の観光や商用を目的にノルウェーを訪れる際、ビザを取得せずに入国が認められます。
+                2022年より導入が予定されている渡航認証制度ETIAS（エティアス）施行後は、事前に渡航認証の申請が必須となります。
+            </visa>
+        </country>
+        
+        <country country_code="111" country_in_region_code="35">
+            <name>バチカン</name>
+            <flag>vatican</flag>
+            <visa>イタリアの入国条件を満たしていればビザ不要。</visa>
+        </country>
+        
+        <country country_code="112" country_in_region_code="36">
+            <name>ハンガリー</name>
+            <flag>hungary</flag>
+            <visa>
+                無査証滞在の条件　（シェンゲン協定加盟国）
+                渡航目的　観光、業務、外交、公用
+                滞在可能期間　　１８０日
+            </visa>
+        </country>
+        
+        <country country_code="113" country_in_region_code="37">
+            <name>フィンランド</name>
+            <flag>finland</flag>
+            <visa>
+                シェンゲン協定加盟国。あらゆる180日間の期間内で90日以内の観光、出張、添乗、短期留学の滞在はビザ不要。
+            </visa>
+        </country>
+        
+        <country country_code="114" country_in_region_code="38">
+            <name>フランス</name>
+            <flag>france</flag>
+            <visa>シェンゲン協定加盟国。
+            あらゆる180日間の期間内で90日以内の観光、出張、添乗、短期留学の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="115" country_in_region_code="39">
+            <name>ブルガリア</name>
+            <flag>bulgaria</flag>
+            <visa>
+                観光、知人・親族訪問、短期商用などの短期滞在を目的とする90日以内の滞在であれば、査証を取得することなく、ブルガリアに入国可能。
+            </visa>
+        </country>
+        
+        <country country_code="116" country_in_region_code="40">
+            <name>ベラルーシ</name>
+            <flag>belarus</flag>
+            <visa>観光・商用・知人訪問目的でミンスク国立空港より空路で入国する場合のみ出入国を含め最長30日以内の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="117" country_in_region_code="41">
+            <name>ベルギー</name>
+            <flag>belgium</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。
+                出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="118" country_in_region_code="42">
+            <name>ポーランド</name>
+            <flag>poland</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。
+                出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="119" country_in_region_code="43">
+            <name>ボスニア・ヘルツェゴヴィナ</name>
+            <flag>bosniaherzegovina</flag>
+            <visa>90日以内の観光・業務目的はビザ不要。</visa>
+        </country>
+        
+        <country country_code="120" country_in_region_code="44">
+            <name>ポルトガル</name>
+            <flag>portugal</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。
+                出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="121" country_in_region_code="45">
+            <name>マルタ</name>
+            <flag>malta</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。
+                出国用航空券が必要。
+            </visa>
+        </country>
+        
+        <country country_code="122" country_in_region_code="46">
+            <name>モナコ</name>
+            <flag>monaco</flag>
+            <visa>あらゆる180日間の期間内で90日以内の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="123" country_in_region_code="47">
+            <name>モルドバ</name>
+            <flag>moldova</flag>
+            <visa>
+                最初の入国日より６ヶ月間で90日以内の滞在はビザ不要。
+                就労、留学であってもビザが必要。
+            </visa>
+        </country>
+        
+        <country country_code="124" country_in_region_code="48">
+            <name>モンテネグロ</name>
+            <flag>montenegro</flag>
+            <visa>
+                最初の入国日より６ヶ月間で90日以内の滞在はビザ不要。
+                入国後24時間以内に最寄りの警察署で滞在登録が必要。
+            </visa>
+        </country>
+        
+        <country country_code="125" country_in_region_code="49">
+            <name>ラトビア</name>
+            <flag>latvia</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="126" country_in_region_code="50">
+            <name>リトアニア</name>
+            <flag>lithuania</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="127" country_in_region_code="51">
+            <name>リヒテンシュタイン</name>
+            <flag>liechtenstein</flag>
+            <visa>
+                シェンゲン協定加盟国。
+                あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。出国用航空券が必要。
+            </visa>
+        </country>
+
+        <country country_code="128" country_in_region_code="52">
+            <name>ルーマニア</name>
+            <flag>romania</flag>
+            <visa>180日間の期間内で90日以内の観光、業務、知人親族訪問、通過等の目的の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="129" country_in_region_code="53">
+            <name>ルクセンブルク</name>
+            <flag>luxembourg</flag>
+            <visa>シェンゲン協定加盟国。あらゆる180日間の期間内で90日以内の観光、訪問、業務目的の滞在はビザ不要。出国用航空券が必要。</visa>
+        </country>
+        
+        <country country_code="130" country_in_region_code="54">
+            <name>ロシア</name>
+            <flag>russia</flag>
+            <visa>
+                観光ビザ
+                日本国民、その他国民、無国籍者向けに観光目的の短期滞在用に発行されます。
+                ロシア側団体からの外国人旅行者受け入れ確認書を基に、ロシア外務省への登録および旅行リファレンス番号が必要。
+
+                * 短期のビジネス交渉、博覧会、オークションへの参加、治療や医療調査目的の場合。
+                外国人旅行者受け入れ確認書の旅行の目的欄にこれらの目的を記入すれば、
+                滞在予定表に記載され、上記イベントに必要な日数分のビザが発行される。
+
+                * ダブルの観光ビザは、書類に従い、外国人がロシア滞在中にロシア隣国やその他の国を訪問し、
+                帰国時に再度ロシア領内を通過する場合のみ発行される。
+                この場合、経路は受け入れ先のロシア側団体が発行した外国人旅行者受け入れ確認書に明記されている必要があり。
+                この際のダブルの観光ビザ（および一次入国ビザ）の有効期限は1ヶ月以内となっている。
+
+                * 2017年1月1日より、ロシア連邦の外交使節団および領事機関は、
+                1996年8月5日付連邦法25.6条№144-FZ号「ロシア連邦からの出国およびロシア連邦への入国手続関連法」に基づき、
+                日本国民に対して6ヶ月間までの数次ビザを発行している。
+                このビザでは、日本人はロシア国内に30日間を超えて連続滞在できず、最長の合計滞在期間が90日間となる。
+            </visa>
+        </country>
+        
+    </regions>
+
+
+    <regions region="中東" region_code="6">
+        <country country_code="131" country_in_region_code="1">
+            <name>アフガニスタン</name>
+            <flag>afghanistan</flag>
+            <visa>外務省はアフガニスタン全土に対して「退避勧告」を発出中。</visa>
+        </country>
+        
+        <country country_code="132" country_in_region_code="2">
+            <name>アラブ首長国連邦</name>
+            <flag>uae</flag>
+            <visa>30日以内の一般目的の滞在はビザ不要。</visa>
+        </country>
+
+        <country country_code="133" country_in_region_code="3">
+            <name>イエメン</name>
+            <flag>yemen</flag>
+            <visa>
+                1ヶ月有効の観光ビザと商用ビザがあり、いずれも日本のイエメン大使館で取得できる。
+                申請費用 6000円。
+            </visa>
+        </country>
+        
+        <country country_code="134" country_in_region_code="4">
+            <name>イスラエル</name>
+            <flag>israel</flag>
+            <visa>90日以内の一般、収入を伴わない業務の滞在はビザ不要。</visa>
+        </country>
+        
+        <country country_code="135" country_in_region_code="5">
+            <name>イラク</name>
+            <flag>iraq</flag>
+            <visa>観光ビザの有効期間は30日間。時期によって変わる観光ビザ事情。</visa>
+        </country>
+        
+        <country country_code="136" country_in_region_code="6">
+            <name>イラン</name>
+            <flag>iran</flag>
+            <visa>
+                観光シングル
+                滞在可能日数　30日以内
+                有効期間　90日
+                申請料　普通2500円  緊急3750円
+            </visa>
+        </country>
+
+        <country country_code="137" country_in_region_code="7">
+            <name>オマーン</name>
+            <flag>oman</flag>
+            <visa>
+                オマーンへの入国にはビザ（査証）が必要。
+                2018年3月21日以降日本国籍の方は原則 e-Visa（オンラインビザ： https://evisa.rop.gov.om/ ）
+                を事前に取得する必要があり。従来のアライバルビザの取得は当面可能だが，
+                事前に査証を取得しなかった場合、入国手続に相当な時間を要する可能性あり。
+            </visa>
+        </country>
+        
+        <country country_code="138" country_in_region_code="8">
+            <name>カタール</name>
+            <flag>qatar</flag>
+            <visa>
+                在日カタール大使館では、外交・公用以外の査証発給は行なっていない。
+                日本を含む33ヵ国の国籍保持者は、観光・業務目的で1ヵ月以内滞在の場合、査証は現地ドーハ空港（DOH）で取得可能。
+                （1ヵ月を超える滞在は現地で延長手続きが必要）
+            </visa>
+        </country>
+        
+        <country country_code="139" country_in_region_code="9">
+            <name>クウェート</name>
+            <flag>kuwait</flag>
+            <visa>
+                日本国籍の方はクウェート国際空港到着時に観光・商用目的の短期滞在ビザを取得することが可能。
+                ビザは入国時より1か月間有効で、一回の入国に限り有効。
+                数次入国ビザ（マルチプル）やトランジットビザは発行されない。
+            </visa>
+        </country>
+        
+        <country country_code="140" country_in_region_code="10">
+            <name>サウジアラビア</name>
+            <flag>saudiarabia</flag>
+            <visa>
+                サウジアラビア入国には、査証が必要。
+                一般旅券の場合は、サウジアラビアにある申請人の受け入れ先（スポンサー）がサウジ内務省に対してウェブサイトを通じて事前申請を行う。
+                スポンサーの事前申請から１～２週間後、ウエブサイト上に申請結果が掲載される。
+                許可された場合は、スポンサーがその許可書をダウンロードして申請人に送り、申請人はビザセンターに査証申請手続きを行う。
+                サウジ入国査証の詳細については、在京サウジアラビア大使館を参照。
+            </visa>
+        </country>
+        
+        <country country_code="141" country_in_region_code="11">
+            <name>シリア</name>
+            <flag>syria</flag>
+            <visa>
+                ビザが必要。在日シリア大使館で取得可能。
+                シングル2600円、マルチプル5200円。
+            </visa>
+        </country>
+
+        <country country_code="142" country_in_region_code="12">
+            <name>トルコ</name>
+            <flag>turkey</flag>
+            <visa>
+                90日以内の観光、商談目的の滞在はビザ不要。あらゆる180日間の期間内で合計90日を超える滞在は不可。
+                技術指導、装置組立て、機械修理の目的での滞在はビザが必要。
+            </visa>
+        </country>
+
+        <country country_code="143" country_in_region_code="13">
+            <name>バーレーン</name>
+            <flag>bahrain</flag>
+            <visa>14日以内の観光、業務目的の滞在は現地空港にて取得可能。</visa>
+        </country>
+
+        <country country_code="144" country_in_region_code="14">
+            <name>ヨルダン</name>
+            <flag>jordan</flag>
+            <visa>
+                日本人は、陸、海、空路全ての国境で（キング、フセイン、ワディ・アラバ国境を除く）１ヶ月滞在可能なビザを無料で取得可能。
+            </visa>
+        </country>
+
+        <country country_code="145" country_in_region_code="15">
+            <name>レバノン</name>
+            <flag>lebanon</flag>
+            <visa>観光、業務目的で１ヶ月以内の滞在は現地空港にて取得（大使館での発給は不可）</visa>
+        </country>
+
+    </regions>
+
+
+    <regions region="アフリカ" region_code="7">
+
+        <country country_code="146" country_in_region_code="1">
+            <name>アルジェリア</name>
+            <flag>algeria</flag>
+            <visa>
+                現地の旅行代理店
+                アルジェリア旅行を企画している日本の旅行代理店に連絡する必要がある
+                (バックパッカーのような個人旅行は現在できません)
+                滞在期間  30日 90日の2種類
+                観光ビザ料金  4800円
+            </visa>
+        </country>
+
+        <country country_code="147" country_in_region_code="2">
+            <name>アンゴラ</name>
+            <flag>angola</flag>
+            <visa>
+                観光ビザ
+                滞在期間  30日以下の滞在が可能 有効期間  発給日から60日間以内に使用しなければならない。 
+                申請料  7980円
+            </visa>
+        </country>
+        
+        <country country_code="148" country_in_region_code="3">
+            <name>ウガンダ</name>
+            <flag>uganda</flag>
+            <visa>
+                観光3ヶ月シングル 滞在可能日数  最長90日以内で入国時の審査官の判断で決定 申請料  6500円
+            </visa>
+        </country>
+
+        <country country_code="149" country_in_region_code="4">
+            <name>エジプト</name>
+            <flag>egypt</flag>
+            <visa>
+                観光シングル
+                滞在可能日数  30日以内 有効期間  発給日から2ヶ月(有効期間内に入国が必要)
+                申請料  7500円
+                観光マルチブル
+                滞在可能日数  30日以内 有効期間  発給日から3ヶ月(有効期間内に上記滞在可能日数ないの入国が何回でも可能)
+                申請料 10500円
+
+                アライバルビザ 日本国籍の一般旅券所持者の観光ビザはカイロ国際空港で取得可能。
+            </visa>
+        </country>
+
+        <country country_code="150" country_in_region_code="5">
+            <name>エスワティニ</name>
+            <flag>eswatini</flag>
+            <visa>30日以内の観光，商用目的の滞在であれば入国ビザは必要なし。
+            ただし，エスワティニ入国時，旅券の残存有効期間が入国日より3か月以上あること，査証欄に未使用のページが2ページ以上あることが必要。</visa>
+        </country>
+        
+        <country country_code="151" country_in_region_code="6">
+            <name>エチオピア</name>
+            <flag>ethiopia</flag>
+            <visa>
+                観光1ヶ月シングル
+                滞在可能日数  最長1ヶ月以内で有効き加減まで
+                有効期間  申請日から1ヶ月以内に入出国が必要 申請料  4400円
+
+                観光3ヶ月シングル
+                滞在可能日数  最長3ヶ月以内で有効期限まで
+                有効期間   申請日から3ヶ月以内に入出国が必要
+                申請料  6600円
+
+                観光3ヶ月マルチブル
+                滞在可能日数  最長3ヶ月以内で有効期限まで
+                有効期間  申請日から3ヶ月以内に入出国が必要
+                申請料  7700円
+
+                観光6ヶ月マルチブル
+                滞在可能日数  最長6ヶ月以内で有効期限まで
+                有効期間  申請日から6ヶ月以内に入出国が必要
+                申請料  8800円
+
+                アライバルビザ 日本国籍の一般旅券保持者であれば、アディスアベバ・ボレ国際空港にて観光ビザの取得 が可能。
+                ビザ料金(US 20ドル)はドル紙幣のみとなっている。
+            </visa>
+        </country>
+        
+        <country country_code="152" country_in_region_code="7">
+            <name>エリトリア</name>
+            <flag>eritrea</flag>
+            <visa>
+                観光ビザシングル
+                観光ビザは入国後１ヶ月間
+                申請料5000円
+            </visa>
+        </country>
+        
+        <country country_code="153" country_in_region_code="8">
+            <name>ガーナ</name>
+            <flag>ghana</flag>
+            <visa>
+                観光3ヶ月シングル 
+                滞在可能日数  入国審査官判断で30日または60日以内 有効期間  3ヶ月(有効期間内に入国が必要)
+                申請料  9440円
+
+                観光3ヶ月マルチブル 滞在可能日数  入国審査官判断で1回の入国が30日または60日以内 有効期間   3ヶ月(有効期間内に入国が必要
+                申請料  11000円
+            </visa>
+        </country>
+        
+        <country country_code="154" country_in_region_code="9">
+            <name>カーボベルデ</name>
+            <flag>caboverde</flag>
+            <visa>
+                入国目的にかかわらずビザが必要であるが、到着地の空港で取得が可能。
+                日本にはカーボベルデ大使館はないため、事前取得の場合は在セネガル大使館等での手続きとなる。
+                なお、ビザの取得にあたっては、パスポートの残存有効期間が6ヶ月以上必要。
+            </visa>
+        </country>
+        
+        <country country_code="155" country_in_region_code="10">
+            <name>ガボン</name>
+            <flag>gabon</flag>
+            <visa>
+                ガボンへの入国時には，旅券，査証，黄熱予防接種証明書（イエローカード）が必要。
+                査証は渡航目的にかかわらず必要。
+                事前にe-VISA(https://evisa.dgdi.ga/ )の取得や駐日ガボン大使館等で査証を取得する必要あり。
+                出入国時には，全ての荷物について検査される。
+                空港係官は，英語をほとんど解さないので，ある程度のフランス語ができないと円滑な審査の支障となる可能性がある。
+            </visa>
+        </country>
+        
+        <country country_code="156" country_in_region_code="11">
+            <name>カメルーン</name>
+            <flag>cameroon</flag>
+            <visa>
+                渡航目的，滞在期間を問わず，事前に東京や各国にあるカメルーン大使館で査証を取得する必要があり。
+                入国査証は観光，商用及び外交・公用等に分けられている。
+                入国に当たっては，パスポート，査証及び黄熱予防接種証明書（イエローカード）の提示が必要。
+                外貨の持ち込みについては特に規制されていないが，持ち出しについては以下のとおり規制されている。
+
+
+                観光目的：最高400万CFAフラン相当額（約6,000ユーロ）
+                商用目的：最高1,000万CFAフラン相当額（約15,000ユーロ）
+                公用目的：最高400万CFAフラン相当額（約6,000ユーロ）
+                医療目的：最高500万CFAフラン相当額（約7,600ユーロ）
+
+                入国時よりも出国時における手荷物検査が厳重で，頻繁に荷物の開披検査が行われている。
+                トラブル防止のため，機内持ち込みが禁止されている物については，事前に預け荷物に収納する措置を徹底する必要がある。
+            </visa>
+        </country>
+        
+        <country country_code="157" country_in_region_code="12">
+            <name>ガンビア</name>
+            <flag>gambia</flag>
+            <visa>
+                入国目的を問わず査証が必要。
+                一般的には，ガンビア査証の発給代行を行っている駐日セネガル大使館あるいはセネガル（ダカール市ヨフ）にあるガンビア大使館で査証申請を行う。この場合，窓口に備えてある申請書2通に記入の上，残存有効期間が6か月以上あるパスポートと顔写真のある頁の写し2枚，写真2葉，手数料(35,000FCFA)の他，出入国手段（航空券等）の証明，滞在に必要な費用（現金等）の提示を求められることがある。短期滞在の場合1か月間の滞在ビザが取得出来るが，それを超える場合は，ガンビア入国後，出入国管理局に延長の申請をする必要がある。
+                黄熱予防接種が推奨されており，黄熱感染リスク国を経由して入国する場合は，入国審査時に，
+                黄熱予防接種証明書（イエローカード）の提示を求められる。
+                なお，黄熱予防接種証明書は接種後10日目から有効となるので，入国の10日以上前に予防接種を受ける必要がある。
+                陸路による出入国は，バスなどの車両に整備不良が多く見られるため，注意が必要。
+                また，南部からの陸路移動については，国境を隔てたセネガル・カザマンス地方の情勢が不安定なことから避けた方が良い。
+            </visa>
+        </country>
+        
+        <country country_code="158" country_in_region_code="13">
+            <name>ギニア</name>
+            <flag>guinea</flag>
+            <visa>
+                観光ビザ
+                滞在可能日数  3ヶ月 有効期間  最大3ヶ月(領事館判断) 申請料  15000円
+            </visa>
+        </country>
+        
+        <country country_code="159" country_in_region_code="14">
+            <name>ギニアビサウ</name>
+            <flag>guineabissau</flag>
+            <visa>
+                ギニアビサウにはビザなしで渡航することは不可能。
+                あらかじめビザを取得する必要がある。ただし、日本にはギニアビサウの大使館はないため、
+                ギニアビサウ大使館が位置する他の国に赴き、そこでビザを取得することが一般的である。
+                (同じ西アフリカに位置するセネガルなど）
+            </visa>
+        </country>
+        
+        <country country_code="160" country_in_region_code="15">
+            <name>ケニア</name>
+            <flag>kenya</flag>
+            <visa>
+                一次入国ビザ(観光、商用)
+                滞在可能日数  3ヶ月 有効期間  発給日から3ヶ月以内に入国 申請料  5500円
+
+                数次入国ビザ(マルチブル) 有効期間  6ヶ月または1年間 申請料  11000円
+            </visa>
+        </country>
+
+        <country country_code="161" country_in_region_code="16">
+            <name>コートジボワール</name>
+            <flag>ivorycoast</flag>
+            <visa>
+                観光ビザ
+                滞在可能日数  最大3ヶ月
+                有効期間  6ヶ月以上
+                申請料 TAX込みで58ユーロ
+            </visa>
+        </country>
+
+        <country country_code="162" country_in_region_code="17">
+            <name>コモロ</name>
+            <flag>comoros</flag>
+            <visa>
+                入国にはビザ（査証）が必要。日本にはコモロの在外公館が設置されていないため、
+                セネガル共和国大使館がビザ発給を代行している。
+            </visa>
+        </country>
+
+        <country country_code="163" country_in_region_code="18">
+            <name>コンゴ共和国</name>
+            <flag>congo</flag>
+            <visa>
+                観光3ヶ月シングル
+                滞在可能日数  領事館判断
+                有効期間  3ヶ月(有効期間内に入国が必要)
+                申請用  普通申請14000円
+                緊急申請21000円
+
+                観光3ヶ月マルチブル
+                滞在可能日数  領事館判断
+                有効期間  3ヶ月(有効期間内に入国が必要)
+                申請料  普通申請30000円
+                緊急申請37000円
+            </visa>
+        </country>
+        
+        <country country_code="164" country_in_region_code="19">
+            <name>コンゴ民主共和国</name>
+            <flag>thedemocraticrepubliccongo</flag>
+            <visa>
+                観光ビザシングル
+                滞在可能日数  1・2・3・6ヶ月
+                申請料  1ヶ月11000円 2ヶ月19000円 3ヶ月27000円 6ヶ月37000円
+                観光マルチブル
+                滞在可能日数  1・2・3・6ヶ月
+                有効期間  3ヶ月以内に最初の入国
+                申請料  1ヶ月17000円 2ヶ月25000円 3ヶ月31000円 6ヶ月37000円
+            </visa>
+        </country>
+        
+        <country country_code="165" country_in_region_code="20">
+            <name>サントメ・プリンシペ</name>
+            <flag>thedemocraticrepublicofsaotomeandprincipe</flag>
+            <visa>滞在期間が15日以内の邦人の方は，査証は不要。</visa>
+        </country>
+        
+        <country country_code="166" country_in_region_code="21">
+            <name>ザンビア</name>
+            <flag>zambia</flag>
+            <visa>
+                観光シングル
+                滞在可能日数  3ヶ月
+                有効期間  3ヶ月
+                申請料  50USドル
+                ザンビアのルサカ空港や各国境の入国管理事務所では30日間の短期滞在査証のみを発給している。
+
+                観光マルチブル
+                滞在可能日数  3ヶ月
+                有効期間  3ヶ月
+                申請料  80USドル
+            </visa>
+        </country>
+        
+        <country country_code="167" country_in_region_code="22">
+            <name>シエラレオネ</name>
+            <flag>sierraleone</flag>
+            <visa>
+                滞在期間が15日を超える予定の邦人の方は査証が必要。
+                事前に渡航目的に応じた査証を取得する必要がある。日本にはサントメ・プリンシペの大使館がないことから，
+                同国大使館が設置されているポルトガル，ベルギー，フランス，アンゴラ，ガボン，中国等において査証取得の手続きを行う。
+                入国時には，旅券，査証（15日を超えて滞在予定の方），黄熱予防接種証明書（イエローカード。黄熱非危険国から直接入国する場合を除く）の提示が必要。
+                なお，黄熱予防接種は，接種10日後から有効となる。
+                出国時には，旅券，搭乗券が必要。
+
+                シエラレオネ、日本とシエラレオネとの間には査証免除協定がないため，
+                シエラレオネに入国する場合は，必ず事前に査証を取得しなければならない。
+                一般的な査証としては短期査証があり，通常滞在期間90日以内で1回限り有効なものを付与される。
+                なお，日本にはシエラレオネ大使館はないため，経由地のシエラレオネ大使館で査証を取得することとなるが，
+                東京と大阪にある英国ビザ申請センターでも取得可能（完全予約制）
+            </visa>
+        </country>
+        
+        <country country_code="168" country_in_region_code="23">
+            <name>ジブチ</name>
+            <flag>djibouti</flag>
+            <visa>
+                観光ビザ
+                最大滞在日数  14日
+                有効期間  到着後14日
+                申請料  USD 32
+
+                最大滞在日数 90日
+                有効期間  到着後90日
+                申請料  USD 43
+            </visa>
+        </country>
+        
+        <country country_code="169" country_in_region_code="24">
+            <name>ジンバブエ</name>
+            <flag>zimbabwe</flag>
+            <visa>
+                アライバルビザ
+                6ヶ月以内の観光、商用、公用目的は入国時に査証申請を行っている。
+                在日大使館での査証 発給は不可 ダブル希望の場合、2回以上の入出国がわかる航空券が必要。
+                入国審査官の判断によってはシングルしか取得できない場合があり。
+            </visa>
+        </country>
+
+        <country country_code="170" country_in_region_code="25">
+            <name>スーダン</name>
+            <flag>sudan</flag>
+            <visa>
+                観光、商用ビザ
+                滞在可能日数　大使館判断
+                有効期間　発行日より１〜２ヶ月
+                料金　16000円
+            </visa>
+        </country>
+
+        <country country_code="171" country_in_region_code="26">
+            <name>セーシェル</name>
+            <flag>seychelles</flag>
+            <visa>
+                セーシェルに渡航する際には到着日から起算して6か月以上の有効期間を有するパスポートが必要。
+                短期の観光旅行などの場合は，セーシェル到着時に空港で入国審査官に旅券と帰路の航空券を提示すれば，
+                帰路便の予約日まで（最長1か月）の滞在許可が得られる。1年間オープンの航空券（帰路の予約日が記載されていない）の場合は，最長1か月の滞在許可が得られる。
+                また，滞在期間中のホテル予約，または，滞在1日につき100～150米ドルの滞在費用を確認されることがある。
+                　滞在期間の延長を希望する場合は，滞在許可期間が終了する一週間前までに，
+                入国する際に渡される滞在許可証の半券と滞在許可延長申請書（入国管理局で入手可）を持参の上，
+                首都ビクトリア市内にある入国管理局で申請しなければならない。
+                入国した日から起算して3か月までは無料ですが，それ以降は3か月毎に 5,000セーシェル・ルピー（約40,000円）が必要となり，最長1年間までとなっている。
+                1か月以上の長期滞在を予定する場合は，事前にセーシェルの雇用・入国管理・市民権省から滞在許可延長申請書などを取り寄せておけば，
+                セーシェル到着時に入国審査官にその文書を提示して滞在許可を取得可能。この場合，帰路の航空券は必要なし。
+            </visa>
+        </country>
+        
+        <country country_code="172" country_in_region_code="27">
+            <name>赤道ギニア</name>
+            <flag>equatorialguinea</flag>
+            <visa>
+                赤道ギニアへの入国時には，旅券，査証，黄熱予防接種証明書（イエローカード），入国カード等が必要。
+                また，入国管理官による指紋の採取，顔写真の撮影が行われるほか，滞在日程，宿泊先等について聴取される。
+                査証は渡航目的にかかわらず必要。日本には赤道ギニアの大使館がないため（在中国赤道ギニア大使館が日本を兼轄）
+                海外の同国大使館において査証を取得する必要がある。同国大使館のある主な国は，
+                スペイン，フランス，中国，ガボン等で、査証申請には，次の書類等を提出する必要がある。
+            </visa>
+        </country>
+        
+        <country country_code="173" country_in_region_code="28">
+            <name>セネガル</name>
+            <flag>senegal</flag>
+            <visa>
+                2015年に，査証制度が見直され，セネガルに入国する日本国籍者は査証が不要となった。
+                　ただし，海外赴任等でセネガルへ片道の航空券で入国する場合，
+                乗り継ぎ等で利用する航空会社の搭乗手続きの際に，入国理由を詳細に尋ねられたり，
+                入国目的を証明する書類の提示を求められる場合があるため留意する必要がある。
+            </visa>
+        </country>
+        
+        <country country_code="174" country_in_region_code="29">
+            <name>ソマリア</name>
+            <flag>somalia</flag>
+            <visa>全土に危険情報「レベル4：退避してください。渡航は止めてください。（退避勧告）」を発出中</visa>
+        </country>
+        
+        <country country_code="175" country_in_region_code="30">
+            <name>タンザニア</name>
+            <flag>tanzania</flag>
+            <visa>
+                観光1ヶ月シングル
+                滞在可能日数  入国日から90日 
+                有効期間  3ヶ月
+                申請料  6000円
+            </visa>
+        </country>
+        
+        <country country_code="176" country_in_region_code="31">
+            <name>チャド</name>
+            <flag>chad</flag>
+            <visa>
+                渡航する場合は査証を取得する必要がある。
+                査証の有効期間は最長3か月で長期滞在者はチャド入国後72時間以内に入国管理局に出頭し滞在許可証を取得する必要がある。
+                入国には，パスポート，査証，黄熱予防接種証明書（イエローカード）の提示が必要。
+            </visa>
+        </country>
+        
+        <country country_code="177" country_in_region_code="32">
+            <name>中央アフリカ</name>
+            <flag>central6nrepublic</flag>
+            <visa>中央アフリカ共和国全土に「レベル4：退避してください。渡航は止めてください（退避勧告）」を発出中</visa>
+        </country>
+
+        <country country_code="178" country_in_region_code="33">
+            <name>チュニジア</name>
+            <flag>tunisia</flag>
+            <visa>３ヶ月以内の滞在はビザ不要。</visa>
+        </country>
+
+        <country country_code="179" country_in_region_code="34">
+            <name>トーゴ</name>
+            <flag>togo</flag>
+            <visa>
+                入国に際して，原則は各国にあるトーゴ大使館で入国前に査証（ビザ）を取得する必要があるが， ロメ空港でも取得可能。その場合，滞在目的を証明する書類を提示する必要がある。
+                また，空港では入国目的にかかわらず滞在期間が7日間の査証しか取得できないので，
+                それ以上の滞在を希望する場合は，入国後内務省国家保安局にて更新手続（1か月間有効，1回目の延長は無料）を行う必要があり。
+                入国時には，黄熱予防接種証明書（イエローカード）の提示が義務づけられている。
+                入国前に必ず予防接種を行い，黄熱予防接種証明書を持参し、検疫官が同証明書を確認した後に入国審査となる。
+            </visa>
+        </country>
+        
+        <country country_code="180" country_in_region_code="35">
+            <name>ナイジェリア</name>
+            <flag>nigeria</flag>
+            <visa>
+                観光3ヶ月シングル
+                滞在可能日数  3ヶ月以内
+                有効期間  3ヶ月(ビザ発給日より有効期間3ヶ月以内に入出国)
+            </visa>
+        </country>
+        
+        <country country_code="181" country_in_region_code="36">
+            <name>ナミビア</name>
+            <flag>namibia</flag>
+            <visa>90日以内の観光はビザ不要</visa>
+        </country>
+        
+        <country country_code="182" country_in_region_code="37">
+            <name>ニジェール</name>
+            <flag>niger</flag>
+            <visa>
+                2019年12月、ニジェール領事館閉館に伴い、日本でのニジェールビザ申請ができなくなっている。
+                ニジェールビザは、経由地で申請するか、WEBサイト上のニジェール国際旅行会社を通じてニジェールアライバルビザを申請する必要あり。
+            </visa>
+        </country>
+        
+        <country country_code="183" country_in_region_code="38">
+            <name>ブルキナファソ</name>
+            <flag>burkinafaso</flag>
+            <visa>
+                観光3ヶ月シングル
+                滞在可能日数  3ヶ月
+                有効期間  3ヶ月以内に入出国
+                申請料  9000円
+
+                観光3ヶ月マルチブル
+                滞在期間  3ヶ月 有効期間  3ヶ月以内に入出国
+                申請料  12000円
+            </visa>
+        </country>
+        
+        <country country_code="184" country_in_region_code="39">
+            <name>ブルンジ</name>
+            <flag>burundi</flag>
+            <visa>
+                現在，ブルンジについては，到着時にビザを取得できないため，入国前に査証を取得する必要がある。
+                日本にはブルンジ大使館がありませんので，他国のブルンジ大使館で取得することが必要。
+                取得可能な査証については，３日間滞在可能な一次査証及び３０日間滞在可能な数次査証がある。
+            </visa>
+        </country>
+        
+        <country country_code="185" country_in_region_code="40">
+            <name>ベナン</name>
+            <flag>benin</flag>
+            <visa>事前にEvisaまたはビザの取得が必要 </visa>
+        </country>
+        
+        <country country_code="186" country_in_region_code="41">
+            <name>ボツワナ</name>
+            <flag>botswana</flag>
+            <visa>
+                有効な日本国旅券を所持し，旅券の残存有効期間が滞在予定期間に加え6か月以上ある方はボツワナ入国に際して査証を取得する必要はないとされる。
+                この場合，入国した日から12か月の間に合計90日まで滞在することが可能。
+            </visa>
+        </country>
+        
+        <country country_code="187" country_in_region_code="42">
+            <name>マダガスカル</name>
+            <flag>madagascar</flag>
+            <visa>
+                マダガスカルに入国するには査証が必要。
+                30日以内の短期滞在査証(観光目的)であれば、空港で取得(約20ユーロ)することも可能。
+                滞在可能日数  90日以内
+            </visa>
+        </country>
+        
+        <country country_code="188" country_in_region_code="43">
+            <name>マラウイ</name>
+            <flag>malawi</flag>
+            <visa>
+                観光ビザ
+                滞在可能日数  60日
+                有効期間  3ヶ月
+                申請料  11600円
+            </visa>
+        </country>
+        
+        <country country_code="189" country_in_region_code="44">
+            <name>マリ</name>
+            <flag>mali</flag>
+            <visa>
+                観光、商用3ヶ月マルチ
+                滞在可能日数  3ヶ月
+                有効期間  3ヶ月
+                入国時に黄熱予防接種証明書の提示が必要
+            </visa>
+        </country>
+        
+        <country country_code="190" country_in_region_code="45">
+            <name>南アフリカ共和国</name>
+            <flag>south6</flag>
+            <visa>
+                日本国籍の方は、通過・90日以内(３ヶ月)
+                の観光・商用・外交・公用目的の場合は無査証で入国可能。
+            </visa>
+        </country>
+        
+        <country country_code="191" country_in_region_code="46">
+            <name>南スーダン</name>
+            <flag>southsudan</flag>
+            <visa>
+                観光査証の滞在可能日数は申請日数通り。
+                旅券にイスラエルの査証があると査証は発給されない。
+                滞在が2週間を超える場合、現地 受入先を確認する。
+            </visa>
+        </country>
+
+        <country country_code="192" country_in_region_code="47">
+            <name>モーリシャス</name>
+            <flag>mauritius</flag>
+            <visa>ビザ免除国（短期間）</visa>
+        </country>
+
+        <country country_code="193" country_in_region_code="48">
+            <name>モーリタニア</name>
+            <flag>mauritania</flag>
+            <visa>
+                現在大使館ではビザは発行してない。
+                すべてのビザは空港及び国境到着時に申請、取得可能。必要書類はパスポートと以下のビザ料金になっている。
+
+                滞在期間　30日→US$60  
+                90日→US$100
+                ３ヶ月以上1年まで→US$285
+                2年以上3年まで→US$425 
+                3年以上→US$845
+            </visa>
+        </country>
+
+        <country country_code="194" country_in_region_code="49">
+            <name>モザンビーク</name>
+            <flag>mozambique</flag>
+            <visa>
+                通過シングル
+                滞在可能日数  7日間
+                有効期間  入国予定日から最大7日間
+                申請料  通常申請8500円
+                緊急申請12000円 特急申請16000円
+
+                観光シングル30日
+                滞在可能日数  30日
+                申請料  通常申請15000円 緊急申請19000円 特級申請23000円
+
+                観光マルチ90日
+                滞在可能日数90日
+                申請料  通常申請23000円  緊急申請32000円  特級申請37500円
+            </visa>
+        </country>
+
+        <country country_code="195" country_in_region_code="50">
+            <name>モロッコ</name>
+            <flag>morocco</flag>
+            <visa>
+                日本国籍の方は3ヶ月(90日）以内の滞在の場合、
+                モロッコ入国に際して査証（ビザ）は必要なし。
+            </visa>
+        </country>
+
+        <country country_code="196" country_in_region_code="51">
+            <name>リビア</name>
+            <flag>libya</flag>
+            <visa>
+                リビアの受け入れ先の会社または機関に連絡を取り、現地の入国の事前許可を取得する。
+                許可が下り次第、入国管理局がリビア大使館へ許可入電を送付される。
+                この許可入電がないとリビアビザの申請は受け付けることができない。
+                許可入電の申請がおわり次第、駐日大使館へ連絡し、許可番号と名前で入電の確認をする。
+                大使館は入電許可に基づきビザを発行している。シングルまたはマルチプルビザの 申請は現地リビアから行う。
+                観光ビザ 料金7000円
+            </visa>
+        </country>
+
+        <country country_code="197" country_in_region_code="52">
+            <name>リベリア</name>
+            <flag>liberia</flag>
+            <visa>
+                観光シングル 滞在可能日数  最大3ヶ月 有効期間  3ヶ月以内に入国
+
+                観光マルチブル
+                滞在可能日数  最大3ヶ月
+                有効期間  3ヶ月以内に入国
+            </visa>
+        </country>
+        
+        <country country_code="198" country_in_region_code="53">
+            <name>ルワンダ</name>
+            <flag>rwanda</flag>
+            <visa>
+                観光マルチ
+                有効期間  90日間 申請料  6200円
+                アライバルビザ 取得可
+            </visa>
+        </country>
+        
+        <country country_code="199" country_in_region_code="54">
+            <name>レソト</name>
+            <flag>lesotho</flag>
+            <visa>ビザ免除国（短期間）</visa>
+        </country>
+
+    </regions>
+
+</resources>
