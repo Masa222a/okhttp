@@ -1,6 +1,7 @@
 package com.example.okhttp.Model
 
 import com.example.okhttp.Model.Entity.Flag
+import com.example.okhttp.Model.Entity.Visa
 import com.example.okhttp.R
 import com.example.okhttp.SingletonContext
 import org.xmlpull.v1.XmlPullParser
@@ -8,8 +9,10 @@ import org.xmlpull.v1.XmlPullParser
 class XmlManager {
     private val context = SingletonContext.applicationContext()!!
     var flags = listOf<Flag>()
+    var visaList = mutableListOf<Visa>()
     init {
         getXmlData()
+        getVisaData()
     }
 
     enum class Region(val index: Int) {
@@ -135,5 +138,51 @@ class XmlManager {
             flags.add(Flag(countryCodes[i], pictureIds[i], countriesName[i], countriesEngName[i], populations[i], languages[i], capitals[i], currencies[i], regions[i]))
         }
         this.flags = flags
+    }
+
+    fun changeVisaList(id: Int): List<Visa> {
+        return visaList.filter { it.id == id }
+    }
+
+
+    fun getVisaData() {
+        val parser = context.resources.getXml(R.xml.country_visa_information)
+        val dataList = mutableListOf<Visa>()
+        var tagName: String? = null
+        var eventType = parser.eventType
+
+        val visaName = mutableListOf<String>()
+        val visaContent = mutableListOf<String>()
+        while (eventType != XmlPullParser.END_DOCUMENT) {
+            when(eventType) {
+                XmlPullParser.START_DOCUMENT -> {
+
+                }
+                XmlPullParser.START_TAG -> {
+                    tagName = parser.name
+                }
+                XmlPullParser.TEXT -> {
+                    if (tagName != null) {
+                        when(tagName) {
+                            "flag" -> {
+                                visaName.add(parser.text)
+                            }
+                            "visa" -> {
+                                visaContent.add(parser.text)
+                            }
+                        }
+                    }
+                }
+            }
+            eventType = parser.next()
+        }
+
+        parser.close()
+
+        for (i in 1 until visaName.size + 1) {
+            dataList.add(Visa(i, visaName[i - 1], visaContent[i - 1]))
+        }
+
+        this.visaList = dataList
     }
 }
