@@ -29,6 +29,9 @@ class DetailPagerAdapter(val flag: Flag, fragmentManager: FragmentManager, lifec
         when(Page.positionOf(position)) {
             Page.Visa -> {
                 val fragment = DetailVisaFragment()
+                val bundle = Bundle()
+                bundle.putSerializable("flag", flag)
+                fragment.arguments = bundle
                 return fragment
             }
             Page.Embassy -> {

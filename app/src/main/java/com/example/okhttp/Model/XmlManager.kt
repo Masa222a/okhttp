@@ -144,7 +144,6 @@ class XmlManager {
         return visaList.filter { it.id == id }
     }
 
-
     fun getVisaData() {
         val parser = context.resources.getXml(R.xml.country_visa_information)
         val dataList = mutableListOf<Visa>()
